@@ -1,0 +1,27 @@
+{
+	"name": "rezen/proxyz",
+	"type": "library",
+	"description": "A library to make it easier to change native php functions behaviour",
+	"keywords": [
+		"testing",
+		"proxy"
+	],
+	"homepage": "https://github.com/rezen/proxyz",
+	"support": {
+		"issues": "https://github.com/rezen/proxyz/issues",
+		"source": "https://github.com/rezen/proxyz"
+	},
+	"license": "MIT",
+	"authors": [{
+		"name": "Andres Hermosilla",
+		"homepage": "https://ahermosilla.com"
+	}],
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"bin": [],
+	"require": {},
+	"require-dev": {
+		"symfony/dom-crawler": "^5.1",
+		"symfony/css-selector": "^5.1"
+	}
+}
