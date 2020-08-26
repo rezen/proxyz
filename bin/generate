@@ -181,5 +181,19 @@ function generate($root) {
     file_put_contents("{$root}/src/Proxyz/_methods.php", "<?php return ". json_encode($methods, JSON_PRETTY_PRINT) . ";");
 }
 
+
+function verifyCode($root) { 
+    exec("find $root/src -type f -name '*.php' -exec php -l {} \;", $output);
+    array_map(function($line) {
+        if (strpos($line, "Parse error") === false) {
+            return;   
+        }
+        echo $line;
+        exit(1);
+    }, $output);
+}
+
 generate($root);
+verifyCode($root);
+
 exit(0);
