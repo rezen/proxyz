@@ -19,3 +19,9 @@ use function \Proxyz\Php\Filesystem\file_get_contents;
 
 file_get_contents("config.json");
 ```
+
+## Testing
+```sh
+composer install
+./vendor/bin/phpunit  --testdox ./tests/
+```

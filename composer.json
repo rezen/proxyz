@@ -24,15 +24,21 @@
 	},
 	"require-dev": {
 		"symfony/dom-crawler": "^5.1",
-		"symfony/css-selector": "^5.1"
+        "symfony/css-selector": "^5.1",
+        "phpunit/phpunit": "^8.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"Proxyz": "src/"
+			"Proxyz\\": "src/"
 		},
 		"files": [
-			"src/Wirer.php"
+			"src/Proxyz/Wirer.php"
 		],
 		"exclude-from-classmap": []
-	}
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Proxyz\\Tests\\": "tests/"
+        }
+    }
 }
