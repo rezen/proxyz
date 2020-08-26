@@ -24,21 +24,42 @@
 	},
 	"require-dev": {
 		"symfony/dom-crawler": "^5.1",
-        "symfony/css-selector": "^5.1",
-        "phpunit/phpunit": "^8.0"
+		"symfony/css-selector": "^5.1",
+		"phpunit/phpunit": "^8.0"
 	},
 	"autoload": {
-		"psr-4": {
-			"Proxyz\\": "src/"
-		},
+		"psr-4": {},
 		"files": [
-			"src/Proxyz/Wirer.php"
+			"src/Proxyz/Wirer.php",
+			"src/Proxyz/Wp/Misc.php",
+			"src/Proxyz/Wp/Comment.php",
+			"src/Proxyz/Wp/Http.php",
+			"src/Proxyz/Wp/User.php",
+			"src/Proxyz/Wp/Theme.php",
+			"src/Proxyz/Wp/Plugin.php",
+			"src/Proxyz/Wp/Post.php",
+			"src/Proxyz/Wp/Formatting.php",
+			"src/Proxyz/Wp/Multisite.php",
+			"src/Proxyz/Wp/Feed.php",
+			"src/Proxyz/Wp/Taxonomy.php",
+			"src/Proxyz/Php/Network.php",
+			"src/Proxyz/Php/Ftp.php",
+			"src/Proxyz/Php/Mysqli.php",
+			"src/Proxyz/Php/Socket.php",
+			"src/Proxyz/Php/Openssl.php",
+			"src/Proxyz/Php/System.php",
+			"src/Proxyz/Php/Curl.php",
+			"src/Proxyz/Php/Xml.php",
+			"src/Proxyz/Php/Session.php",
+			"src/Proxyz/Php/Filesystem.php",
+			"src/Proxyz/Php/Mail.php",
+			"src/Proxyz/Php/Info.php"
 		],
 		"exclude-from-classmap": []
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Proxyz\\Tests\\": "tests/"
-        }
-    }
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Proxyz\\Tests\\": "tests/"
+		}
+	}
 }
