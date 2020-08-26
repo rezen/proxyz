@@ -2,6 +2,8 @@
 
 namespace Proxyz;
 
+use Exception;
+
 // Setup globals which are used for holding modifiers
 if (!isset($GLOBALS['PROXYZ_OVERRIDES'])) {
     $GLOBALS['PROXYZ_OVERRIDES'] = [];
@@ -17,9 +19,11 @@ if (!isset($GLOBALS['PROXYZ_WRAPS'])) {
  * @param  string  $name
  * @param  callable $method
  */
-
 function addOverride($name, $method) 
 {
+    if (!in_array($name, getModdableMethods())) {
+        throw new Exception("That function is not supported by the proxy");
+    }
     $GLOBALS['PROXYZ_OVERRIDES'][$name] = $method;
 }
 
@@ -31,6 +35,9 @@ function addOverride($name, $method)
  */
 function addWrapper(string $name, $method) 
 {
+    if (!in_array($name, getModdableMethods())) {
+        throw new Exception("That function is not supported by the proxy");
+    }
     $GLOBALS['PROXYZ_WRAPS'][$name] = $method;
 }
 
