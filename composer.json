@@ -19,9 +19,20 @@
 	"prefer-stable": true,
 	"minimum-stability": "dev",
 	"bin": [],
-	"require": {},
+	"require": {
+		"php": ">=7.2.5"
+	},
 	"require-dev": {
 		"symfony/dom-crawler": "^5.1",
 		"symfony/css-selector": "^5.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Proxyz": "src/"
+		},
+		"files": [
+			"src/Wirer.php"
+		],
+		"exclude-from-classmap": []
 	}
 }
