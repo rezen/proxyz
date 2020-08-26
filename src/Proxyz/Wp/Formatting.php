@@ -46,10 +46,10 @@ function esc_html() {
 function esc_js() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function esc_textarea() {
+function esc_sql() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function esc_sql() {
+function esc_textarea() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function esc_url() {
@@ -136,28 +136,22 @@ function trailingslashit() {
 function untrailingslashit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function urlencode_deep() {
+function url_shorten() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function url_shorten() {
+function urlencode_deep() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function utf8_uri_encode() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function wpautop() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wptexturize() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function wp_filter_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function wp_filter_post_kses() {
+function wp_filter_nohtml_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function wp_filter_nohtml_kses() {
+function wp_filter_post_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function wp_iso_descrambler() {
@@ -241,6 +235,12 @@ function wp_specialchars() {
 function wp_trim_words() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
+function wpautop() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wptexturize() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
 function zeroise() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
@@ -261,8 +261,8 @@ function methods() {
     "esc_attr",
     "esc_html",
     "esc_js",
-    "esc_textarea",
     "esc_sql",
+    "esc_textarea",
     "esc_url",
     "esc_url_raw",
     "force_balance_tags",
@@ -291,14 +291,12 @@ function methods() {
     "stripslashes_deep",
     "trailingslashit",
     "untrailingslashit",
-    "urlencode_deep",
     "url_shorten",
+    "urlencode_deep",
     "utf8_uri_encode",
-    "wpautop",
-    "wptexturize",
     "wp_filter_kses",
-    "wp_filter_post_kses",
     "wp_filter_nohtml_kses",
+    "wp_filter_post_kses",
     "wp_iso_descrambler",
     "wp_kses",
     "wp_kses_array_lc",
@@ -326,5 +324,7 @@ function methods() {
     "wp_richedit_pre",
     "wp_specialchars",
     "wp_trim_words",
+    "wpautop",
+    "wptexturize",
     "zeroise"
 ];}

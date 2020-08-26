@@ -43,10 +43,10 @@ function get_bloginfo_rss() {
 function get_category_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_comment_link() {
+function get_comment_author_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_comment_author_rss() {
+function get_comment_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function get_post_comments_feed_link() {
@@ -76,9 +76,6 @@ function post_comments_feed_link() {
 function rss_enclosure() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function the_title_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function the_category_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
@@ -86,6 +83,9 @@ function the_content_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function the_excerpt_rss() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function the_title_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function wp_rss() {
@@ -107,8 +107,8 @@ function methods() {
     "get_author_feed_link",
     "get_bloginfo_rss",
     "get_category_feed_link",
-    "get_comment_link",
     "get_comment_author_rss",
+    "get_comment_link",
     "get_post_comments_feed_link",
     "get_rss",
     "get_search_comments_feed_link",
@@ -118,9 +118,9 @@ function methods() {
     "permalink_single_rss",
     "post_comments_feed_link",
     "rss_enclosure",
-    "the_title_rss",
     "the_category_rss",
     "the_content_rss",
     "the_excerpt_rss",
+    "the_title_rss",
     "wp_rss"
 ];}

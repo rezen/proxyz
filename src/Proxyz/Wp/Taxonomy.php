@@ -28,49 +28,16 @@ function get_category_by_path() {
 function get_category_by_slug() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_the_category_by_ID() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function get_the_category_list() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function get_category_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function get_category_parents() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_the_category() {
+function get_edit_term_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function single_cat_title() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function in_category() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function is_category() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function the_category() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_category_checklist() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_dropdown_categories() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_list_categories() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_create_category() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_delete_category() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_insert_category() {
+function get_object_taxonomies() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function get_tag() {
@@ -82,58 +49,16 @@ function get_tag_link() {
 function get_tags() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_the_tag_list() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function get_the_tags() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function has_tag() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function is_tag() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function the_tags() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function single_tag_title() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function tag_description() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_generate_tag_cloud() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_tag_cloud() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function get_object_taxonomies() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function get_edit_term_link() {
+function get_taxonomies() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function get_taxonomy() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_taxonomies() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function get_term() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_the_term_list() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function get_term_by() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function the_terms() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function get_the_terms() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function get_term_children() {
@@ -145,10 +70,43 @@ function get_term_link() {
 function get_terms() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_taxonomy() {
+function get_the_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_category_by_ID() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_category_list() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_tag_list() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_tags() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_term_list() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function get_the_terms() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function has_tag() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function in_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function is_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function is_tag() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function is_tax() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function is_taxonomy() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function is_taxonomy_hierarchical() {
@@ -157,19 +115,64 @@ function is_taxonomy_hierarchical() {
 function is_term() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function taxonomy_exists() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function term_exists() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function register_taxonomy() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function register_taxonomy_for_object_type() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
+function single_cat_title() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function single_tag_title() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function tag_description() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function taxonomy_exists() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function term_exists() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function the_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function the_tags() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function the_terms() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_category_checklist() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_create_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_delete_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_delete_term() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_dropdown_categories() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_generate_tag_cloud() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
 function wp_get_object_terms() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_insert_category() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_insert_term() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_list_categories() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function wp_remove_object_terms() {
@@ -178,16 +181,13 @@ function wp_remove_object_terms() {
 function wp_set_object_terms() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function wp_insert_term() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_update_term() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function wp_delete_term() {
+function wp_tag_cloud() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function wp_terms_checklist() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_update_term() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function methods() {
@@ -201,58 +201,58 @@ function methods() {
     "get_category",
     "get_category_by_path",
     "get_category_by_slug",
-    "get_the_category_by_ID",
-    "get_the_category_list",
     "get_category_link",
     "get_category_parents",
-    "get_the_category",
-    "single_cat_title",
-    "in_category",
-    "is_category",
-    "the_category",
-    "wp_category_checklist",
-    "wp_dropdown_categories",
-    "wp_list_categories",
-    "wp_create_category",
-    "wp_delete_category",
-    "wp_insert_category",
+    "get_edit_term_link",
+    "get_object_taxonomies",
     "get_tag",
     "get_tag_link",
     "get_tags",
-    "get_the_tag_list",
-    "get_the_tags",
-    "has_tag",
-    "is_tag",
-    "the_tags",
-    "single_tag_title",
-    "tag_description",
-    "wp_generate_tag_cloud",
-    "wp_tag_cloud",
-    "get_object_taxonomies",
-    "get_edit_term_link",
-    "get_taxonomy",
     "get_taxonomies",
+    "get_taxonomy",
     "get_term",
-    "get_the_term_list",
     "get_term_by",
-    "the_terms",
-    "get_the_terms",
     "get_term_children",
     "get_term_link",
     "get_terms",
-    "is_taxonomy",
+    "get_the_category",
+    "get_the_category_by_ID",
+    "get_the_category_list",
+    "get_the_tag_list",
+    "get_the_tags",
+    "get_the_term_list",
+    "get_the_terms",
+    "has_tag",
+    "in_category",
+    "is_category",
+    "is_tag",
     "is_tax",
+    "is_taxonomy",
     "is_taxonomy_hierarchical",
     "is_term",
-    "taxonomy_exists",
-    "term_exists",
     "register_taxonomy",
     "register_taxonomy_for_object_type",
+    "single_cat_title",
+    "single_tag_title",
+    "tag_description",
+    "taxonomy_exists",
+    "term_exists",
+    "the_category",
+    "the_tags",
+    "the_terms",
+    "wp_category_checklist",
+    "wp_create_category",
+    "wp_delete_category",
+    "wp_delete_term",
+    "wp_dropdown_categories",
+    "wp_generate_tag_cloud",
     "wp_get_object_terms",
+    "wp_insert_category",
+    "wp_insert_term",
+    "wp_list_categories",
     "wp_remove_object_terms",
     "wp_set_object_terms",
-    "wp_insert_term",
-    "wp_update_term",
-    "wp_delete_term",
-    "wp_terms_checklist"
+    "wp_tag_cloud",
+    "wp_terms_checklist",
+    "wp_update_term"
 ];}

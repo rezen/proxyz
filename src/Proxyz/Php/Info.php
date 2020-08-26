@@ -1,9 +1,6 @@
 <?php namespace Proxyz\Php\Info;
 // This file is dynamically generated ... do not edit 
 
-function assert() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
 function assert_options() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
@@ -177,7 +174,6 @@ function zend_version() {
 }
 function methods() {
   return [
-    "assert",
     "assert_options",
     "cli_get_process_title",
     "cli_set_process_title",

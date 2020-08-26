@@ -58,6 +58,10 @@ function crawlPhpReferenceMethods($reference) {
     $methods = $elements->each(function($el) use (&$body) {
         return preg_replace("/[^A-z0-9_]+/", "_", $el->children()->first()->text());
     });
+
+    $methods = array_filter($methods, function($m) {
+        return !in_array($m, ['assert']);
+    });
     sort($methods);
     return $methods;
 }
@@ -93,12 +97,15 @@ function crawlWpReferenceMethods() {
     });
 
     $modules = array_map(function($section, $idx) use ($headings) {
+        $methods = $section->each(function($el) {
+            return preg_replace("/[^A-z0-9_]+/", "", $el->text());
+        });
+        $methods = array_values(array_unique($methods));
+        sort($methods);
         return (object) [
-            'id' => $headings[$idx],
-            'name' => ucfirst($headings[$idx]),
-            'methods' => $section->each(function($el) {
-                return $el->text();
-            }),
+            'id'      => $headings[$idx],
+            'name'    => ucfirst($headings[$idx]),
+            'methods' => $methods,
         ];
     }, $sections, array_keys($sections));
 
