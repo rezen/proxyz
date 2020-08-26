@@ -1,4 +1,4 @@
-<?php namespace Proxyz\Session;
+<?php namespace Proxyz\Php\Session;
 // This file is dynamically generated ... do not edit 
 
 function session_abort() {

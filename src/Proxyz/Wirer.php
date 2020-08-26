@@ -35,6 +35,14 @@ function addWrapper(string $name, $method)
 }
 
 /**
+ * Get names of all methods that you can modify
+ */ 
+function getModdableMethods() 
+{
+    return require '_methods.php';
+}
+
+/**
  * Used by generated methods to call underlying function or modifier
  *
  * @param  string  $name

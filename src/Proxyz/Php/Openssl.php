@@ -1,4 +1,4 @@
-<?php namespace Proxyz\Openssl;
+<?php namespace Proxyz\Php\Openssl;
 // This file is dynamically generated ... do not edit 
 
 function openssl_cipher_iv_length() {

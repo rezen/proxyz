@@ -1,0 +1,178 @@
+#!/usr/bin/env php
+<?php
+
+$root = realpath(dirname(__FILE__) . "/../");
+require $root . '/vendor/autoload.php';
+
+use Symfony\Component\DomCrawler\Crawler;
+
+function renderMethod($name) {
+    return implode("\n",  [
+        "",
+        "function $name() {",
+        "  return \Proxyz\callMethod(__FUNCTION__, func_get_args());",
+        "}",
+    ]);
+}
+
+function getPhpReferencesMethods($references) {
+    $methods = [];
+    foreach($references as $reference) {
+        $methods = array_merge($methods, crawlPhpReferenceMethods($reference));
+    }
+    return $methods;
+}
+
+function getPhpModuleData($id, $references) {
+    return (object) [
+        'id'      => $id,
+        'name'    => ucfirst($id),
+        'methods' => getPhpReferencesMethods($references),
+    ];
+}
+
+function generateFiles($namespace) {
+    return function($module)  use ($namespace) {
+        $body = "<?php namespace Proxyz\\{$namespace}\\{$module->name};\n// This file is dynamically generated ... do not edit \n";
+        $body = array_reduce($module->methods, function($body, $method) {
+            return $body . renderMethod($method);
+        }, $body);
+
+        $body .= "\nfunction methods() {\n";
+        $body .= "  return " . json_encode($module->methods, JSON_PRETTY_PRINT) . ";";
+        $body .= "}\n";
+
+        $root = realpath(dirname(__FILE__) . "/../");
+        $path = "{$root}/src/Proxyz/{$namespace}/{$module->name}.php";
+        file_put_contents($path, $body);
+    };
+}
+
+function crawlPhpReferenceMethods($reference) {
+    $html = file_get_contents($reference);
+    if (!$html) {
+        throw new Exception("Could not reach reference");
+    }
+    $crawler = new Crawler($html);
+    $elements = $crawler->filter('#layout-content .chunklist_reference li');
+    $methods = $elements->each(function($el) use (&$body) {
+        return preg_replace("/[^A-z0-9_]+/", "_", $el->children()->first()->text());
+    });
+    sort($methods);
+    return $methods;
+}
+
+function crawlWpReferenceMethods() {
+    $reference = "https://codex.wordpress.org/Function_Reference";
+    $html = file_get_contents($reference);
+    if (!$html) {
+        throw new Exception("Could not reach reference");
+    }
+    $namespaceMap = [
+        'Post, Custom Post Type, Page, Attachment and Bookmarks Functions' => 'post',
+        'Category, Tag and Taxonomy Functions' => 'taxonomy',
+        'User and Author Functions' => 'user',
+        'Feed Functions' => 'feed',
+        'HTTP API Functions' => 'http',
+        'Comment, Ping, and Trackback Functions' => 'comment',
+        'Action, Filter, and Plugin Functions' => 'plugin',
+        'Theme-Related Functions' => 'theme',
+        'Formatting Functions' => 'formatting',
+        'Miscellaneous Functions' => 'misc',
+        'Multisite functions' => "multisite",
+    ];
+    $crawler = new Crawler($html);
+    $elements = $crawler->filter('.widefat');
+
+    $headings = $elements->filter('tr h3')->each(function($el) use($namespaceMap) {
+        return  $namespaceMap[$el->text()];
+    });
+
+    $sections = $elements->each(function($el)  {
+        return $el->filter('tr')->eq(1)->filter('li tt a');
+    });
+
+    $modules = array_map(function($section, $idx) use ($headings) {
+        return (object) [
+            'id' => $headings[$idx],
+            'name' => ucfirst($headings[$idx]),
+            'methods' => $section->each(function($el) {
+                return $el->text();
+            }),
+        ];
+    }, $sections, array_keys($sections));
+
+    array_map(generateFiles("Wp"), $modules);
+    return array_reduce($modules, function($all, $module) {
+        return array_merge($all, $module->methods);
+    }, []);
+}
+
+function generateProxyPhpFiles() {
+    $generate = [
+        'curl' => [
+            'https://www.php.net/manual/en/ref.curl.php'
+        ],
+        'filesystem' => [
+            'https://www.php.net/manual/en/ref.filesystem.php'
+        ],
+        'system' => [
+            'https://www.php.net/manual/en/ref.exec.php'
+        ],
+        'session' => [
+            'https://www.php.net/manual/en/ref.session.php',
+        ],
+        'mysqli' => [
+            'https://www.php.net/manual/en/class.mysqli.php'
+        ],
+        'mail' => [
+            'https://www.php.net/manual/en/ref.imap.php',
+            'https://www.php.net/manual/en/ref.mail.php',
+        ],
+        'info' => [
+            'https://www.php.net/manual/en/ref.info.php',
+        ],
+        'openssl' => [
+            'https://www.php.net/manual/en/ref.openssl.php'
+        ],
+        'xml' => [
+            'https://www.php.net/manual/en/ref.xml.php',
+        ],
+        'network' => [
+            'https://www.php.net/manual/en/ref.network.php',
+        ],
+        'ftp' => [
+            'https://www.php.net/manual/en/ref.ftp.php',
+        ],
+        'socket' => [
+            'https://www.php.net/manual/en/ref.sockets.php'
+        ]
+    ];
+
+    $modules = [];
+    foreach($generate as $module => $references) {
+        try {
+            $modules[] = getPhpModuleData($module, $references);
+        } catch (Exception $err) {
+            echo("Had an issue building data for $module");
+        }
+    }
+
+    array_map(generateFiles("Php"), $modules);
+    return array_reduce($modules, function($all, $module) {
+        return array_merge($all, $module->methods);
+    }, []);
+}
+
+function generateProxyWpFiles() { 
+
+}
+
+function generate($root) {
+    $methods = generateProxyPhpFiles();
+    $methods = array_merge($methods, crawlWpReferenceMethods());
+    file_put_contents("{$root}/src/Proxyz/_methods.php", "<?php return ". json_encode($methods, JSON_PRETTY_PRINT) . ";");
+}
+
+generate($root);
+exit(0);

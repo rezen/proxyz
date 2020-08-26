@@ -1,4 +1,4 @@
-<?php namespace Proxyz\Xml;
+<?php namespace Proxyz\Php\Xml;
 // This file is dynamically generated ... do not edit 
 
 function utf8_decode() {

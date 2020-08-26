@@ -1,238 +1,238 @@
-<?php namespace Proxyz\Info;
+<?php namespace Proxyz\Wp\Comment;
 // This file is dynamically generated ... do not edit 
 
-function assert() {
+function add_ping() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function assert_options() {
+function add_comment_meta() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function cli_get_process_title() {
+function check_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function cli_set_process_title() {
+function comment_text() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function dl() {
+function comment_form() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function extension_loaded() {
+function comments_number() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_collect_cycles() {
+function discover_pingback_server_uri() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_disable() {
+function delete_comment_meta() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_enable() {
+function do_all_pings() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_enabled() {
+function do_enclose() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_mem_caches() {
+function do_trackbacks() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function gc_status() {
+function generic_ping() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_cfg_var() {
+function get_approved_comments() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_current_user() {
+function get_avatar() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_defined_constants() {
+function get_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_extension_funcs() {
+function get_comment_text() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_include_path() {
+function get_comment_meta() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_included_files() {
+function get_comments() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_loaded_extensions() {
+function wp_list_comments() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_magic_quotes_gpc() {
+function get_enclosed() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_magic_quotes_runtime() {
+function get_lastcommentmodified() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_required_files() {
+function get_pung() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function get_resources() {
+function get_to_ping() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getenv() {
+function have_comments() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getlastmod() {
+function get_comment_author() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getmygid() {
+function is_trackback() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getmyinode() {
+function pingback() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getmypid() {
+function privacy_ping_filter() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getmyuid() {
+function sanitize_comment_cookies() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getopt() {
+function trackback() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function getrusage() {
+function trackback_url() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ini_alter() {
+function trackback_url_list() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ini_get() {
+function update_comment_meta() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ini_get_all() {
+function weblog_ping() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ini_restore() {
+function wp_allow_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ini_set() {
+function wp_count_comments() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function magic_quotes_runtime() {
+function wp_delete_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function main() {
+function wp_filter_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function memory_get_peak_usage() {
+function wp_get_comment_status() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function memory_get_usage() {
+function wp_get_current_commenter() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function php_ini_loaded_file() {
+function wp_insert_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function php_ini_scanned_files() {
+function wp_new_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function php_logo_guid() {
+function wp_set_comment_status() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function php_sapi_name() {
+function wp_throttle_comment_flood() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function php_uname() {
+function wp_update_comment() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function phpcredits() {
+function wp_update_comment_count() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function phpinfo() {
+function wp_update_comment_count_now() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function phpversion() {
+function comment_class() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function putenv() {
+function comment_ID() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function restore_include_path() {
+function comment_author() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function set_include_path() {
+function comment_date() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function set_magic_quotes_runtime() {
+function comment_time() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function set_time_limit() {
+function get_comment_date() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function sys_get_temp_dir() {
+function get_comment_time() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function version_compare() {
+function paginate_comments_links() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function zend_logo_guid() {
+function previous_comments_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function zend_thread_id() {
+function next_comments_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function zend_version() {
+function get_comment_pages_count() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [
-    "assert",
-    "assert_options",
-    "cli_get_process_title",
-    "cli_set_process_title",
-    "dl",
-    "extension_loaded",
-    "gc_collect_cycles",
-    "gc_disable",
-    "gc_enable",
-    "gc_enabled",
-    "gc_mem_caches",
-    "gc_status",
-    "get_cfg_var",
-    "get_current_user",
-    "get_defined_constants",
-    "get_extension_funcs",
-    "get_include_path",
-    "get_included_files",
-    "get_loaded_extensions",
-    "get_magic_quotes_gpc",
-    "get_magic_quotes_runtime",
-    "get_required_files",
-    "get_resources",
-    "getenv",
-    "getlastmod",
-    "getmygid",
-    "getmyinode",
-    "getmypid",
-    "getmyuid",
-    "getopt",
-    "getrusage",
-    "ini_alter",
-    "ini_get",
-    "ini_get_all",
-    "ini_restore",
-    "ini_set",
-    "magic_quotes_runtime",
-    "main",
-    "memory_get_peak_usage",
-    "memory_get_usage",
-    "php_ini_loaded_file",
-    "php_ini_scanned_files",
-    "php_logo_guid",
-    "php_sapi_name",
-    "php_uname",
-    "phpcredits",
-    "phpinfo",
-    "phpversion",
-    "putenv",
-    "restore_include_path",
-    "set_include_path",
-    "set_magic_quotes_runtime",
-    "set_time_limit",
-    "sys_get_temp_dir",
-    "version_compare",
-    "zend_logo_guid",
-    "zend_thread_id",
-    "zend_version"
+    "add_ping",
+    "add_comment_meta",
+    "check_comment",
+    "comment_text",
+    "comment_form",
+    "comments_number",
+    "discover_pingback_server_uri",
+    "delete_comment_meta",
+    "do_all_pings",
+    "do_enclose",
+    "do_trackbacks",
+    "generic_ping",
+    "get_approved_comments",
+    "get_avatar",
+    "get_comment",
+    "get_comment_text",
+    "get_comment_meta",
+    "get_comments",
+    "wp_list_comments",
+    "get_enclosed",
+    "get_lastcommentmodified",
+    "get_pung",
+    "get_to_ping",
+    "have_comments",
+    "get_comment_author",
+    "is_trackback",
+    "pingback",
+    "privacy_ping_filter",
+    "sanitize_comment_cookies",
+    "trackback",
+    "trackback_url",
+    "trackback_url_list",
+    "update_comment_meta",
+    "weblog_ping",
+    "wp_allow_comment",
+    "wp_count_comments",
+    "wp_delete_comment",
+    "wp_filter_comment",
+    "wp_get_comment_status",
+    "wp_get_current_commenter",
+    "wp_insert_comment",
+    "wp_new_comment",
+    "wp_set_comment_status",
+    "wp_throttle_comment_flood",
+    "wp_update_comment",
+    "wp_update_comment_count",
+    "wp_update_comment_count_now",
+    "comment_class",
+    "comment_ID",
+    "comment_author",
+    "comment_date",
+    "comment_time",
+    "get_comment_date",
+    "get_comment_time",
+    "paginate_comments_links",
+    "previous_comments_link",
+    "next_comments_link",
+    "get_comment_pages_count"
 ];}

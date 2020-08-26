@@ -1,314 +1,330 @@
-<?php namespace Proxyz\Mail;
+<?php namespace Proxyz\Wp\Formatting;
 // This file is dynamically generated ... do not edit 
 
-function imap_8bit() {
+function absint() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_alerts() {
+function add_magic_quotes() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_append() {
+function addslashes_gpc() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_base64() {
+function antispambot() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_binary() {
+function attribute_escape() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_body() {
+function backslashit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_bodystruct() {
+function balanceTags() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_check() {
+function clean_pre() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_clearflag_full() {
+function clean_url() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_close() {
+function convert_chars() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_create() {
+function convert_smilies() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_createmailbox() {
+function ent2ncr() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_delete() {
+function esc_attr() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_deletemailbox() {
+function esc_html() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_errors() {
+function esc_js() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_expunge() {
+function esc_textarea() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetch_overview() {
+function esc_sql() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetchbody() {
+function esc_url() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetchheader() {
+function esc_url_raw() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetchmime() {
+function force_balance_tags() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetchstructure() {
+function format_to_edit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_fetchtext() {
+function format_to_post() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_gc() {
+function funky_javascript_fix() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_get_quota() {
+function htmlentities2() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_get_quotaroot() {
+function is_email() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_getacl() {
+function js_escape() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_getmailboxes() {
+function make_clickable() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_getsubscribed() {
+function popuplinks() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_header() {
+function remove_accents() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_headerinfo() {
+function sanitize_email() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_headers() {
+function sanitize_file_name() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_last_error() {
+function sanitize_html_class() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_list() {
+function sanitize_key() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_listmailbox() {
+function sanitize_mime_type() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_listscan() {
+function sanitize_option() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_listsubscribed() {
+function sanitize_sql_orderby() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_lsub() {
+function sanitize_text_field() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mail() {
+function sanitize_title() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mail_compose() {
+function sanitize_title_for_query() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mail_copy() {
+function sanitize_title_with_dashes() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mail_move() {
+function sanitize_user() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mailboxmsginfo() {
+function seems_utf8() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mime_header_decode() {
+function stripslashes_deep() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_msgno() {
+function trailingslashit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_mutf7_to_utf8() {
+function untrailingslashit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_num_msg() {
+function urlencode_deep() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_num_recent() {
+function url_shorten() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_open() {
+function utf8_uri_encode() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_ping() {
+function wpautop() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_qprint() {
+function wptexturize() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_rename() {
+function wp_filter_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_renamemailbox() {
+function wp_filter_post_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_reopen() {
+function wp_filter_nohtml_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_rfc822_parse_adrlist() {
+function wp_iso_descrambler() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_rfc822_parse_headers() {
+function wp_kses() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_rfc822_write_address() {
+function wp_kses_array_lc() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_savebody() {
+function wp_kses_attr() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_scan() {
+function wp_kses_bad_protocol() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_scanmailbox() {
+function wp_kses_bad_protocol_once() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_search() {
+function wp_kses_bad_protocol_once2() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_set_quota() {
+function wp_kses_check_attr_val() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_setacl() {
+function wp_kses_decode_entities() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_setflag_full() {
+function wp_kses_hair() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_sort() {
+function wp_kses_hook() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_status() {
+function wp_kses_html_error() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_subscribe() {
+function wp_kses_js_entities() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_thread() {
+function wp_kses_no_null() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_timeout() {
+function wp_kses_normalize_entities() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_uid() {
+function wp_kses_normalize_entities2() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_undelete() {
+function wp_kses_post() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_unsubscribe() {
+function wp_kses_split() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_utf7_decode() {
+function wp_kses_split2() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_utf7_encode() {
+function wp_kses_stripslashes() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_utf8() {
+function wp_kses_version() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function imap_utf8_to_mutf7() {
+function wp_make_link_relative() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ezmlm_hash() {
+function wp_normalize_path() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function mail() {
+function wp_rel_nofollow() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_richedit_pre() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_specialchars() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function wp_trim_words() {
+  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+}
+function zeroise() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [
-    "imap_8bit",
-    "imap_alerts",
-    "imap_append",
-    "imap_base64",
-    "imap_binary",
-    "imap_body",
-    "imap_bodystruct",
-    "imap_check",
-    "imap_clearflag_full",
-    "imap_close",
-    "imap_create",
-    "imap_createmailbox",
-    "imap_delete",
-    "imap_deletemailbox",
-    "imap_errors",
-    "imap_expunge",
-    "imap_fetch_overview",
-    "imap_fetchbody",
-    "imap_fetchheader",
-    "imap_fetchmime",
-    "imap_fetchstructure",
-    "imap_fetchtext",
-    "imap_gc",
-    "imap_get_quota",
-    "imap_get_quotaroot",
-    "imap_getacl",
-    "imap_getmailboxes",
-    "imap_getsubscribed",
-    "imap_header",
-    "imap_headerinfo",
-    "imap_headers",
-    "imap_last_error",
-    "imap_list",
-    "imap_listmailbox",
-    "imap_listscan",
-    "imap_listsubscribed",
-    "imap_lsub",
-    "imap_mail",
-    "imap_mail_compose",
-    "imap_mail_copy",
-    "imap_mail_move",
-    "imap_mailboxmsginfo",
-    "imap_mime_header_decode",
-    "imap_msgno",
-    "imap_mutf7_to_utf8",
-    "imap_num_msg",
-    "imap_num_recent",
-    "imap_open",
-    "imap_ping",
-    "imap_qprint",
-    "imap_rename",
-    "imap_renamemailbox",
-    "imap_reopen",
-    "imap_rfc822_parse_adrlist",
-    "imap_rfc822_parse_headers",
-    "imap_rfc822_write_address",
-    "imap_savebody",
-    "imap_scan",
-    "imap_scanmailbox",
-    "imap_search",
-    "imap_set_quota",
-    "imap_setacl",
-    "imap_setflag_full",
-    "imap_sort",
-    "imap_status",
-    "imap_subscribe",
-    "imap_thread",
-    "imap_timeout",
-    "imap_uid",
-    "imap_undelete",
-    "imap_unsubscribe",
-    "imap_utf7_decode",
-    "imap_utf7_encode",
-    "imap_utf8",
-    "imap_utf8_to_mutf7",
-    "ezmlm_hash",
-    "mail"
+    "absint",
+    "add_magic_quotes",
+    "addslashes_gpc",
+    "antispambot",
+    "attribute_escape",
+    "backslashit",
+    "balanceTags",
+    "clean_pre",
+    "clean_url",
+    "convert_chars",
+    "convert_smilies",
+    "ent2ncr",
+    "esc_attr",
+    "esc_html",
+    "esc_js",
+    "esc_textarea",
+    "esc_sql",
+    "esc_url",
+    "esc_url_raw",
+    "force_balance_tags",
+    "format_to_edit",
+    "format_to_post",
+    "funky_javascript_fix",
+    "htmlentities2",
+    "is_email",
+    "js_escape",
+    "make_clickable",
+    "popuplinks",
+    "remove_accents",
+    "sanitize_email",
+    "sanitize_file_name",
+    "sanitize_html_class",
+    "sanitize_key",
+    "sanitize_mime_type",
+    "sanitize_option",
+    "sanitize_sql_orderby",
+    "sanitize_text_field",
+    "sanitize_title",
+    "sanitize_title_for_query",
+    "sanitize_title_with_dashes",
+    "sanitize_user",
+    "seems_utf8",
+    "stripslashes_deep",
+    "trailingslashit",
+    "untrailingslashit",
+    "urlencode_deep",
+    "url_shorten",
+    "utf8_uri_encode",
+    "wpautop",
+    "wptexturize",
+    "wp_filter_kses",
+    "wp_filter_post_kses",
+    "wp_filter_nohtml_kses",
+    "wp_iso_descrambler",
+    "wp_kses",
+    "wp_kses_array_lc",
+    "wp_kses_attr",
+    "wp_kses_bad_protocol",
+    "wp_kses_bad_protocol_once",
+    "wp_kses_bad_protocol_once2",
+    "wp_kses_check_attr_val",
+    "wp_kses_decode_entities",
+    "wp_kses_hair",
+    "wp_kses_hook",
+    "wp_kses_html_error",
+    "wp_kses_js_entities",
+    "wp_kses_no_null",
+    "wp_kses_normalize_entities",
+    "wp_kses_normalize_entities2",
+    "wp_kses_post",
+    "wp_kses_split",
+    "wp_kses_split2",
+    "wp_kses_stripslashes",
+    "wp_kses_version",
+    "wp_make_link_relative",
+    "wp_normalize_path",
+    "wp_rel_nofollow",
+    "wp_richedit_pre",
+    "wp_specialchars",
+    "wp_trim_words",
+    "zeroise"
 ];}

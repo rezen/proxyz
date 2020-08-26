@@ -1,330 +1,314 @@
-<?php namespace Proxyz\Filesystem;
+<?php namespace Proxyz\Php\Mail;
 // This file is dynamically generated ... do not edit 
 
-function basename() {
+function imap_8bit() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function chgrp() {
+function imap_alerts() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function chmod() {
+function imap_append() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function chown() {
+function imap_base64() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function clearstatcache() {
+function imap_binary() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function copy() {
+function imap_body() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function delete() {
+function imap_bodystruct() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function dirname() {
+function imap_check() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function disk_free_space() {
+function imap_clearflag_full() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function disk_total_space() {
+function imap_close() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function diskfreespace() {
+function imap_create() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fclose() {
+function imap_createmailbox() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function feof() {
+function imap_delete() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fflush() {
+function imap_deletemailbox() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fgetc() {
+function imap_errors() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fgetcsv() {
+function imap_expunge() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fgets() {
+function imap_fetch_overview() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fgetss() {
+function imap_fetchbody() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function file() {
+function imap_fetchheader() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function file_exists() {
+function imap_fetchmime() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function file_get_contents() {
+function imap_fetchstructure() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function file_put_contents() {
+function imap_fetchtext() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fileatime() {
+function imap_gc() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function filectime() {
+function imap_get_quota() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function filegroup() {
+function imap_get_quotaroot() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fileinode() {
+function imap_getacl() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function filemtime() {
+function imap_getmailboxes() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fileowner() {
+function imap_getsubscribed() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fileperms() {
+function imap_header() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function filesize() {
+function imap_headerinfo() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function filetype() {
+function imap_headers() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function flock() {
+function imap_last_error() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fnmatch() {
+function imap_list() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fopen() {
+function imap_listmailbox() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fpassthru() {
+function imap_listscan() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fputcsv() {
+function imap_listsubscribed() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fputs() {
+function imap_lsub() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fread() {
+function imap_mail() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fscanf() {
+function imap_mail_compose() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fseek() {
+function imap_mail_copy() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fstat() {
+function imap_mail_move() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ftell() {
+function imap_mailboxmsginfo() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function ftruncate() {
+function imap_mime_header_decode() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function fwrite() {
+function imap_msgno() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function glob() {
+function imap_mutf7_to_utf8() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_dir() {
+function imap_num_msg() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_executable() {
+function imap_num_recent() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_file() {
+function imap_open() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_link() {
+function imap_ping() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_readable() {
+function imap_qprint() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_uploaded_file() {
+function imap_rename() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_writable() {
+function imap_renamemailbox() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function is_writeable() {
+function imap_reopen() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function lchgrp() {
+function imap_rfc822_parse_adrlist() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function lchown() {
+function imap_rfc822_parse_headers() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function link() {
+function imap_rfc822_write_address() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function linkinfo() {
+function imap_savebody() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function lstat() {
+function imap_scan() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function mkdir() {
+function imap_scanmailbox() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function move_uploaded_file() {
+function imap_search() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function parse_ini_file() {
+function imap_set_quota() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function parse_ini_string() {
+function imap_setacl() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function pathinfo() {
+function imap_setflag_full() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function pclose() {
+function imap_sort() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function popen() {
+function imap_status() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function readfile() {
+function imap_subscribe() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function readlink() {
+function imap_thread() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function realpath() {
+function imap_timeout() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function realpath_cache_get() {
+function imap_uid() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function realpath_cache_size() {
+function imap_undelete() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function rename() {
+function imap_unsubscribe() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function rewind() {
+function imap_utf7_decode() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function rmdir() {
+function imap_utf7_encode() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function set_file_buffer() {
+function imap_utf8() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function stat() {
+function imap_utf8_to_mutf7() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function symlink() {
+function ezmlm_hash() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function tempnam() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function tmpfile() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function touch() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function umask() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function unlink() {
+function mail() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [
-    "basename",
-    "chgrp",
-    "chmod",
-    "chown",
-    "clearstatcache",
-    "copy",
-    "delete",
-    "dirname",
-    "disk_free_space",
-    "disk_total_space",
-    "diskfreespace",
-    "fclose",
-    "feof",
-    "fflush",
-    "fgetc",
-    "fgetcsv",
-    "fgets",
-    "fgetss",
-    "file",
-    "file_exists",
-    "file_get_contents",
-    "file_put_contents",
-    "fileatime",
-    "filectime",
-    "filegroup",
-    "fileinode",
-    "filemtime",
-    "fileowner",
-    "fileperms",
-    "filesize",
-    "filetype",
-    "flock",
-    "fnmatch",
-    "fopen",
-    "fpassthru",
-    "fputcsv",
-    "fputs",
-    "fread",
-    "fscanf",
-    "fseek",
-    "fstat",
-    "ftell",
-    "ftruncate",
-    "fwrite",
-    "glob",
-    "is_dir",
-    "is_executable",
-    "is_file",
-    "is_link",
-    "is_readable",
-    "is_uploaded_file",
-    "is_writable",
-    "is_writeable",
-    "lchgrp",
-    "lchown",
-    "link",
-    "linkinfo",
-    "lstat",
-    "mkdir",
-    "move_uploaded_file",
-    "parse_ini_file",
-    "parse_ini_string",
-    "pathinfo",
-    "pclose",
-    "popen",
-    "readfile",
-    "readlink",
-    "realpath",
-    "realpath_cache_get",
-    "realpath_cache_size",
-    "rename",
-    "rewind",
-    "rmdir",
-    "set_file_buffer",
-    "stat",
-    "symlink",
-    "tempnam",
-    "tmpfile",
-    "touch",
-    "umask",
-    "unlink"
+    "imap_8bit",
+    "imap_alerts",
+    "imap_append",
+    "imap_base64",
+    "imap_binary",
+    "imap_body",
+    "imap_bodystruct",
+    "imap_check",
+    "imap_clearflag_full",
+    "imap_close",
+    "imap_create",
+    "imap_createmailbox",
+    "imap_delete",
+    "imap_deletemailbox",
+    "imap_errors",
+    "imap_expunge",
+    "imap_fetch_overview",
+    "imap_fetchbody",
+    "imap_fetchheader",
+    "imap_fetchmime",
+    "imap_fetchstructure",
+    "imap_fetchtext",
+    "imap_gc",
+    "imap_get_quota",
+    "imap_get_quotaroot",
+    "imap_getacl",
+    "imap_getmailboxes",
+    "imap_getsubscribed",
+    "imap_header",
+    "imap_headerinfo",
+    "imap_headers",
+    "imap_last_error",
+    "imap_list",
+    "imap_listmailbox",
+    "imap_listscan",
+    "imap_listsubscribed",
+    "imap_lsub",
+    "imap_mail",
+    "imap_mail_compose",
+    "imap_mail_copy",
+    "imap_mail_move",
+    "imap_mailboxmsginfo",
+    "imap_mime_header_decode",
+    "imap_msgno",
+    "imap_mutf7_to_utf8",
+    "imap_num_msg",
+    "imap_num_recent",
+    "imap_open",
+    "imap_ping",
+    "imap_qprint",
+    "imap_rename",
+    "imap_renamemailbox",
+    "imap_reopen",
+    "imap_rfc822_parse_adrlist",
+    "imap_rfc822_parse_headers",
+    "imap_rfc822_write_address",
+    "imap_savebody",
+    "imap_scan",
+    "imap_scanmailbox",
+    "imap_search",
+    "imap_set_quota",
+    "imap_setacl",
+    "imap_setflag_full",
+    "imap_sort",
+    "imap_status",
+    "imap_subscribe",
+    "imap_thread",
+    "imap_timeout",
+    "imap_uid",
+    "imap_undelete",
+    "imap_unsubscribe",
+    "imap_utf7_decode",
+    "imap_utf7_encode",
+    "imap_utf8",
+    "imap_utf8_to_mutf7",
+    "ezmlm_hash",
+    "mail"
 ];}

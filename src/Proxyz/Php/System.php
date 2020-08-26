@@ -1,4 +1,4 @@
-<?php namespace Proxyz\System;
+<?php namespace Proxyz\Php\System;
 // This file is dynamically generated ... do not edit 
 
 function escapeshellarg() {

@@ -1,134 +1,126 @@
-<?php namespace Proxyz\Curl;
+<?php namespace Proxyz\Wp\Feed;
 // This file is dynamically generated ... do not edit 
 
-function curl_close() {
+function bloginfo_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_copy_handle() {
+function comment_author_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_errno() {
+function comment_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_error() {
+function comment_text_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_escape() {
+function do_feed() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_exec() {
+function do_feed_atom() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_file_create() {
+function do_feed_rdf() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_getinfo() {
+function do_feed_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_init() {
+function do_feed_rss2() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_add_handle() {
+function fetch_feed() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_close() {
+function fetch_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_errno() {
+function get_author_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_exec() {
+function get_bloginfo_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_getcontent() {
+function get_category_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_info_read() {
+function get_comment_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_init() {
+function get_comment_author_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_remove_handle() {
+function get_post_comments_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_select() {
+function get_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_setopt() {
+function get_search_comments_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_multi_strerror() {
+function get_search_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_pause() {
+function get_the_category_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_reset() {
+function get_the_title_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_setopt() {
+function permalink_single_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_setopt_array() {
+function post_comments_feed_link() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_share_close() {
+function rss_enclosure() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_share_errno() {
+function the_title_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_share_init() {
+function the_category_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_share_setopt() {
+function the_content_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_share_strerror() {
+function the_excerpt_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
-function curl_strerror() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function curl_unescape() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
-}
-function curl_version() {
+function wp_rss() {
   return \Proxyz\callMethod(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [
-    "curl_close",
-    "curl_copy_handle",
-    "curl_errno",
-    "curl_error",
-    "curl_escape",
-    "curl_exec",
-    "curl_file_create",
-    "curl_getinfo",
-    "curl_init",
-    "curl_multi_add_handle",
-    "curl_multi_close",
-    "curl_multi_errno",
-    "curl_multi_exec",
-    "curl_multi_getcontent",
-    "curl_multi_info_read",
-    "curl_multi_init",
-    "curl_multi_remove_handle",
-    "curl_multi_select",
-    "curl_multi_setopt",
-    "curl_multi_strerror",
-    "curl_pause",
-    "curl_reset",
-    "curl_setopt",
-    "curl_setopt_array",
-    "curl_share_close",
-    "curl_share_errno",
-    "curl_share_init",
-    "curl_share_setopt",
-    "curl_share_strerror",
-    "curl_strerror",
-    "curl_unescape",
-    "curl_version"
+    "bloginfo_rss",
+    "comment_author_rss",
+    "comment_link",
+    "comment_text_rss",
+    "do_feed",
+    "do_feed_atom",
+    "do_feed_rdf",
+    "do_feed_rss",
+    "do_feed_rss2",
+    "fetch_feed",
+    "fetch_rss",
+    "get_author_feed_link",
+    "get_bloginfo_rss",
+    "get_category_feed_link",
+    "get_comment_link",
+    "get_comment_author_rss",
+    "get_post_comments_feed_link",
+    "get_rss",
+    "get_search_comments_feed_link",
+    "get_search_feed_link",
+    "get_the_category_rss",
+    "get_the_title_rss",
+    "permalink_single_rss",
+    "post_comments_feed_link",
+    "rss_enclosure",
+    "the_title_rss",
+    "the_category_rss",
+    "the_content_rss",
+    "the_excerpt_rss",
+    "wp_rss"
 ];}

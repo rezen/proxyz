@@ -1,4 +1,4 @@
-<?php namespace Proxyz\Mysqli;
+<?php namespace Proxyz\Php\Mysqli;
 // This file is dynamically generated ... do not edit 
 
 function mysqli___construct() {

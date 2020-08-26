@@ -15,7 +15,7 @@ In your app, wherever you init and configure things, add a wrapper
 
 Wherever you need to override the `file_get_contents`, import the namespaced function.  
 ```php
-use function \Proxyz\Filesystem\file_get_contents;
+use function \Proxyz\Php\Filesystem\file_get_contents;
 
 file_get_contents("config.json");
 ```
