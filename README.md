@@ -1,10 +1,13 @@
 # proxyz
-If you are trying to test a PHP application and want to override `file_get_contents` response, you're in for a heap of fun (okay, so not fun). Really, any function that interacts with stateful bits is annoying. PHP has so many functions (not objects) that are in the global namespace that make testing hard. Also if you are writing a plugin or them for WordPress, you are using functions in the global namespace which you can not overwrite. To mitigate some of this pain, what you need is a method proxy. A method proxy will allow you to override or watch the behaviour of a function in the global namespace effortlessly.
+[![Latest Stable Version](https://poser.pugx.org/rezen/proxyz/v)](//packagist.org/packages/rezen/proxyz)
+
+If you are trying to test a PHP application and want to override `file_get_contents` response, you're in for a heap of fun (okay, so not fun). Really, any function that interacts with stateful bits is annoying. PHP has so many functions (not objects) that are in the global namespace that make testing hard. Also if you are writing a plugin for WordPress, you are using functions in the global namespace which you can not overwrite. To mitigate some of this pain, what you need is a method proxy. A method proxy will allow you to override or watch the behaviour of a function in the global namespace effortlessly.
 
 
 
 ## Install
-`composer install rezen/proxyz`  
+
+`composer install rezen/proxyz` 
 
 ## Example
 In your app, wherever you init and configure things, add a wrapper  
@@ -43,8 +46,7 @@ Wherever you need to override the `file_get_contents`, import the namespaced fun
 use function \Proxyz\Php\Filesystem\file_get_contents;
 use function \Proxyz\Php\Curl\{curl_init, curl_setopt, curl_exec};
 
-
-file_get_contents("config.json");
+$config = file_get_contents("config.json");
 ```
 
 ## Testing
