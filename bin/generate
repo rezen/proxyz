@@ -24,28 +24,29 @@ function getPhpReferencesMethods($references) {
 }
 
 function getPhpModuleData($id, $references) {
+    $name = ucfirst($id);
     return (object) [
         'id'      => $id,
-        'name'    => ucfirst($id),
+        'ns' => "Proxyz\\Php\\{$name}",
+        'name'    => $name,
         'methods' => getPhpReferencesMethods($references),
     ];
 }
 
-function generateFiles($namespace) {
-    return function($module)  use ($namespace) {
-        $body = "<?php namespace Proxyz\\{$namespace}\\{$module->name};\n// This file is dynamically generated ... do not edit \n";
-        $body = array_reduce($module->methods, function($body, $method) {
-            return $body . renderMethod($method);
-        }, $body);
+function generateFile($module)  {
+    $filePath = implode("/", explode("\\", $module->ns));    
+    $body = "<?php namespace {$module->ns};\n// This file is dynamically generated ... do not edit \n";
+    $body = array_reduce($module->methods, function($body, $method) {
+        return $body . renderMethod($method);
+    }, $body);
 
-        $body .= "\nfunction methods() {\n";
-        $body .= "  return " . json_encode($module->methods, JSON_PRETTY_PRINT) . ";";
-        $body .= "}\n";
+    $body .= "\nfunction methods() {\n";
+    $body .= "  return " . json_encode($module->methods, JSON_PRETTY_PRINT) . ";";
+    $body .= "}\n";
 
-        $root = realpath(dirname(__FILE__) . "/../");
-        $path = "{$root}/src/Proxyz/{$namespace}/{$module->name}.php";
-        file_put_contents($path, $body);
-    };
+    $root = realpath(dirname(__FILE__) . "/../");
+    $path = "{$root}/src/{$filePath}.php";
+    file_put_contents($path, $body);
 }
 
 function crawlPhpReferenceMethods($reference) {
@@ -96,23 +97,20 @@ function crawlWpReferenceMethods() {
         return $el->filter('tr')->eq(1)->filter('li tt a');
     });
 
-    $modules = array_map(function($section, $idx) use ($headings) {
+    return array_map(function($section, $idx) use ($headings) {
         $methods = $section->each(function($el) {
             return preg_replace("/[^A-z0-9_]+/", "", $el->text());
         });
         $methods = array_values(array_unique($methods));
         sort($methods);
+        $name = ucfirst($headings[$idx]);
         return (object) [
             'id'      => $headings[$idx],
-            'name'    => ucfirst($headings[$idx]),
+            'ns' => "Proxyz\\Wp\\{$name}",
+            'name'    => $name,
             'methods' => $methods,
         ];
     }, $sections, array_keys($sections));
-
-    array_map(generateFiles("Wp"), $modules);
-    return array_reduce($modules, function($all, $module) {
-        return array_merge($all, $module->methods);
-    }, []);
 }
 
 function generateProxyPhpFiles() {
@@ -164,21 +162,18 @@ function generateProxyPhpFiles() {
             echo("Had an issue building data for $module");
         }
     }
-
-    array_map(generateFiles("Php"), $modules);
-    return array_reduce($modules, function($all, $module) {
-        return array_merge($all, $module->methods);
-    }, []);
+    return $modules;
 }
 
-function generateProxyWpFiles() { 
-
-}
 
 function generate($root) {
-    $methods = generateProxyPhpFiles();
-    $methods = array_merge($methods, crawlWpReferenceMethods());
-    file_put_contents("{$root}/src/Proxyz/_methods.php", "<?php return ". json_encode($methods, JSON_PRETTY_PRINT) . ";");
+    $modules = crawlWpReferenceMethods();
+    $modules = array_merge($modules, generateProxyPhpFiles());
+    array_map('generateFile', $modules);
+    $methods = array_reduce($modules, function($aggr, $module) {
+        return array_merge($aggr, array_fill_keys($module->methods, $module->ns));
+    }, []);
+    file_put_contents("{$root}/src/Proxyz/_methods.php", "<?php return ". str_replace([":", "{", "}"], ["=> ", "[", "]"], json_encode($methods, JSON_PRETTY_PRINT)) . ";");
 }
 
 

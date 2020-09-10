@@ -27,4 +27,15 @@ class MethodsTest extends UnitTest
             return call_user_func_array($fn, $args);
         });
     }
+
+    public function test_get_moddable_methods()
+    {
+        $methods = \Proxyz\getModdableMethods();
+        $this->assertTrue(in_array("fclose", $methods));
+    }
+
+    public function test_get_method_namespace()
+    {
+        $this->assertEquals("Proxyz\\Php\\Curl", \Proxyz\getMethodNamespace('curl_init'));
+    }
 }

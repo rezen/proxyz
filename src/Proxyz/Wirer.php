@@ -44,10 +44,28 @@ function addWrapper(string $name, $method)
 /**
  * Get names of all methods that you can modify
  */ 
-function getModdableMethods() 
+function getModdableMethods(): array
 {
-    return require '_methods.php';
+    return array_keys(require '_methods.php');
 }
+
+/**
+ * Determine if a method is moddable
+ */
+function isModdable($name): bool
+{   
+    return getMethodNamespace($name) !== null;
+}
+
+/**
+ * Determine namespace a method belongs to
+ */
+function getMethodNamespace($name) 
+{
+    $methods = require '_methods.php';
+    return $methods[$name] ?? null;
+}
+
 
 /**
  * Used by generated methods to call underlying function or modifier
