@@ -10,7 +10,7 @@ function renderMethod($name) {
     return implode("\n",  [
         "",
         "function $name() {",
-        "  return \Proxyz\callMethod(__FUNCTION__, func_get_args());",
+        "  return \Proxyz\callFunction(__FUNCTION__, func_get_args());",
         "}",
     ]);
 }

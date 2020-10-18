@@ -2,94 +2,94 @@
 // This file is dynamically generated ... do not edit 
 
 function bloginfo_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function comment_author_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function comment_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function comment_text_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function do_feed() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function do_feed_atom() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function do_feed_rdf() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function do_feed_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function do_feed_rss2() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function fetch_feed() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function fetch_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_author_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_bloginfo_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_category_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_comment_author_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_comment_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_post_comments_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_search_comments_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_search_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_the_category_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function get_the_title_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function permalink_single_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function post_comments_feed_link() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function rss_enclosure() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function the_category_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function the_content_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function the_excerpt_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function the_title_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function wp_rss() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [

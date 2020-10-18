@@ -30,7 +30,8 @@
 	"autoload": {
 		"psr-4": {},
 		"files": [
-			"src/Proxyz/Wirer.php",
+			"src/Proxyz/wirer.php",
+			"src/Proxyz/Delegate.php",
 			"src/Proxyz/Wp/Misc.php",
 			"src/Proxyz/Wp/Comment.php",
 			"src/Proxyz/Wp/Http.php",
@@ -59,7 +60,8 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Proxyz\\Tests\\": "tests/"
+			"Proxyz\\Tests\\": "test/tests",
+			"Sample\\":"test/sample"
 		}
 	}
 }

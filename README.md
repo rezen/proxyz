@@ -49,12 +49,18 @@ use function \Proxyz\Php\Curl\{curl_init, curl_setopt, curl_exec};
 $config = file_get_contents("config.json");
 ```
 
+Override a class when need be!
+```php
+\Proxyz\addOverride(\SplFileInfo::class, \Sample\Dance::class);
+$instance = \Proxyz\newInstance(\SplFileInfo::class, [$first]);
+\Sample\Dance::class === get_class($instance);
+```
+
 ## Testing
 ```sh
 composer install
-./vendor/bin/phpunit  --testdox ./tests/
+./vendor/bin/phpunit  -d memory_limit=1024M --testdox ./test/tests/ 
 ```
 
 ## Todo
-- Generic proxy class for wrapping classes
 - Code rewriter for detecting native functions and adding `use` imports 

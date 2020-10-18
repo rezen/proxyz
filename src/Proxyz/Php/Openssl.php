@@ -2,175 +2,175 @@
 // This file is dynamically generated ... do not edit 
 
 function openssl_cipher_iv_length() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_export() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_export_to_file() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_get_public_key() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_get_subject() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_new() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_csr_sign() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_decrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_dh_compute_key() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_digest() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_encrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_error_string() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_free_key() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_cert_locations() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_cipher_methods() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_curve_names() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_md_methods() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_privatekey() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_get_publickey() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_open() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pbkdf2() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs12_export() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs12_export_to_file() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs12_read() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_decrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_encrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_read() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_sign() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_verify() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_export() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_export_to_file() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_free() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_get_details() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_get_private() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_get_public() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_new() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_private_decrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_private_encrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_public_decrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_public_encrypt() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_random_pseudo_bytes() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_seal() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_sign() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_spki_export() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_spki_export_challenge() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_spki_new() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_spki_verify() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_verify() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_check_private_key() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_checkpurpose() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_export() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_export_to_file() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_fingerprint() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_free() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_parse() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_read() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_x509_verify() {
-  return \Proxyz\callMethod(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [

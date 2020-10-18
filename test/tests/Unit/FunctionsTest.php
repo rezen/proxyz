@@ -6,9 +6,9 @@ use Exception;
 use Proxyz\Tests\UnitTest;
 use function Proxyz\Php\Filesystem\file_get_contents;
 
-class MethodsTest extends UnitTest
+class FunctionsTest extends UnitTest
 {
-    public function test_proxy_add_wrapper()
+    function test_proxy_add_wrapper()
     {
         \Proxyz\addWrapper('file_get_contents', function($args, $fn) {
             if ($args[0] === "config.json") {
@@ -20,21 +20,13 @@ class MethodsTest extends UnitTest
         $this->assertEquals(null, @file_get_contents("xyz.json"));
     }
 
-    public function test_raises_exception_for_nonexistant_function()
-    {
-        $this->expectException(Exception::class);
-        \Proxyz\addWrapper('fake', function($args, $fn) {
-            return call_user_func_array($fn, $args);
-        });
-    }
-
-    public function test_get_moddable_methods()
+    function test_get_moddable_methods()
     {
         $methods = \Proxyz\getModdableMethods();
         $this->assertTrue(in_array("fclose", $methods));
     }
 
-    public function test_get_method_namespace()
+    function test_get_method_namespace()
     {
         $this->assertEquals("Proxyz\\Php\\Curl", \Proxyz\getMethodNamespace('curl_init'));
     }
