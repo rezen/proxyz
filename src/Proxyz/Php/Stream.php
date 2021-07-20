@@ -1,218 +1,190 @@
-<?php namespace Proxyz\Php\Info;
+<?php namespace Proxyz\Php\Stream;
 // This file is dynamically generated ... do not edit 
 
-function assert_options() {
+function stream_bucket_append() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function cli_get_process_title() {
+function stream_bucket_make_writeable() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function cli_set_process_title() {
+function stream_bucket_new() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function dl() {
+function stream_bucket_prepend() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function extension_loaded() {
+function stream_context_create() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_collect_cycles() {
+function stream_context_get_default() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_disable() {
+function stream_context_get_options() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_enable() {
+function stream_context_get_params() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_enabled() {
+function stream_context_set_default() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_mem_caches() {
+function stream_context_set_option() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function gc_status() {
+function stream_context_set_params() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_cfg_var() {
+function stream_copy_to_stream() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_current_user() {
+function stream_filter_append() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_defined_constants() {
+function stream_filter_prepend() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_extension_funcs() {
+function stream_filter_register() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_include_path() {
+function stream_filter_remove() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_included_files() {
+function stream_get_contents() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_loaded_extensions() {
+function stream_get_filters() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_magic_quotes_gpc() {
+function stream_get_line() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_magic_quotes_runtime() {
+function stream_get_meta_data() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_required_files() {
+function stream_get_transports() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function get_resources() {
+function stream_get_wrappers() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getenv() {
+function stream_is_local() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getlastmod() {
+function stream_isatty() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getmygid() {
+function stream_notification_callback() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getmyinode() {
+function stream_register_wrapper() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getmypid() {
+function stream_resolve_include_path() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getmyuid() {
+function stream_select() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getopt() {
+function stream_set_blocking() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function getrusage() {
+function stream_set_chunk_size() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ini_alter() {
+function stream_set_read_buffer() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ini_get() {
+function stream_set_timeout() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ini_get_all() {
+function stream_set_write_buffer() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ini_restore() {
+function stream_socket_accept() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ini_set() {
+function stream_socket_client() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function main() {
+function stream_socket_enable_crypto() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function memory_get_peak_usage() {
+function stream_socket_get_name() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function memory_get_usage() {
+function stream_socket_pair() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function php_ini_loaded_file() {
+function stream_socket_recvfrom() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function php_ini_scanned_files() {
+function stream_socket_sendto() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function php_sapi_name() {
+function stream_socket_server() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function php_uname() {
+function stream_socket_shutdown() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function phpcredits() {
+function stream_supports_lock() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function phpinfo() {
+function stream_wrapper_register() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function phpversion() {
+function stream_wrapper_restore() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function putenv() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function restore_include_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function set_include_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function set_time_limit() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function sys_get_temp_dir() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function version_compare() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function zend_thread_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function zend_version() {
+function stream_wrapper_unregister() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function methods() {
   return [
-    "assert_options",
-    "cli_get_process_title",
-    "cli_set_process_title",
-    "dl",
-    "extension_loaded",
-    "gc_collect_cycles",
-    "gc_disable",
-    "gc_enable",
-    "gc_enabled",
-    "gc_mem_caches",
-    "gc_status",
-    "get_cfg_var",
-    "get_current_user",
-    "get_defined_constants",
-    "get_extension_funcs",
-    "get_include_path",
-    "get_included_files",
-    "get_loaded_extensions",
-    "get_magic_quotes_gpc",
-    "get_magic_quotes_runtime",
-    "get_required_files",
-    "get_resources",
-    "getenv",
-    "getlastmod",
-    "getmygid",
-    "getmyinode",
-    "getmypid",
-    "getmyuid",
-    "getopt",
-    "getrusage",
-    "ini_alter",
-    "ini_get",
-    "ini_get_all",
-    "ini_restore",
-    "ini_set",
-    "main",
-    "memory_get_peak_usage",
-    "memory_get_usage",
-    "php_ini_loaded_file",
-    "php_ini_scanned_files",
-    "php_sapi_name",
-    "php_uname",
-    "phpcredits",
-    "phpinfo",
-    "phpversion",
-    "putenv",
-    "restore_include_path",
-    "set_include_path",
-    "set_time_limit",
-    "sys_get_temp_dir",
-    "version_compare",
-    "zend_thread_id",
-    "zend_version"
+    "stream_bucket_append",
+    "stream_bucket_make_writeable",
+    "stream_bucket_new",
+    "stream_bucket_prepend",
+    "stream_context_create",
+    "stream_context_get_default",
+    "stream_context_get_options",
+    "stream_context_get_params",
+    "stream_context_set_default",
+    "stream_context_set_option",
+    "stream_context_set_params",
+    "stream_copy_to_stream",
+    "stream_filter_append",
+    "stream_filter_prepend",
+    "stream_filter_register",
+    "stream_filter_remove",
+    "stream_get_contents",
+    "stream_get_filters",
+    "stream_get_line",
+    "stream_get_meta_data",
+    "stream_get_transports",
+    "stream_get_wrappers",
+    "stream_is_local",
+    "stream_isatty",
+    "stream_notification_callback",
+    "stream_register_wrapper",
+    "stream_resolve_include_path",
+    "stream_select",
+    "stream_set_blocking",
+    "stream_set_chunk_size",
+    "stream_set_read_buffer",
+    "stream_set_timeout",
+    "stream_set_write_buffer",
+    "stream_socket_accept",
+    "stream_socket_client",
+    "stream_socket_enable_crypto",
+    "stream_socket_get_name",
+    "stream_socket_pair",
+    "stream_socket_recvfrom",
+    "stream_socket_sendto",
+    "stream_socket_server",
+    "stream_socket_shutdown",
+    "stream_supports_lock",
+    "stream_wrapper_register",
+    "stream_wrapper_restore",
+    "stream_wrapper_unregister"
 ];}

@@ -34,9 +34,6 @@ function session_get_cookie_params() {
 function session_id() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function session_is_registered() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
 function session_module_name() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
@@ -44,9 +41,6 @@ function session_name() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function session_regenerate_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function session_register() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function session_register_shutdown() {
@@ -70,9 +64,6 @@ function session_start() {
 function session_status() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function session_unregister() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
 function session_unset() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
@@ -92,11 +83,9 @@ function methods() {
     "session_gc",
     "session_get_cookie_params",
     "session_id",
-    "session_is_registered",
     "session_module_name",
     "session_name",
     "session_regenerate_id",
-    "session_register",
     "session_register_shutdown",
     "session_reset",
     "session_save_path",
@@ -104,7 +93,6 @@ function methods() {
     "session_set_save_handler",
     "session_start",
     "session_status",
-    "session_unregister",
     "session_unset",
     "session_write_close"
 ];}

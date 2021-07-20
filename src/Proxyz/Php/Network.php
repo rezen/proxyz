@@ -7,9 +7,6 @@ function checkdnsrr() {
 function closelog() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function define_syslog_variables() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
 function dns_check_record() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
@@ -107,7 +104,6 @@ function methods() {
   return [
     "checkdnsrr",
     "closelog",
-    "define_syslog_variables",
     "dns_check_record",
     "dns_get_mx",
     "dns_get_record",

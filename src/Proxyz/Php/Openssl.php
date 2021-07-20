@@ -4,6 +4,21 @@
 function openssl_cipher_iv_length() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
+function openssl_cms_decrypt() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
+function openssl_cms_encrypt() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
+function openssl_cms_read() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
+function openssl_cms_sign() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
+function openssl_cms_verify() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
 function openssl_csr_export() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
@@ -86,6 +101,9 @@ function openssl_pkcs7_sign() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkcs7_verify() {
+  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+}
+function openssl_pkey_derive() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function openssl_pkey_export() {
@@ -175,6 +193,11 @@ function openssl_x509_verify() {
 function methods() {
   return [
     "openssl_cipher_iv_length",
+    "openssl_cms_decrypt",
+    "openssl_cms_encrypt",
+    "openssl_cms_read",
+    "openssl_cms_sign",
+    "openssl_cms_verify",
     "openssl_csr_export",
     "openssl_csr_export_to_file",
     "openssl_csr_get_public_key",
@@ -203,6 +226,7 @@ function methods() {
     "openssl_pkcs7_read",
     "openssl_pkcs7_sign",
     "openssl_pkcs7_verify",
+    "openssl_pkey_derive",
     "openssl_pkey_export",
     "openssl_pkey_export_to_file",
     "openssl_pkey_free",

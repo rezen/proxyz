@@ -127,16 +127,10 @@ function mysqli_release_savepoint() {
 function mysqli_rollback() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function mysqli_rpl_query_type() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
 function mysqli_savepoint() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function mysqli_select_db() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function mysqli_send_query() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function mysqli_server_info() {
@@ -146,12 +140,6 @@ function mysqli_server_version() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function mysqli_set_charset() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function mysqli_set_local_infile_default() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function mysqli_set_local_infile_handler() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function mysqli_sqlstate() {
@@ -225,15 +213,11 @@ function methods() {
     "mysqli_refresh",
     "mysqli_release_savepoint",
     "mysqli_rollback",
-    "mysqli_rpl_query_type",
     "mysqli_savepoint",
     "mysqli_select_db",
-    "mysqli_send_query",
     "mysqli_server_info",
     "mysqli_server_version",
     "mysqli_set_charset",
-    "mysqli_set_local_infile_default",
-    "mysqli_set_local_infile_handler",
     "mysqli_sqlstate",
     "mysqli_ssl_set",
     "mysqli_stat",
