@@ -6,6 +6,26 @@ require $root . '/vendor/autoload.php';
 
 use Symfony\Component\DomCrawler\Crawler;
 
+function httpGet($url) {
+    $context = stream_context_create([
+        "http" => [
+            "method" => "GET",
+            "header" => implode("\r\n", [
+                "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                "accept-language: en-US,en;q=0.9",
+                "cache-control: max-age=0",
+                "sec-fetch-mode: navigate",
+                "sec-fetch-site: none",
+                "sec-fetch-user: ?1",
+                "upgrade-insecure-requests: 1",
+                "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+            ]),
+            'follow_location' => true
+        ]
+    ]);
+    return file_get_contents($url, false, $context);
+}
+
 function renderMethod($name) {
     return implode("\n",  [
         "",
@@ -50,9 +70,9 @@ function generateFile($module)  {
 }
 
 function crawlPhpReferenceMethods($reference) {
-    $html = file_get_contents($reference);
+    $html = httpGet($reference);
     if (!$html) {
-        throw new Exception("Could not reach reference");
+        throw new Exception("Could not reach reference - $reference");
     }
     $crawler = new Crawler($html);
     $elements = $crawler->filter('#layout-content .chunklist_reference li');
@@ -69,9 +89,9 @@ function crawlPhpReferenceMethods($reference) {
 
 function crawlWpReferenceMethods() {
     $reference = "https://codex.wordpress.org/Function_Reference";
-    $html = file_get_contents($reference);
+    $html = httpGet($reference);
     if (!$html) {
-        throw new Exception("Could not reach reference");
+        throw new Exception("Could not reach WordPress reference");
     }
     $namespaceMap = [
         'Post, Custom Post Type, Page, Attachment and Bookmarks Functions' => 'post',
@@ -151,7 +171,10 @@ function generateProxyPhpFiles() {
         ],
         'socket' => [
             'https://www.php.net/manual/en/ref.sockets.php'
-        ]
+        ],
+        'stream' => [
+            'https://www.php.net/manual/en/ref.stream.php',
+        ], 
     ];
 
     $modules = [];
