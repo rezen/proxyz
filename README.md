@@ -7,7 +7,7 @@ If you are trying to test a PHP application and want to override `file_get_conte
 
 ## Install
 
-`composer install rezen/proxyz` 
+`composer require rezen/proxyz` 
 
 ## Example
 In your app, wherever you init and configure things, add a wrapper  
