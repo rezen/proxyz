@@ -29,7 +29,9 @@ function httpGet($url) {
 
 function getFunctionParts($name) {
     $params = '';
-    $return = 'func_get_args()';
+    $return = '$args_';
+    $hasReferences = false;
+
     // @todo won't work for WordPress functions
     // @todo use docs to generate defaults
     // https://github.com/php/doc-en/blob/4a9a553afc482e0a6df8e70a403342669437b62c/reference/mysqli/mysqli/poll.xml
@@ -50,6 +52,7 @@ function getFunctionParts($name) {
             if ($parameter->isPassedByReference()) {
                 $var = "&" . $var;
                 $arg = "&" . $arg;
+                $hasReferences = true;
             } 
 
             if ($parameter->isOptional() && !$parameter->isVariadic()) {
@@ -63,6 +66,12 @@ function getFunctionParts($name) {
         $params = implode(", ", $args);
         $return ="[" . implode(", ", $pass) . "]";
     }
+    
+    // No references? Reset 
+    if (!$hasReferences) {
+        $params = '';
+        $return = '$args_';
+    }
     return [$params, $return];
 
 }
@@ -72,7 +81,8 @@ function renderMethod($name) {
     return implode("\n",  [
         "",
         "function $name($params) {",
-        "  return \Proxyz\callFunction(__FUNCTION__, $return);",
+        "  \$args_ = func_get_args();",    
+        "  return \Proxyz\callFunction(__FUNCTION__, array_slice($return, 0, count(\$args)));",
         "}",
     ]);
 }

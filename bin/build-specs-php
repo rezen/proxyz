@@ -1,0 +1,211 @@
+#!/usr/bin/env php
+<?php
+$root = realpath(dirname(__FILE__) . "/../");
+
+$generate = [
+    'curl' => ['curl/functions'], 
+    'filesystem' => ['filesystem/functions'], 
+    'system' => ['exec/functions'], 
+    'session' => ['session/functions', ], 
+    'mysqli' => ['mysqli/mysqli'], 
+    
+    'mail' => ['imap/functions', 'mail/functions', ], 
+    'info' => ['info/functions', ], 
+    'openssl' => ['openssl/functions'], 
+    'xml' => ['xml/functions', ], 
+    'network' => ['network/functions', ], 
+    'ftp' => ['ftp/functions', ], 
+    'socket' => ['socket/functions'], 
+    'stream' => ['stream/functions', ], 
+    'datetime' => ['datetime/functions', ], 
+];
+
+if (!is_dir("$root/bin/data/doc-en")) {
+    system("cd bin/data && git clone https://github.com/php/doc-en");
+}
+
+$functions = [];
+foreach ($generate as $namespace => $references)
+{
+    $functions[$namespace] = [];
+    foreach ($references as $dir)
+    {
+
+        $refs = glob("$root/bin/data/doc-en/reference/$dir/*.xml");
+        foreach ($refs as $ref)
+        {
+            $functions[$namespace][] = parseFunctionReference($ref);
+
+        }
+    }
+}
+
+$encoded = json_encode($functions, JSON_PRETTY_PRINT);
+file_put_contents("$root/bin/data/php.json", $encoded);
+
+
+function getAliasParams($file, $alias)
+{
+    if (!$alias)
+    {
+        return [];
+    }
+
+    if (strpos($alias, "::") !== false)
+    {
+        $parent = realpath(dirname($file) . "/..");
+        $parts = explode("::", $alias);
+        $method = str_replace(["__", "_"], ["", "-"], strtolower($parts[1]));
+        $klass = strtolower($parts[0]);
+        $aliasFile = $parent . "/$klass/$method.xml";
+    }
+    else
+    {
+        $aliasFile = realpath(dirname($file)) . "/" . str_replace("_", "-", $alias) . ".xml";
+    }
+
+    $ref = parseFunctionReference($aliasFile);
+    return $ref['params'];
+}
+
+function parseFunctionReference($file)
+{
+    if (!file_exists($file))
+    {
+        return ['file' => $file, 'name' => null, 'alias' => null, 'params' => [], ];
+    }
+    $content = file_get_contents($file);
+    $content = preg_replace_callback('#&[A-Z0-9\.\-]+;#i', function ($matches)
+    {
+        return htmlentities(html_entity_decode($matches[0]) , ENT_XML1);
+    }
+    , $content);
+    $content = trim($content);
+    $lines = explode("\n", $content);
+    $lastLine = $lines[count($lines) - 1];
+    if ($lastLine && $lastLine[0] === "{")
+    {
+        $content = substr($content, 0, strrpos(trim($content) , "\n"));
+    }
+    $spec = simplexml_load_string($content, null, LIBXML_NOENT);
+
+    if (!$spec)
+    {
+        echo "Noooo ";
+        echo $file;
+        die;
+    }
+    foreach ($spec->refsect1 as $section)
+    {
+        $attrs = $section->attributes();
+        $role = (string)$attrs->role;
+        if ($role !== 'description')
+        {
+            continue;
+        }
+        $method = null;
+        foreach ($section->children() as $child)
+        {
+            $attrs = $child->attributes();
+            $role = (string)$attrs['role'];
+            if ($role === 'procedural')
+            {
+                $method = $child;
+            }
+        }
+
+        if (!$method)
+        {
+            $method = $section->children()->methodsynopsis;
+        }
+
+        $methodName = (string)$method->methodname;
+        foreach($spec->refnamediv->children()->refname as $name) {
+            $name = (string) $name;
+            if (strpos($name, '::') === false) {
+                $methodName = $name;
+            }
+        }
+        $returnType = $method->type;
+        $signature = [
+            'file' => $file, 
+            'name' => $methodName, 
+            'alias' => null, 'params' => [], 
+        ];
+
+        if (!$method->methodparam)
+        {
+            if ($signature['name'] === '')
+            {
+                $signature['alias'] = (string)$spec
+                    ->refsect1
+                    ->para->methodname;
+                $signature['name'] = (string)$spec->refnamediv->refname;
+
+                if (!$signature['alias'])
+                {
+                    // References another function
+                    $signature['alias'] = (string)$spec
+                        ->refnamediv
+                        ->refpurpose->function;
+                }
+                else
+                {
+                    // References on object
+                    $signature['params'] = getAliasParams($file, $signature['alias']);
+                }
+            }
+            return $signature;
+
+        }
+        foreach ($method->methodparam as $param)
+        {
+            $parts = [];
+            $rep = (string)$param->attributes()['rep'];
+            $choice = (string)$param->attributes()['choice'];
+            $isVariadic = ($rep === "repeat");
+            $isOptional = ($choice === 'opt');
+            $name = "$" . $param->parameter;
+            if ($isVariadic)
+            {
+                $name = "..." . $name;
+            }
+
+            $attrs = $param
+                ->parameter
+                ->attributes();
+            $role = (string)$attrs['role'];
+            $isReference = ($role === 'reference');
+
+            if ($isReference)
+            {
+                $name = "&" . $name;
+            }
+
+            $parts[] = $name;
+
+            $initializer = (string)$param->initializer;
+            if (empty($initializer) && $isOptional) {
+                $initializer = 'null';
+            }
+        
+            if (!empty($initializer))
+            {
+                $length = strlen($initializer);
+                if ($initializer[0] === "&" && $initializer[$length - 1] === ';')
+                {
+                    $initializer = substr($initializer, 1, $length - 2);
+                }
+                if (strpos($initializer, '(') !== false) {
+                    $initializer = 'null';
+                }
+                $parts[] = $initializer;
+
+            }
+            $signature['params'][] = $parts;
+        }
+
+        return $signature;
+    }
+}
+

@@ -1,0 +1,68 @@
+#!/usr/bin/env php
+<?php
+
+$root = realpath(dirname(__FILE__) . "/../");
+$specs = glob("$root/bin/data/*json");
+
+foreach($specs as $file) {
+    $rootNamespace = ucfirst(str_replace(".json", "", basename($file)));
+    $content = file_get_contents($file);
+    $data = json_decode($content, true);
+    foreach($data as $namespace => $functions) {
+        generateFile($rootNamespace, ucfirst($namespace), $functions);
+    }
+}
+
+function generateFile($rootNamespace, $namespace, $functions=[]) {
+    $body =  '<?php namespace ' . implode("\\", ['Proxyz', $rootNamespace, $namespace]) . ";\n";
+    $body .= "// This file is dynamically generated ... do not edit \n";
+
+    usort($functions, function($a, $b) {
+        return strcmp($a["name"], $b["name"]);
+    });
+    foreach($functions as $function) {
+        if ($function['name'] === 'assert') {
+            continue;
+        }
+        $body .= fnString($function);
+    }
+    $names = array_map(function($fn) {
+        return $fn['name'];
+    }, $functions);
+
+    $body .= "\nfunction methods() {\n";
+    $body .= "  return " . json_encode($names, JSON_PRETTY_PRINT) . ";";
+    $body .= "}\n";
+    global $root;
+    $tmpfile = "$root/.tmp/Proxyz/$rootNamespace/$namespace.php";
+    @mkdir(dirname($tmpfile), 0755, true);
+    file_put_contents($tmpfile, $body);
+    exec("php -l $tmpfile", $output);
+    foreach($output as $line) {
+        if (strpos($line, 'Parse error') !== false) {
+            echo "[!] Problem with $tmpfile";
+            echo $line;
+            return;
+        }
+    }
+    file_put_contents(str_replace(".tmp", "src", $tmpfile), $body);
+    unlink($tmpfile);
+}
+
+function fnString($function) {
+    $params = array_map(function($param) {
+        return implode("=", $param);
+    }, $function['params']);
+    $params = implode(", ", $params);
+    $returns = array_map(function($param) {
+        return str_replace("...", "", $param[0]);
+    }, $function['params']);
+    $returns = implode(", ", $returns);
+
+    return implode("\n",  [
+        "",
+        "function {$function['name']}($params) {",
+        "  return \Proxyz\callFunction(__FUNCTION__, [$returns]);",
+        "}",
+    ]);
+} 
