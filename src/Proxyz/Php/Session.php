@@ -4,16 +4,16 @@
 function session_abort() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_cache_expire($new_cache_expire=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$new_cache_expire]);
+function session_cache_expire($value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$value]);
 }
-function session_cache_limiter($cache_limiter=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$cache_limiter]);
+function session_cache_limiter($value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$value]);
 }
 function session_commit() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_create_id($prefix=null) {
+function session_create_id($prefix="") {
   return \Proxyz\callFunction(__FUNCTION__, [$prefix]);
 }
 function session_decode($data) {
@@ -40,7 +40,7 @@ function session_module_name($module=null) {
 function session_name($name=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$name]);
 }
-function session_regenerate_id($delete_old_session=null) {
+function session_regenerate_id($delete_old_session=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$delete_old_session]);
 }
 function session_register_shutdown() {
@@ -55,10 +55,10 @@ function session_save_path($path=null) {
 function session_set_cookie_params($lifetime_or_options, $path=null, $domain=null, $secure=null, $httponly=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$lifetime_or_options, $path, $domain, $secure, $httponly]);
 }
-function session_set_save_handler($open, $close=null, $read=null, $write=null, $destroy=null, $gc=null, $create_sid=null, $validate_sid=null, $update_timestamp=null) {
+function session_set_save_handler($open, $close, $read, $write, $destroy, $gc, $create_sid=null, $validate_sid=null, $update_timestamp=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$open, $close, $read, $write, $destroy, $gc, $create_sid, $validate_sid, $update_timestamp]);
 }
-function session_start($options=null) {
+function session_start($options=[]) {
   return \Proxyz\callFunction(__FUNCTION__, [$options]);
 }
 function session_status() {

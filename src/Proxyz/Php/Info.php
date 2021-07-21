@@ -13,8 +13,8 @@ function cli_set_process_title($title) {
 function dl($extension_filename) {
   return \Proxyz\callFunction(__FUNCTION__, [$extension_filename]);
 }
-function extension_loaded($extension_name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$extension_name]);
+function extension_loaded($extension) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension]);
 }
 function gc_collect_cycles() {
   return \Proxyz\callFunction(__FUNCTION__, []);
@@ -34,17 +34,17 @@ function gc_mem_caches() {
 function gc_status() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_cfg_var($option_name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$option_name]);
+function get_cfg_var($option) {
+  return \Proxyz\callFunction(__FUNCTION__, [$option]);
 }
 function get_current_user() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_defined_constants($categorize=null) {
+function get_defined_constants($categorize=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$categorize]);
 }
-function get_extension_funcs($extension_name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$extension_name]);
+function get_extension_funcs($extension) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension]);
 }
 function get_include_path() {
   return \Proxyz\callFunction(__FUNCTION__, []);
@@ -52,7 +52,7 @@ function get_include_path() {
 function get_included_files() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_loaded_extensions($zend_extensions=null) {
+function get_loaded_extensions($zend_extensions=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$zend_extensions]);
 }
 function get_magic_quotes_gpc() {
@@ -67,7 +67,7 @@ function get_required_files() {
 function get_resources($type=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$type]);
 }
-function getenv($varname=null, $local_only=null) {
+function getenv($varname, $local_only=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$varname, $local_only]);
 }
 function getlastmod() {
@@ -85,34 +85,34 @@ function getmypid() {
 function getmyuid() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function getopt($options, $opts=null, &$optind=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$options, $opts, &$optind]);
+function getopt($short_options, $long_options=[], &$rest_index=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$short_options, $long_options, &$rest_index]);
 }
-function getrusage($who=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$who]);
+function getrusage($mode=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mode]);
 }
-function ini_alter($varname, $newvalue) {
-  return \Proxyz\callFunction(__FUNCTION__, [$varname, $newvalue]);
+function ini_alter() {
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function ini_get($varname) {
-  return \Proxyz\callFunction(__FUNCTION__, [$varname]);
+function ini_get($option) {
+  return \Proxyz\callFunction(__FUNCTION__, [$option]);
 }
-function ini_get_all($extension=null, $details=null) {
+function ini_get_all($extension=null, $details=true) {
   return \Proxyz\callFunction(__FUNCTION__, [$extension, $details]);
 }
-function ini_restore($varname) {
-  return \Proxyz\callFunction(__FUNCTION__, [$varname]);
+function ini_restore($option) {
+  return \Proxyz\callFunction(__FUNCTION__, [$option]);
 }
-function ini_set($varname, $newvalue) {
-  return \Proxyz\callFunction(__FUNCTION__, [$varname, $newvalue]);
+function ini_set($option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$option, $value]);
 }
 function main() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function memory_get_peak_usage($real_usage=null) {
+function memory_get_peak_usage($real_usage=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$real_usage]);
 }
-function memory_get_usage($real_usage=null) {
+function memory_get_usage($real_usage=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$real_usage]);
 }
 function php_ini_loaded_file() {
@@ -124,26 +124,26 @@ function php_ini_scanned_files() {
 function php_sapi_name() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function php_uname($mode=null) {
+function php_uname($mode="a") {
   return \Proxyz\callFunction(__FUNCTION__, [$mode]);
 }
-function phpcredits($flag=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$flag]);
+function phpcredits($flags=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$flags]);
 }
-function phpinfo($what=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$what]);
+function phpinfo($flags=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$flags]);
 }
 function phpversion($extension=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$extension]);
 }
-function putenv($setting) {
-  return \Proxyz\callFunction(__FUNCTION__, [$setting]);
+function putenv($assignment) {
+  return \Proxyz\callFunction(__FUNCTION__, [$assignment]);
 }
 function restore_include_path() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function set_include_path($new_include_path) {
-  return \Proxyz\callFunction(__FUNCTION__, [$new_include_path]);
+function set_include_path($include_path) {
+  return \Proxyz\callFunction(__FUNCTION__, [$include_path]);
 }
 function set_time_limit($seconds) {
   return \Proxyz\callFunction(__FUNCTION__, [$seconds]);
@@ -151,17 +151,18 @@ function set_time_limit($seconds) {
 function sys_get_temp_dir() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function version_compare($ver1, $ver2, $oper=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ver1, $ver2, $oper]);
+function version_compare($version1, $version2) {
+  return \Proxyz\callFunction(__FUNCTION__, [$version1, $version2]);
 }
 function zend_thread_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function zend_version() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function methods() {
   return [
+    "assert",
     "assert_options",
     "cli_get_process_title",
     "cli_set_process_title",

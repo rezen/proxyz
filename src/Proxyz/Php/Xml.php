@@ -1,14 +1,14 @@
 <?php namespace Proxyz\Php\Xml;
 // This file is dynamically generated ... do not edit 
 
-function utf8_decode($data) {
-  return \Proxyz\callFunction(__FUNCTION__, [$data]);
+function utf8_decode($string) {
+  return \Proxyz\callFunction(__FUNCTION__, [$string]);
 }
-function utf8_encode($data) {
-  return \Proxyz\callFunction(__FUNCTION__, [$data]);
+function utf8_encode($string) {
+  return \Proxyz\callFunction(__FUNCTION__, [$string]);
 }
-function xml_error_string($code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$code]);
+function xml_error_string($error_code) {
+  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
 }
 function xml_get_current_byte_index($parser) {
   return \Proxyz\callFunction(__FUNCTION__, [$parser]);
@@ -22,8 +22,8 @@ function xml_get_current_line_number($parser) {
 function xml_get_error_code($parser) {
   return \Proxyz\callFunction(__FUNCTION__, [$parser]);
 }
-function xml_parse($parser, $data, $isfinal=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $data, $isfinal]);
+function xml_parse($parser, $data, $is_final=false) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $data, $is_final]);
 }
 function xml_parse_into_struct($parser, $data, &$values, &$index=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$parser, $data, &$values, &$index]);
@@ -31,8 +31,8 @@ function xml_parse_into_struct($parser, $data, &$values, &$index=null) {
 function xml_parser_create($encoding=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$encoding]);
 }
-function xml_parser_create_ns($encoding=null, $sep=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$encoding, $sep]);
+function xml_parser_create_ns($encoding=null, $separator=":") {
+  return \Proxyz\callFunction(__FUNCTION__, [$encoding, $separator]);
 }
 function xml_parser_free($parser) {
   return \Proxyz\callFunction(__FUNCTION__, [$parser]);
@@ -43,35 +43,35 @@ function xml_parser_get_option($parser, $option) {
 function xml_parser_set_option($parser, $option, $value) {
   return \Proxyz\callFunction(__FUNCTION__, [$parser, $option, $value]);
 }
-function xml_set_character_data_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_character_data_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_default_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_default_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_element_handler($parser, $shdl, $ehdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $shdl, $ehdl]);
+function xml_set_element_handler($parser, $start_handler, $end_handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $start_handler, $end_handler]);
 }
-function xml_set_end_namespace_decl_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_end_namespace_decl_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_external_entity_ref_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_external_entity_ref_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_notation_decl_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_notation_decl_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_object($parser, $obj) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $obj]);
+function xml_set_object($parser, $object) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $object]);
 }
-function xml_set_processing_instruction_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_processing_instruction_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_start_namespace_decl_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_start_namespace_decl_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
-function xml_set_unparsed_entity_decl_handler($parser, $hdl) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $hdl]);
+function xml_set_unparsed_entity_decl_handler($parser, $handler) {
+  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
 }
 function methods() {
   return [

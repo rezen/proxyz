@@ -1,35 +1,29 @@
 <?php namespace Proxyz\Php\Mysqli;
 // This file is dynamically generated ... do not edit 
 
-function mysqli___construct() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_affected_rows($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_affected_rows($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_autocommit($mysql, $enable) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $enable]);
 }
-function mysqli_autocommit($link, $mode) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $mode]);
+function mysqli_begin_transaction($mysql, $flags=null, $name=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
-function mysqli_begin_transaction($link, $flags=null, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $flags, $name]);
+function mysqli_change_user($mysql, $username, $password, $database) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $username, $password, $database]);
 }
-function mysqli_change_user($link, $user, $password, $database) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $user, $password, $database]);
+function mysqli_character_set_name($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_character_set_name($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_close($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_client_info() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_commit($mysql, $flags=null, $name=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
-function mysqli_client_version() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function mysqli_close($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
-}
-function mysqli_commit($link, $flags=null, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $flags, $name]);
+function mysqli_connect($hostname=null, $username=null, $password=null, $database="", $port=null, $socket=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $username, $password, $database, $port, $socket]);
 }
 function mysqli_connect_errno() {
   return \Proxyz\callFunction(__FUNCTION__, []);
@@ -37,150 +31,154 @@ function mysqli_connect_errno() {
 function mysqli_connect_error() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function mysqli_debug($debug_options) {
-  return \Proxyz\callFunction(__FUNCTION__, [$debug_options]);
+function mysqli_debug($options) {
+  return \Proxyz\callFunction(__FUNCTION__, [$options]);
 }
-function mysqli_dump_debug_info($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_dump_debug_info($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_errno($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_errno($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_error($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_error($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_error_list($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_error_list($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_field_count($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_field_count($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_get_charset($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_get_charset($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_get_connection_stats($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_get_client_info($mysql=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_get_warnings($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_get_client_version() {
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function mysqli_host_info() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_get_connection_stats($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_info($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_get_host_info($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+}
+function mysqli_get_proto_info($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+}
+function mysqli_get_server_info($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+}
+function mysqli_get_server_version($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+}
+function mysqli_get_warnings($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+}
+function mysqli_info($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
 function mysqli_init() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function mysqli_insert_id($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_insert_id($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_kill($link, $connection_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $connection_id]);
+function mysqli_kill($mysql, $process_id) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $process_id]);
 }
-function mysqli_more_results($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_more_results($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_multi_query($link, $query=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $query]);
+function mysqli_multi_query($mysql, $query) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
 }
-function mysqli_next_result($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_next_result($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_options($link, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $option, $value]);
+function mysqli_options($mysql, $option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $option, $value]);
 }
-function mysqli_ping($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_ping($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_poll(&$read, &$write, &$error, $sec, $usec=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [&$read, &$write, &$error, $sec, $usec]);
+function mysqli_poll(&$read, &$error, &$reject, $seconds, $microseconds=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [&$read, &$error, &$reject, $seconds, $microseconds]);
 }
-function mysqli_prepare($link, $query) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $query]);
+function mysqli_prepare($mysql, $query) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
 }
-function mysqli_protocol_version() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_query($mysql, $query, $result_mode=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query, $result_mode]);
 }
-function mysqli_query($link, $query, $resultmode=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $query, $resultmode]);
+function mysqli_real_connect($host=null, $username=null, $passwd=null, $dbname=null, $port=null, $socket=null, $flags=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$host, $username, $passwd, $dbname, $port, $socket, $flags]);
 }
-function mysqli_real_connect($link, $host=null, $user=null, $password=null, $database=null, $port=null, $socket=null, $flags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $host, $user, $password, $database, $port, $socket, $flags]);
+function mysqli_real_escape_string($mysql, $string) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $string]);
 }
-function mysqli_real_escape_string($link, $string_to_escape) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $string_to_escape]);
+function mysqli_real_query($mysql, $query) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
 }
-function mysqli_real_query($link, $query=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $query]);
+function mysqli_reap_async_query($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_reap_async_query($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_refresh($mysql, $flags) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags]);
 }
-function mysqli_refresh($link, $options) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $options]);
+function mysqli_release_savepoint($mysql, $name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $name]);
 }
-function mysqli_release_savepoint($link, $name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $name]);
+function mysqli_rollback($mysql, $flags=null, $name=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
-function mysqli_rollback($link, $flags=null, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $flags, $name]);
+function mysqli_savepoint($mysql, $name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $name]);
 }
-function mysqli_savepoint($link, $name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $name]);
+function mysqli_select_db($mysql, $database) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $database]);
 }
-function mysqli_select_db($link, $database) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $database]);
+function mysqli_set_charset($mysql, $charset) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $charset]);
 }
-function mysqli_server_info() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_sqlstate($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_server_version() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mysqli_ssl_set($mysql, $key, $certificate, $ca_certificate, $ca_path, $cipher_algos) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $key, $certificate, $ca_certificate, $ca_path, $cipher_algos]);
 }
-function mysqli_set_charset($link, $charset) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $charset]);
+function mysqli_stat($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_sqlstate($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_stmt_init($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_ssl_set($link, $key, $cert, $certificate_authority, $certificate_authority_path, $cipher) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $key, $cert, $certificate_authority, $certificate_authority_path, $cipher]);
+function mysqli_store_result($mysql, $mode=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $mode]);
 }
-function mysqli_stat($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
-}
-function mysqli_stmt_init($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
-}
-function mysqli_store_result($link, $flags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link, $flags]);
-}
-function mysqli_thread_id($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_thread_id($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
 function mysqli_thread_safe() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function mysqli_use_result($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_use_result($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_warning_count($link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$link]);
+function mysqli_warning_count($mysql) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
 function methods() {
   return [
-    "mysqli___construct",
     "mysqli_affected_rows",
     "mysqli_autocommit",
     "mysqli_begin_transaction",
     "mysqli_change_user",
     "mysqli_character_set_name",
-    "mysqli_client_info",
-    "mysqli_client_version",
     "mysqli_close",
     "mysqli_commit",
+    "mysqli_connect",
     "mysqli_connect_errno",
     "mysqli_connect_error",
     "mysqli_debug",
@@ -190,9 +188,14 @@ function methods() {
     "mysqli_error_list",
     "mysqli_field_count",
     "mysqli_get_charset",
+    "mysqli_get_client_info",
+    "mysqli_get_client_version",
     "mysqli_get_connection_stats",
+    "mysqli_get_host_info",
+    "mysqli_get_proto_info",
+    "mysqli_get_server_info",
+    "mysqli_get_server_version",
     "mysqli_get_warnings",
-    "mysqli_host_info",
     "mysqli_info",
     "mysqli_init",
     "mysqli_insert_id",
@@ -204,7 +207,6 @@ function methods() {
     "mysqli_ping",
     "mysqli_poll",
     "mysqli_prepare",
-    "mysqli_protocol_version",
     "mysqli_query",
     "mysqli_real_connect",
     "mysqli_real_escape_string",
@@ -215,8 +217,6 @@ function methods() {
     "mysqli_rollback",
     "mysqli_savepoint",
     "mysqli_select_db",
-    "mysqli_server_info",
-    "mysqli_server_version",
     "mysqli_set_charset",
     "mysqli_sqlstate",
     "mysqli_ssl_set",

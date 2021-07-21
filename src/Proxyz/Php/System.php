@@ -7,11 +7,11 @@ function escapeshellarg($arg) {
 function escapeshellcmd($command) {
   return \Proxyz\callFunction(__FUNCTION__, [$command]);
 }
-function exec($command, &$output=null, &$return_value=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$output, &$return_value]);
+function exec($command, &$output=null, &$result_code=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$output, &$result_code]);
 }
-function passthru($command, &$return_value=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_value]);
+function passthru($command, &$return_var=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_var]);
 }
 function proc_close($process) {
   return \Proxyz\callFunction(__FUNCTION__, [$process]);
@@ -22,17 +22,17 @@ function proc_get_status($process) {
 function proc_nice($priority) {
   return \Proxyz\callFunction(__FUNCTION__, [$priority]);
 }
-function proc_open($command, $descriptorspec, &$pipes, $cwd=null, $env=null, $other_options=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, $descriptorspec, &$pipes, $cwd, $env, $other_options]);
+function proc_open($cmd, $descriptorspec, &$pipes, $cwd=null, $env=null, $other_options=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$cmd, $descriptorspec, &$pipes, $cwd, $env, $other_options]);
 }
-function proc_terminate($process, $signal=null) {
+function proc_terminate($process, $signal=15) {
   return \Proxyz\callFunction(__FUNCTION__, [$process, $signal]);
 }
 function shell_exec($cmd) {
   return \Proxyz\callFunction(__FUNCTION__, [$cmd]);
 }
-function system($command, &$return_value=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_value]);
+function system($command, &$result_code=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$result_code]);
 }
 function methods() {
   return [

@@ -28,38 +28,38 @@ function stream_context_get_params($stream_or_context) {
 function stream_context_set_default($options) {
   return \Proxyz\callFunction(__FUNCTION__, [$options]);
 }
-function stream_context_set_option($stream_or_context, $wrappername, $optionname=null, $value=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream_or_context, $wrappername, $optionname, $value]);
+function stream_context_set_option($stream_or_context, $wrapper, $option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream_or_context, $wrapper, $option, $value]);
 }
-function stream_context_set_params($stream_or_context, $options) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream_or_context, $options]);
+function stream_context_set_params($context, $params) {
+  return \Proxyz\callFunction(__FUNCTION__, [$context, $params]);
 }
-function stream_copy_to_stream($source, $dest, $maxlen=null, $pos=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$source, $dest, $maxlen, $pos]);
+function stream_copy_to_stream($source, $dest, $maxlength=-1, $offset=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$source, $dest, $maxlength, $offset]);
 }
-function stream_filter_append($stream, $filtername, $read_write=null, $filterparams=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $filtername, $read_write, $filterparams]);
+function stream_filter_append($stream, $filtername, $read_write=null, $params=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $filtername, $read_write, $params]);
 }
-function stream_filter_prepend($stream, $filtername, $read_write=null, $filterparams=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $filtername, $read_write, $filterparams]);
+function stream_filter_prepend($stream, $filtername, $read_write=null, $params=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $filtername, $read_write, $params]);
 }
-function stream_filter_register($filtername, $classname) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filtername, $classname]);
+function stream_filter_register($filter_name, $class) {
+  return \Proxyz\callFunction(__FUNCTION__, [$filter_name, $class]);
 }
 function stream_filter_remove($stream_filter) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream_filter]);
 }
-function stream_get_contents($source, $maxlen=null, $offset=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$source, $maxlen, $offset]);
+function stream_get_contents($handle, $maxlength=-1, $offset=-1) {
+  return \Proxyz\callFunction(__FUNCTION__, [$handle, $maxlength, $offset]);
 }
 function stream_get_filters() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function stream_get_line($stream, $maxlen, $ending=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $maxlen, $ending]);
+function stream_get_line($handle, $length, $ending="") {
+  return \Proxyz\callFunction(__FUNCTION__, [$handle, $length, $ending]);
 }
-function stream_get_meta_data($fp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$fp]);
+function stream_get_meta_data($stream) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
 function stream_get_transports() {
   return \Proxyz\callFunction(__FUNCTION__, []);
@@ -73,65 +73,65 @@ function stream_is_local($stream) {
 function stream_isatty($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function stream_notification_callback() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function stream_notification_callback($notification_code, $severity, $message, $message_code, $bytes_transferred, $bytes_max) {
+  return \Proxyz\callFunction(__FUNCTION__, [$notification_code, $severity, $message, $message_code, $bytes_transferred, $bytes_max]);
 }
-function stream_register_wrapper($protocol, $classname, $flags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$protocol, $classname, $flags]);
+function stream_register_wrapper() {
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function stream_resolve_include_path($filename) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename]);
 }
-function stream_select(&$read_streams, &$write_streams, &$except_streams, $tv_sec, $tv_usec=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [&$read_streams, &$write_streams, &$except_streams, $tv_sec, $tv_usec]);
+function stream_select(&$read, &$write, &$except, $tv_sec, $tv_usec=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [&$read, &$write, &$except, $tv_sec, $tv_usec]);
 }
-function stream_set_blocking($socket, $mode) {
-  return \Proxyz\callFunction(__FUNCTION__, [$socket, $mode]);
+function stream_set_blocking($stream, $enable) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $enable]);
 }
-function stream_set_chunk_size($fp, $chunk_size) {
-  return \Proxyz\callFunction(__FUNCTION__, [$fp, $chunk_size]);
+function stream_set_chunk_size($stream, $size) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $size]);
 }
-function stream_set_read_buffer($fp, $buffer) {
-  return \Proxyz\callFunction(__FUNCTION__, [$fp, $buffer]);
+function stream_set_read_buffer($stream, $size) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $size]);
 }
 function stream_set_timeout($stream, $seconds, $microseconds=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $seconds, $microseconds]);
 }
-function stream_set_write_buffer($fp, $buffer) {
-  return \Proxyz\callFunction(__FUNCTION__, [$fp, $buffer]);
+function stream_set_write_buffer($stream, $buffer) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $buffer]);
 }
-function stream_socket_accept($serverstream, $timeout=null, &$peername=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$serverstream, $timeout, &$peername]);
+function stream_socket_accept($server_socket, $timeout=null, &$peername=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$server_socket, $timeout, &$peername]);
 }
-function stream_socket_client($remoteaddress, &$errcode=null, &$errstring=null, $timeout=null, $flags=null, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$remoteaddress, &$errcode, &$errstring, $timeout, $flags, $context]);
+function stream_socket_client($remote_socket, &$errno=null, &$errstr=null, $timeout=null, $flags=STREAM_CLIENT_CONNECT, $context=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$remote_socket, &$errno, &$errstr, $timeout, $flags, $context]);
 }
-function stream_socket_enable_crypto($stream, $enable, $cryptokind=null, $sessionstream=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $enable, $cryptokind, $sessionstream]);
+function stream_socket_enable_crypto($stream, $enable, $crypto_type=null, $session_stream=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $enable, $crypto_type, $session_stream]);
 }
-function stream_socket_get_name($stream, $want_peer) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $want_peer]);
+function stream_socket_get_name($handle, $want_peer) {
+  return \Proxyz\callFunction(__FUNCTION__, [$handle, $want_peer]);
 }
 function stream_socket_pair($domain, $type, $protocol) {
   return \Proxyz\callFunction(__FUNCTION__, [$domain, $type, $protocol]);
 }
-function stream_socket_recvfrom($stream, $amount, $flags=null, &$remote_addr=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $amount, $flags, &$remote_addr]);
+function stream_socket_recvfrom($socket, $length, $flags=null, &$address=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $length, $flags, &$address]);
 }
-function stream_socket_sendto($stream, $data, $flags=null, $target_addr=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $data, $flags, $target_addr]);
+function stream_socket_sendto($socket, $data, $flags=null, $address=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $data, $flags, $address]);
 }
-function stream_socket_server($localaddress, &$errcode=null, &$errstring=null, $flags=null, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$localaddress, &$errcode, &$errstring, $flags, $context]);
+function stream_socket_server($local_socket, &$errno=null, &$errstr=null, $flags=STREAM_SERVER_BIND | STREAM_SERVER_LISTEN, $context=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$local_socket, &$errno, &$errstr, $flags, $context]);
 }
-function stream_socket_shutdown($stream, $how) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $how]);
+function stream_socket_shutdown($stream, $mode) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $mode]);
 }
 function stream_supports_lock($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function stream_wrapper_register($protocol, $classname, $flags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$protocol, $classname, $flags]);
+function stream_wrapper_register($protocol, $class, $flags=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$protocol, $class, $flags]);
 }
 function stream_wrapper_restore($protocol) {
   return \Proxyz\callFunction(__FUNCTION__, [$protocol]);
