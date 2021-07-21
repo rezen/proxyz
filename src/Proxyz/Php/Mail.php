@@ -226,11 +226,11 @@ function imap_utf8() {
 function imap_utf8_to_mutf7() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function ezmlm_hash() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ezmlm_hash($addr) {
+  return \Proxyz\callFunction(__FUNCTION__, [$addr]);
 }
-function mail() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function mail($to, $subject, $message, $additional_headers=null, $additional_parameters=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$to, $subject, $message, $additional_headers, $additional_parameters]);
 }
 function methods() {
   return [

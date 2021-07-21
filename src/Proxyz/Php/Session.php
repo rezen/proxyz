@@ -2,73 +2,73 @@
 // This file is dynamically generated ... do not edit 
 
 function session_abort() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_cache_expire() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_cache_expire($new_cache_expire=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$new_cache_expire]);
 }
-function session_cache_limiter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_cache_limiter($cache_limiter=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$cache_limiter]);
 }
 function session_commit() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_create_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_create_id($prefix=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$prefix]);
 }
-function session_decode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_decode($data) {
+  return \Proxyz\callFunction(__FUNCTION__, [$data]);
 }
 function session_destroy() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_encode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_gc() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_get_cookie_params() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_id($id=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$id]);
 }
-function session_module_name() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_module_name($module=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$module]);
 }
-function session_name() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_name($name=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$name]);
 }
-function session_regenerate_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_regenerate_id($delete_old_session=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$delete_old_session]);
 }
 function session_register_shutdown() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_reset() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function session_save_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_save_path($path=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$path]);
 }
-function session_set_cookie_params() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_set_cookie_params($lifetime_or_options, $path=null, $domain=null, $secure=null, $httponly=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$lifetime_or_options, $path, $domain, $secure, $httponly]);
 }
-function session_set_save_handler() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_set_save_handler($open, $close=null, $read=null, $write=null, $destroy=null, $gc=null, $create_sid=null, $validate_sid=null, $update_timestamp=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$open, $close, $read, $write, $destroy, $gc, $create_sid, $validate_sid, $update_timestamp]);
 }
-function session_start() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function session_start($options=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$options]);
 }
 function session_status() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_unset() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function session_write_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function methods() {
   return [

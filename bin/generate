@@ -26,11 +26,53 @@ function httpGet($url) {
     return file_get_contents($url, false, $context);
 }
 
+
+function getFunctionParts($name) {
+    $params = '';
+    $return = 'func_get_args()';
+    // @todo won't work for WordPress functions
+    // @todo use docs to generate defaults
+    // https://github.com/php/doc-en/blob/4a9a553afc482e0a6df8e70a403342669437b62c/reference/mysqli/mysqli/poll.xml
+    if (function_exists($name)) {
+        $reflection = new \ReflectionFunction($name);
+        $parameters = $reflection->getParameters();
+        $args = [];
+        $pass = [];
+        foreach($parameters as $idx => $parameter) {
+            $default = "";
+            $var = "$" . $parameter->getName();
+            $arg = "" . $var;
+
+            if ($parameter->isVariadic()) {
+                $arg = "..." . $var;
+            }
+
+            if ($parameter->isPassedByReference()) {
+                $var = "&" . $var;
+                $arg = "&" . $arg;
+            } 
+
+            if ($parameter->isOptional() && !$parameter->isVariadic()) {
+                $default = "=null";
+            }
+
+            $args[]= $arg . $default;
+            $pass[] = $var;
+        }
+
+        $params = implode(", ", $args);
+        $return ="[" . implode(", ", $pass) . "]";
+    }
+    return [$params, $return];
+
+}
 function renderMethod($name) {
+    [$params, $return] = getFunctionParts($name);
+    
     return implode("\n",  [
         "",
-        "function $name() {",
-        "  return \Proxyz\callFunction(__FUNCTION__, func_get_args());",
+        "function $name($params) {",
+        "  return \Proxyz\callFunction(__FUNCTION__, $return);",
         "}",
     ]);
 }

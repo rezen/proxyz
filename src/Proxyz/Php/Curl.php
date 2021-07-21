@@ -1,101 +1,101 @@
 <?php namespace Proxyz\Php\Curl;
 // This file is dynamically generated ... do not edit 
 
-function curl_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_close($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_copy_handle() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_copy_handle($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_errno() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_errno($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_error() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_error($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_escape() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_escape($ch, $str) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $str]);
 }
-function curl_exec() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_exec($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_file_create() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_file_create($filename, $mimetype=null, $postname=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$filename, $mimetype, $postname]);
 }
-function curl_getinfo() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_getinfo($ch, $option=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $option]);
 }
-function curl_init() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_init($url=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$url]);
 }
-function curl_multi_add_handle() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_add_handle($mh, $ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh, $ch]);
 }
-function curl_multi_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_close($mh) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh]);
 }
-function curl_multi_errno() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_errno($mh) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh]);
 }
-function curl_multi_exec() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_exec($mh, &$still_running=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh, &$still_running]);
 }
-function curl_multi_getcontent() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_getcontent($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_multi_info_read() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_info_read($mh, &$msgs_in_queue=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh, &$msgs_in_queue]);
 }
 function curl_multi_init() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function curl_multi_remove_handle() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_remove_handle($mh, $ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh, $ch]);
 }
-function curl_multi_select() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_select($mh, $timeout=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mh, $timeout]);
 }
-function curl_multi_setopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_setopt($sh, $option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$sh, $option, $value]);
 }
-function curl_multi_strerror() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_multi_strerror($errornum) {
+  return \Proxyz\callFunction(__FUNCTION__, [$errornum]);
 }
-function curl_pause() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_pause($ch, $bitmask) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $bitmask]);
 }
-function curl_reset() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_reset($ch) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch]);
 }
-function curl_setopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_setopt($ch, $option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $option, $value]);
 }
-function curl_setopt_array() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_setopt_array($ch, $options) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $options]);
 }
-function curl_share_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_share_close($sh) {
+  return \Proxyz\callFunction(__FUNCTION__, [$sh]);
 }
-function curl_share_errno() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_share_errno($sh) {
+  return \Proxyz\callFunction(__FUNCTION__, [$sh]);
 }
 function curl_share_init() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function curl_share_setopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_share_setopt($sh, $option, $value) {
+  return \Proxyz\callFunction(__FUNCTION__, [$sh, $option, $value]);
 }
-function curl_share_strerror() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_share_strerror($errornum) {
+  return \Proxyz\callFunction(__FUNCTION__, [$errornum]);
 }
-function curl_strerror() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_strerror($errornum) {
+  return \Proxyz\callFunction(__FUNCTION__, [$errornum]);
 }
-function curl_unescape() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_unescape($ch, $str) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ch, $str]);
 }
-function curl_version() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function curl_version($version=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$version]);
 }
 function methods() {
   return [

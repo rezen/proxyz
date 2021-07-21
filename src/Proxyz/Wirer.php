@@ -77,6 +77,7 @@ function callMethod($callable, $args)
     $override = $GLOBALS['PROXYZ_OVERRIDES'][$id] ?? null;
     
     if (is_null($override)) {
+        // @todo Make sure references are passed correctly
         return call_user_func_array($callable, $args);
     }
     // Calling object method
@@ -108,6 +109,17 @@ function callFunction($name, $args)
     if (array_key_exists($id, $GLOBALS['PROXYZ_WRAPS'])) {
         // Call wrapper method passing in method args and method to call
         return call_user_func_array($GLOBALS['PROXYZ_WRAPS'][$id], [$args, $callable]);
+    }
+
+    // Make sure references are passed correctly
+    $reflection = new \ReflectionFunction($id);
+    $parameters = $reflection->getParameters();
+    foreach($parameters as $idx => $parameter) {
+        if ($parameter->isPassedByReference()) {
+            if (isset($args[$idx])) {
+                $args[$idx] = &$args[$idx];
+            }
+        }
     }
     return call_user_func_array($id, $args);
 }

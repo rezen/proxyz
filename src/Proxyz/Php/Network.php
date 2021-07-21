@@ -1,104 +1,104 @@
 <?php namespace Proxyz\Php\Network;
 // This file is dynamically generated ... do not edit 
 
-function checkdnsrr() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function checkdnsrr($host, $type=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$host, $type]);
 }
 function closelog() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function dns_check_record() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function dns_check_record($host, $type=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$host, $type]);
 }
-function dns_get_mx() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function dns_get_mx($hostname, &$mxhosts, &$weight=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, &$mxhosts, &$weight]);
 }
-function dns_get_record() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function dns_get_record($hostname, $type=null, &$authns=null, &$addtl=null, $raw=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $type, &$authns, &$addtl, $raw]);
 }
-function fsockopen() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function fsockopen($hostname, $port=null, &$errno=null, &$errstr=null, $timeout=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $port, &$errno, &$errstr, $timeout]);
 }
-function gethostbyaddr() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function gethostbyaddr($ip_address) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ip_address]);
 }
-function gethostbyname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function gethostbyname($hostname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname]);
 }
-function gethostbynamel() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function gethostbynamel($hostname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname]);
 }
 function gethostname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function getmxrr() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getmxrr($hostname, &$mxhosts, &$weight=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, &$mxhosts, &$weight]);
 }
-function getprotobyname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getprotobyname($name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$name]);
 }
-function getprotobynumber() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getprotobynumber($proto) {
+  return \Proxyz\callFunction(__FUNCTION__, [$proto]);
 }
-function getservbyname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getservbyname($service, $protocol) {
+  return \Proxyz\callFunction(__FUNCTION__, [$service, $protocol]);
 }
-function getservbyport() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getservbyport($port, $protocol) {
+  return \Proxyz\callFunction(__FUNCTION__, [$port, $protocol]);
 }
-function header() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function header($header, $replace=null, $http_response_code=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$header, $replace, $http_response_code]);
 }
-function header_register_callback() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function header_register_callback($callback) {
+  return \Proxyz\callFunction(__FUNCTION__, [$callback]);
 }
-function header_remove() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function header_remove($name=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$name]);
 }
 function headers_list() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function headers_sent() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function headers_sent(&$file=null, &$line=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [&$file, &$line]);
 }
-function http_response_code() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function http_response_code($response_code=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$response_code]);
 }
-function inet_ntop() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function inet_ntop($in_addr) {
+  return \Proxyz\callFunction(__FUNCTION__, [$in_addr]);
 }
-function inet_pton() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function inet_pton($ip_address) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ip_address]);
 }
-function ip2long() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ip2long($ip_address) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ip_address]);
 }
-function long2ip() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function long2ip($proper_address) {
+  return \Proxyz\callFunction(__FUNCTION__, [$proper_address]);
 }
-function openlog() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function openlog($ident, $option, $facility) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ident, $option, $facility]);
 }
-function pfsockopen() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function pfsockopen($hostname, $port=null, &$errno=null, &$errstr=null, $timeout=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $port, &$errno, &$errstr, $timeout]);
 }
-function setcookie() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function setcookie($name, $value=null, $expires_or_options=null, $path=null, $domain=null, $secure=null, $httponly=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$name, $value, $expires_or_options, $path, $domain, $secure, $httponly]);
 }
-function setrawcookie() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function setrawcookie($name, $value=null, $expires_or_options=null, $path=null, $domain=null, $secure=null, $httponly=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$name, $value, $expires_or_options, $path, $domain, $secure, $httponly]);
 }
-function socket_get_status() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_get_status($fp) {
+  return \Proxyz\callFunction(__FUNCTION__, [$fp]);
 }
-function socket_set_blocking() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_set_blocking($socket, $mode) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $mode]);
 }
-function socket_set_timeout() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_set_timeout($stream, $seconds, $microseconds=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream, $seconds, $microseconds]);
 }
-function syslog() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function syslog($priority, $message) {
+  return \Proxyz\callFunction(__FUNCTION__, [$priority, $message]);
 }
 function methods() {
   return [

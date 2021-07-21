@@ -1,38 +1,38 @@
 <?php namespace Proxyz\Php\System;
 // This file is dynamically generated ... do not edit 
 
-function escapeshellarg() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function escapeshellarg($arg) {
+  return \Proxyz\callFunction(__FUNCTION__, [$arg]);
 }
-function escapeshellcmd() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function escapeshellcmd($command) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command]);
 }
-function exec() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function exec($command, &$output=null, &$return_value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$output, &$return_value]);
 }
-function passthru() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function passthru($command, &$return_value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_value]);
 }
-function proc_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function proc_close($process) {
+  return \Proxyz\callFunction(__FUNCTION__, [$process]);
 }
-function proc_get_status() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function proc_get_status($process) {
+  return \Proxyz\callFunction(__FUNCTION__, [$process]);
 }
-function proc_nice() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function proc_nice($priority) {
+  return \Proxyz\callFunction(__FUNCTION__, [$priority]);
 }
-function proc_open() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function proc_open($command, $descriptorspec, &$pipes, $cwd=null, $env=null, $other_options=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, $descriptorspec, &$pipes, $cwd, $env, $other_options]);
 }
-function proc_terminate() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function proc_terminate($process, $signal=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$process, $signal]);
 }
-function shell_exec() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function shell_exec($cmd) {
+  return \Proxyz\callFunction(__FUNCTION__, [$cmd]);
 }
-function system() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function system($command, &$return_value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_value]);
 }
 function methods() {
   return [

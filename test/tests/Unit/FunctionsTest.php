@@ -5,6 +5,7 @@ namespace Proxyz\Tests\Unit;
 use Exception;
 use Proxyz\Tests\UnitTest;
 use function Proxyz\Php\Filesystem\file_get_contents;
+use function Proxyz\Php\System\passthru;
 
 class FunctionsTest extends UnitTest
 {
@@ -29,5 +30,20 @@ class FunctionsTest extends UnitTest
     function test_get_method_namespace()
     {
         $this->assertEquals("Proxyz\\Php\\Curl", \Proxyz\getMethodNamespace('curl_init'));
+    }
+
+    function test_references_work()
+    {
+        \Proxyz\Php\System\passthru("echo works", $x);
+        $this->assertEquals($x, 0);
+    }
+
+
+    /**
+     * @doesNotPerformAssertions
+     */ 
+    function test_references_work_without_ref()
+    {
+        \Proxyz\Php\System\passthru("echo works");
     }
 }

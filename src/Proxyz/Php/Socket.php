@@ -1,113 +1,113 @@
 <?php namespace Proxyz\Php\Socket;
 // This file is dynamically generated ... do not edit 
 
-function socket_accept() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_accept($socket) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_addrinfo_bind() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_addrinfo_bind($addr) {
+  return \Proxyz\callFunction(__FUNCTION__, [$addr]);
 }
-function socket_addrinfo_connect() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_addrinfo_connect($addr) {
+  return \Proxyz\callFunction(__FUNCTION__, [$addr]);
 }
-function socket_addrinfo_explain() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_addrinfo_explain($addr) {
+  return \Proxyz\callFunction(__FUNCTION__, [$addr]);
 }
-function socket_addrinfo_lookup() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_addrinfo_lookup($host, $service=null, $hints=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$host, $service, $hints]);
 }
-function socket_bind() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_bind($socket, $addr, $port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $addr, $port]);
 }
-function socket_clear_error() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_clear_error($socket=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_close() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_close($socket) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_cmsg_space() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_cmsg_space($level, $type) {
+  return \Proxyz\callFunction(__FUNCTION__, [$level, $type]);
 }
-function socket_connect() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_connect($socket, $addr, $port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $addr, $port]);
 }
-function socket_create() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_create($domain, $type, $protocol) {
+  return \Proxyz\callFunction(__FUNCTION__, [$domain, $type, $protocol]);
 }
-function socket_create_listen() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_create_listen($port, $backlog=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$port, $backlog]);
 }
-function socket_create_pair() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_create_pair($domain, $type, $protocol, &$fd) {
+  return \Proxyz\callFunction(__FUNCTION__, [$domain, $type, $protocol, &$fd]);
 }
-function socket_export_stream() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_export_stream($socket) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_get_option() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_get_option($socket, $level, $optname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $level, $optname]);
 }
-function socket_getopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_getopt($socket, $level, $optname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $level, $optname]);
 }
-function socket_getpeername() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_getpeername($socket, &$addr, &$port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, &$addr, &$port]);
 }
-function socket_getsockname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_getsockname($socket, &$addr, &$port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, &$addr, &$port]);
 }
-function socket_import_stream() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_import_stream($stream) {
+  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function socket_last_error() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_last_error($socket=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_listen() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_listen($socket, $backlog=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $backlog]);
 }
-function socket_read() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_read($socket, $length, $type=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $length, $type]);
 }
-function socket_recv() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_recv($socket, &$buf, $len, $flags) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, &$buf, $len, $flags]);
 }
-function socket_recvfrom() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_recvfrom($socket, &$buf, $len, $flags, &$name, &$port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, &$buf, $len, $flags, &$name, &$port]);
 }
-function socket_recvmsg() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_recvmsg($socket, &$msghdr, $flags) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, &$msghdr, $flags]);
 }
-function socket_select() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_select(&$read_fds, &$write_fds, &$except_fds, $tv_sec, $tv_usec=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [&$read_fds, &$write_fds, &$except_fds, $tv_sec, $tv_usec]);
 }
-function socket_send() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_send($socket, $buf, $len, $flags) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $buf, $len, $flags]);
 }
-function socket_sendmsg() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_sendmsg($socket, $msghdr, $flags) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $msghdr, $flags]);
 }
-function socket_sendto() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_sendto($socket, $buf, $len, $flags, $addr, $port=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $buf, $len, $flags, $addr, $port]);
 }
-function socket_set_block() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_set_block($socket) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_set_nonblock() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_set_nonblock($socket) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket]);
 }
-function socket_set_option() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_set_option($socket, $level, $optname, $optval) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $level, $optname, $optval]);
 }
-function socket_setopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_setopt($socket, $level, $optname, $optval) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $level, $optname, $optval]);
 }
-function socket_shutdown() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_shutdown($socket, $how=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $how]);
 }
-function socket_strerror() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_strerror($errno) {
+  return \Proxyz\callFunction(__FUNCTION__, [$errno]);
 }
-function socket_write() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function socket_write($socket, $buf, $length=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$socket, $buf, $length]);
 }
 function socket_wsaprotocol_info_export() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());

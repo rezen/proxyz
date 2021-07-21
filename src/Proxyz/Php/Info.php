@@ -1,164 +1,164 @@
 <?php namespace Proxyz\Php\Info;
 // This file is dynamically generated ... do not edit 
 
-function assert_options() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function assert_options($what, $value=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$what, $value]);
 }
 function cli_get_process_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function cli_set_process_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function cli_set_process_title($title) {
+  return \Proxyz\callFunction(__FUNCTION__, [$title]);
 }
-function dl() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function dl($extension_filename) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension_filename]);
 }
-function extension_loaded() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function extension_loaded($extension_name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension_name]);
 }
 function gc_collect_cycles() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function gc_disable() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function gc_enable() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function gc_enabled() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function gc_mem_caches() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function gc_status() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_cfg_var() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_cfg_var($option_name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$option_name]);
 }
 function get_current_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_defined_constants() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_defined_constants($categorize=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$categorize]);
 }
-function get_extension_funcs() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_extension_funcs($extension_name) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension_name]);
 }
 function get_include_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function get_included_files() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_loaded_extensions() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_loaded_extensions($zend_extensions=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$zend_extensions]);
 }
 function get_magic_quotes_gpc() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function get_magic_quotes_runtime() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function get_required_files() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function get_resources() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_resources($type=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$type]);
 }
-function getenv() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getenv($varname=null, $local_only=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$varname, $local_only]);
 }
 function getlastmod() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function getmygid() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function getmyinode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function getmypid() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function getmyuid() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function getopt() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getopt($options, $opts=null, &$optind=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$options, $opts, &$optind]);
 }
-function getrusage() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function getrusage($who=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$who]);
 }
-function ini_alter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ini_alter($varname, $newvalue) {
+  return \Proxyz\callFunction(__FUNCTION__, [$varname, $newvalue]);
 }
-function ini_get() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ini_get($varname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$varname]);
 }
-function ini_get_all() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ini_get_all($extension=null, $details=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension, $details]);
 }
-function ini_restore() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ini_restore($varname) {
+  return \Proxyz\callFunction(__FUNCTION__, [$varname]);
 }
-function ini_set() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function ini_set($varname, $newvalue) {
+  return \Proxyz\callFunction(__FUNCTION__, [$varname, $newvalue]);
 }
 function main() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
-function memory_get_peak_usage() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function memory_get_peak_usage($real_usage=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$real_usage]);
 }
-function memory_get_usage() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function memory_get_usage($real_usage=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$real_usage]);
 }
 function php_ini_loaded_file() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function php_ini_scanned_files() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function php_sapi_name() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function php_uname() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function php_uname($mode=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$mode]);
 }
-function phpcredits() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function phpcredits($flag=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$flag]);
 }
-function phpinfo() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function phpinfo($what=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$what]);
 }
-function phpversion() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function phpversion($extension=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$extension]);
 }
-function putenv() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function putenv($setting) {
+  return \Proxyz\callFunction(__FUNCTION__, [$setting]);
 }
 function restore_include_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function set_include_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function set_include_path($new_include_path) {
+  return \Proxyz\callFunction(__FUNCTION__, [$new_include_path]);
 }
-function set_time_limit() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function set_time_limit($seconds) {
+  return \Proxyz\callFunction(__FUNCTION__, [$seconds]);
 }
 function sys_get_temp_dir() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function version_compare() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function version_compare($ver1, $ver2, $oper=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$ver1, $ver2, $oper]);
 }
 function zend_thread_id() {
   return \Proxyz\callFunction(__FUNCTION__, func_get_args());
 }
 function zend_version() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+  return \Proxyz\callFunction(__FUNCTION__, []);
 }
 function methods() {
   return [
