@@ -19,8 +19,8 @@ function curl_escape($handle, $string) {
 function curl_exec($handle) {
   return \Proxyz\callFunction(__FUNCTION__, [$handle]);
 }
-function curl_file_create() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+function curl_file_create($filename, $mime_type=null, $posted_filename=null) {
+  return \Proxyz\callFunction(__FUNCTION__, [$filename, $mime_type, $posted_filename]);
 }
 function curl_getinfo($handle, $option=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$handle, $option]);

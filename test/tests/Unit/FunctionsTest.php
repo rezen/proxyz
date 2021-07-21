@@ -38,12 +38,19 @@ class FunctionsTest extends UnitTest
         $this->assertEquals($x, 0);
     }
 
-
     /**
      * @doesNotPerformAssertions
      */ 
     function test_references_work_without_ref()
     {
         \Proxyz\Php\System\passthru("echo works");
+    }
+
+    /**
+     * @doesNotPerformAssertions
+     */ 
+    function test_variable_safe_namespace_ref() {
+        // One of the paramters defaults to DateTimeZone::ALL
+        \Proxyz\Php\Datetime\timezone_identifiers_list();
     }
 }

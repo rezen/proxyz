@@ -66,8 +66,20 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/curl\/functions\/curl-file-create.xml",
             "name": "curl_file_create",
-            "alias": null,
-            "params": []
+            "alias": "CURLFile::__construct",
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$mime_type",
+                    "null"
+                ],
+                [
+                    "$posted_filename",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/curl\/functions\/curl-getinfo.xml",
@@ -167,7 +179,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/curl\/functions\/curl-multi-init.xml",
             "name": "curl_multi_init",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -298,7 +310,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/curl\/functions\/curl-share-init.xml",
             "name": "curl_share_init",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -353,7 +365,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/curl\/functions\/curl-version.xml",
             "name": "curl_version",
-            "alias": null,
+            "alias": "",
             "params": []
         }
     ],
@@ -446,7 +458,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/delete.xml",
             "name": "delete",
-            "alias": null,
+            "alias": "unlink",
             "params": []
         },
         {
@@ -486,7 +498,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/diskfreespace.xml",
             "name": "diskfreespace",
-            "alias": null,
+            "alias": "disk_free_space",
             "params": []
         },
         {
@@ -845,7 +857,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/fputs.xml",
             "name": "fputs",
-            "alias": null,
+            "alias": "fwrite",
             "params": []
         },
         {
@@ -1031,7 +1043,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/is-writeable.xml",
             "name": "is_writeable",
-            "alias": null,
+            "alias": "is_writable",
             "params": []
         },
         {
@@ -1232,13 +1244,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/realpath-cache-get.xml",
             "name": "realpath_cache_get",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/realpath-cache-size.xml",
             "name": "realpath_cache_size",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -1295,7 +1307,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/set-file-buffer.xml",
             "name": "set_file_buffer",
-            "alias": null,
+            "alias": "stream_set_write_buffer",
             "params": []
         },
         {
@@ -1337,7 +1349,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/filesystem\/functions\/tmpfile.xml",
             "name": "tmpfile",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -1538,7 +1550,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-abort.xml",
             "name": "session_abort",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -1566,7 +1578,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-commit.xml",
             "name": "session_commit",
-            "alias": null,
+            "alias": "session_write_close",
             "params": []
         },
         {
@@ -1593,25 +1605,25 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-destroy.xml",
             "name": "session_destroy",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-encode.xml",
             "name": "session_encode",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-gc.xml",
             "name": "session_gc",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-get-cookie-params.xml",
             "name": "session_get_cookie_params",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -1661,13 +1673,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-register-shutdown.xml",
             "name": "session_register_shutdown",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-reset.xml",
             "name": "session_reset",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -1758,19 +1770,19 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-status.xml",
             "name": "session_status",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-unset.xml",
             "name": "session_unset",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/session\/functions\/session-write-close.xml",
             "name": "session_write_close",
-            "alias": null,
+            "alias": "",
             "params": []
         }
     ],
@@ -1876,13 +1888,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mysqli\/mysqli\/connect-errno.xml",
             "name": "mysqli_connect_errno",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mysqli\/mysqli\/connect-error.xml",
             "name": "mysqli_connect_error",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2000,7 +2012,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mysqli\/mysqli\/get-client-version.xml",
             "name": "mysqli_get_client_version",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2076,7 +2088,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mysqli\/mysqli\/init.xml",
             "name": "mysqli_init",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2450,7 +2462,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mysqli\/mysqli\/thread-safe.xml",
             "name": "mysqli_thread_safe",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2488,7 +2500,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-alerts.xml",
             "name": "imap_alerts",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2615,7 +2627,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-create.xml",
             "name": "imap_create",
-            "alias": null,
+            "alias": "imap_createmailbox",
             "params": []
         },
         {
@@ -2664,7 +2676,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-errors.xml",
             "name": "imap_errors",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2771,7 +2783,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-fetchtext.xml",
             "name": "imap_fetchtext",
-            "alias": null,
+            "alias": "imap_body",
             "params": []
         },
         {
@@ -2861,7 +2873,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-header.xml",
             "name": "imap_header",
-            "alias": null,
+            "alias": "imap_headerinfo",
             "params": []
         },
         {
@@ -2898,7 +2910,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-last-error.xml",
             "name": "imap_last_error",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -2920,7 +2932,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-listmailbox.xml",
             "name": "imap_listmailbox",
-            "alias": null,
+            "alias": "imap_list",
             "params": []
         },
         {
@@ -2945,7 +2957,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-listsubscribed.xml",
             "name": "imap_listsubscribed",
-            "alias": null,
+            "alias": "imap_lsub",
             "params": []
         },
         {
@@ -3163,7 +3175,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-rename.xml",
             "name": "imap_rename",
-            "alias": null,
+            "alias": "imap_renamemailbox",
             "params": []
         },
         {
@@ -3273,13 +3285,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-scan.xml",
             "name": "imap_scan",
-            "alias": null,
+            "alias": "imap_listscan",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/imap\/functions\/imap-scanmailbox.xml",
             "name": "imap_scanmailbox",
-            "alias": null,
+            "alias": "imap_listscan",
             "params": []
         },
         {
@@ -3593,7 +3605,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/cli-get-process-title.xml",
             "name": "cli_get_process_title",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3629,37 +3641,37 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-collect-cycles.xml",
             "name": "gc_collect_cycles",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-disable.xml",
             "name": "gc_disable",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-enable.xml",
             "name": "gc_enable",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-enabled.xml",
             "name": "gc_enabled",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-mem-caches.xml",
             "name": "gc_mem_caches",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/gc-status.xml",
             "name": "gc_status",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3675,7 +3687,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-current-user.xml",
             "name": "get_current_user",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3702,13 +3714,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-include-path.xml",
             "name": "get_include_path",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-included-files.xml",
             "name": "get_included_files",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3725,19 +3737,19 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-magic-quotes-gpc.xml",
             "name": "get_magic_quotes_gpc",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-magic-quotes-runtime.xml",
             "name": "get_magic_quotes_runtime",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/get-required-files.xml",
             "name": "get_required_files",
-            "alias": null,
+            "alias": "get_included_files",
             "params": []
         },
         {
@@ -3768,31 +3780,31 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/getlastmod.xml",
             "name": "getlastmod",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/getmygid.xml",
             "name": "getmygid",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/getmyinode.xml",
             "name": "getmyinode",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/getmypid.xml",
             "name": "getmypid",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/getmyuid.xml",
             "name": "getmyuid",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3827,7 +3839,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/ini-alter.xml",
             "name": "ini_alter",
-            "alias": null,
+            "alias": "ini_set",
             "params": []
         },
         {
@@ -3881,7 +3893,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/main.xml",
             "name": "main",
-            "alias": null,
+            "alias": "main",
             "params": []
         },
         {
@@ -3909,19 +3921,19 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/php-ini-loaded-file.xml",
             "name": "php_ini_loaded_file",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/php-ini-scanned-files.xml",
             "name": "php_ini_scanned_files",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/php-sapi-name.xml",
             "name": "php_sapi_name",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -3981,7 +3993,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/restore-include-path.xml",
             "name": "restore_include_path",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -4007,7 +4019,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/sys-get-temp-dir.xml",
             "name": "sys_get_temp_dir",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -4026,13 +4038,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/zend-thread-id.xml",
             "name": "zend_thread_id",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/info\/functions\/zend-version.xml",
             "name": "zend_version",
-            "alias": null,
+            "alias": "",
             "params": []
         }
     ],
@@ -4402,7 +4414,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/openssl\/functions\/openssl-error-string.xml",
             "name": "openssl_error_string",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -4418,7 +4430,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/openssl\/functions\/openssl-get-cert-locations.xml",
             "name": "openssl_get_cert_locations",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -4435,7 +4447,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/openssl\/functions\/openssl-get-curve-names.xml",
             "name": "openssl_get_curve_names",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -4452,13 +4464,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/openssl\/functions\/openssl-get-privatekey.xml",
             "name": "openssl_get_privatekey",
-            "alias": null,
+            "alias": "openssl_pkey_get_private",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/openssl\/functions\/openssl-get-publickey.xml",
             "name": "openssl_get_publickey",
-            "alias": null,
+            "alias": "openssl_pkey_get_public",
             "params": []
         },
         {
@@ -5475,19 +5487,19 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/closelog.xml",
             "name": "closelog",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/dns-check-record.xml",
             "name": "dns_check_record",
-            "alias": null,
+            "alias": "checkdnsrr",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/dns-get-mx.xml",
             "name": "dns_get_mx",
-            "alias": null,
+            "alias": "getmxrr",
             "params": []
         },
         {
@@ -5575,7 +5587,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/gethostname.xml",
             "name": "gethostname",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -5683,7 +5695,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/headers-list.xml",
             "name": "headers_list",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -5833,19 +5845,19 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/socket-get-status.xml",
             "name": "socket_get_status",
-            "alias": null,
+            "alias": "stream_get_meta_data",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/socket-set-blocking.xml",
             "name": "socket_set_blocking",
-            "alias": null,
+            "alias": "stream_set_blocking",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/network\/functions\/socket-set-timeout.xml",
             "name": "socket_set_timeout",
-            "alias": null,
+            "alias": "stream_set_timeout",
             "params": []
         },
         {
@@ -6302,7 +6314,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ftp\/functions\/ftp-quit.xml",
             "name": "ftp_quit",
-            "alias": null,
+            "alias": "ftp_close",
             "params": []
         },
         {
@@ -6681,7 +6693,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/stream\/functions\/stream-get-filters.xml",
             "name": "stream_get_filters",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -6714,13 +6726,13 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/stream\/functions\/stream-get-transports.xml",
             "name": "stream_get_transports",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/stream\/functions\/stream-get-wrappers.xml",
             "name": "stream_get_wrappers",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -6771,7 +6783,7 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/stream\/functions\/stream-register-wrapper.xml",
             "name": "stream_register_wrapper",
-            "alias": null,
+            "alias": "stream_wrapper_register",
             "params": []
         },
         {
@@ -7123,43 +7135,103 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-add.xml",
             "name": "date_add",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::add",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$interval"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-create-from-format.xml",
             "name": "date_create_from_format",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::createFromFormat",
+            "params": [
+                [
+                    "$format"
+                ],
+                [
+                    "$datetime"
+                ],
+                [
+                    "$timezone",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-create-immutable-from-format.xml",
             "name": "date_create_immutable_from_format",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeImmutable::createFromFormat",
+            "params": [
+                [
+                    "$format"
+                ],
+                [
+                    "$datetime"
+                ],
+                [
+                    "$timezone",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-create-immutable.xml",
             "name": "date_create_immutable",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeImmutable::__construct",
+            "params": [
+                [
+                    "$datetime",
+                    "\"now\""
+                ],
+                [
+                    "$timezone",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-create.xml",
             "name": "date_create",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::__construct",
+            "params": [
+                [
+                    "$datetime",
+                    "\"now\""
+                ],
+                [
+                    "$timezone",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-date-set.xml",
             "name": "date_date_set",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::setDate",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$year"
+                ],
+                [
+                    "$month"
+                ],
+                [
+                    "$day"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-default-timezone-get.xml",
             "name": "date_default_timezone_get",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
@@ -7175,49 +7247,78 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-diff.xml",
             "name": "date_diff",
-            "alias": null,
+            "alias": "DateTime::diff",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-format.xml",
             "name": "date_format",
-            "alias": null,
+            "alias": "DateTime::format",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-get-last-errors.xml",
             "name": "date_get_last_errors",
-            "alias": null,
+            "alias": "DateTime::getLastErrors",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-interval-create-from-date-string.xml",
             "name": "date_interval_create_from_date_string",
-            "alias": null,
-            "params": []
+            "alias": "DateInterval::createFromDateString",
+            "params": [
+                [
+                    "$datetime"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-interval-format.xml",
             "name": "date_interval_format",
-            "alias": null,
-            "params": []
+            "alias": "DateInterval::format",
+            "params": [
+                [
+                    "$format"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-isodate-set.xml",
             "name": "date_isodate_set",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::setISODate",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$year"
+                ],
+                [
+                    "$week"
+                ],
+                [
+                    "$dayOfWeek",
+                    "1"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-modify.xml",
             "name": "date_modify",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::modify",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$modifier"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-offset-get.xml",
             "name": "date_offset_get",
-            "alias": null,
+            "alias": "DateTime::getOffset",
             "params": []
         },
         {
@@ -7246,8 +7347,15 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-sub.xml",
             "name": "date_sub",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::sub",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$interval"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-sun-info.xml",
@@ -7328,32 +7436,64 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-time-set.xml",
             "name": "date_time_set",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::setTime",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$hour"
+                ],
+                [
+                    "$minute"
+                ],
+                [
+                    "$second",
+                    "null"
+                ],
+                [
+                    "$microsecond",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-timestamp-get.xml",
             "name": "date_timestamp_get",
-            "alias": null,
+            "alias": "DateTime::getTimestamp",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-timestamp-set.xml",
             "name": "date_timestamp_set",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::setTimestamp",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$timestamp"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-timezone-get.xml",
             "name": "date_timezone_get",
-            "alias": null,
+            "alias": "DateTime::getTimezone",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date-timezone-set.xml",
             "name": "date_timezone_set",
-            "alias": null,
-            "params": []
+            "alias": "DateTime::setTimezone",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$timezone"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/date.xml",
@@ -7563,26 +7703,39 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/time.xml",
             "name": "time",
-            "alias": null,
+            "alias": "",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-abbreviations-list.xml",
             "name": "timezone_abbreviations_list",
-            "alias": null,
+            "alias": "DateTimeZone::listAbbreviations",
             "params": []
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-identifiers-list.xml",
             "name": "timezone_identifiers_list",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::listIdentifiers",
+            "params": [
+                [
+                    "$timezoneGroup",
+                    "\\DateTimeZone::ALL"
+                ],
+                [
+                    "$countryCode",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-location-get.xml",
             "name": "timezone_location_get",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::getLocation",
+            "params": [
+                [
+                    "$object"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-name-from-abbr.xml",
@@ -7605,31 +7758,58 @@
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-name-get.xml",
             "name": "timezone_name_get",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::getName",
+            "params": [
+                [
+                    "$object"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-offset-get.xml",
             "name": "timezone_offset_get",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::getOffset",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$datetime"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-open.xml",
             "name": "timezone_open",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::__construct",
+            "params": [
+                [
+                    "$timezone"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-transitions-get.xml",
             "name": "timezone_transitions_get",
-            "alias": null,
-            "params": []
+            "alias": "DateTimeZone::getTransitions",
+            "params": [
+                [
+                    "$object"
+                ],
+                [
+                    "$timestampBegin",
+                    "null"
+                ],
+                [
+                    "$timestampEnd",
+                    "null"
+                ]
+            ]
         },
         {
             "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/datetime\/functions\/timezone-version-get.xml",
             "name": "timezone_version_get",
-            "alias": null,
+            "alias": "",
             "params": []
         }
     ]

@@ -48,6 +48,7 @@ function getAliasParams($file, $alias)
 {
     if (!$alias)
     {
+        echo "[!] No alias provided file=$file\n";
         return [];
     }
 
@@ -133,28 +134,18 @@ function parseFunctionReference($file)
             'alias' => null, 'params' => [], 
         ];
 
-        if (!$method->methodparam)
-        {
-            if ($signature['name'] === '')
-            {
-                $signature['alias'] = (string)$spec
-                    ->refsect1
-                    ->para->methodname;
-                $signature['name'] = (string)$spec->refnamediv->refname;
-
-                if (!$signature['alias'])
-                {
-                    // References another function
-                    $signature['alias'] = (string)$spec
-                        ->refnamediv
-                        ->refpurpose->function;
-                }
-                else
-                {
-                    // References on object
-                    $signature['params'] = getAliasParams($file, $signature['alias']);
-                }
+        // References another function
+        if (!$method->methodparam) {
+            $signature['alias'] = (string) $spec->refsect1->para->methodname;
+            if (!$signature['alias']) {
+                $signature['alias'] = (string) $spec
+                    ->refnamediv
+                    ->refpurpose->function;
+            } else {
+                // References on object
+                $signature['params'] = getAliasParams($file, $signature['alias']);
             }
+            
             return $signature;
 
         }
@@ -198,6 +189,11 @@ function parseFunctionReference($file)
                 }
                 if (strpos($initializer, '(') !== false) {
                     $initializer = 'null';
+                }
+
+                // Make sure namespace ref is correct
+                if (strpos($initializer, '::') !== false) {
+                    $initializer = "\\" . $initializer;
                 }
                 $parts[] = $initializer;
 
