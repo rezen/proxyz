@@ -64,3 +64,29 @@ composer install
 
 ## Todo
 - Code rewriter for detecting native functions and adding `use` imports 
+- Improve WordPress references
+    - Currently ~20+ functions have variable references
+        - `ag --php '\&\$' --ignore *class* --nofilename | awk '$1=$1'  | grep '^function' | grep '_' | grep -v 'tion _' | grep -v sodium | cut -d ' ' -f2 | cut -d'(' -f1 | sort | uniq`
+        - **Functions**
+          - add_comment_to_entry
+          - crypto_generichash_final
+          - crypto_generichash_update
+          - feed_start_element
+          - get_page_hierarchy
+          - merge_originals_with
+          - merge_with
+          - recurse_dirsize
+          - separate_comments
+          - translate_entry
+          - update_page_cache
+          - update_post_cache
+          - update_post_caches
+          - wp_add_id3_tag_data
+          - wp_cache_get
+          - wp_get_post_revision
+          - wp_getimagesize
+          - wp_handle_sideload
+          - wp_handle_upload
+          - wp_handle_upload_error
+          - wp_kses_attr_check
+          - wp_parse_str
