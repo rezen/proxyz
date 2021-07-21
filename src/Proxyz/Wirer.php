@@ -109,7 +109,7 @@ function callFunction($name, $args)
         // Call wrapper method passing in method args and method to call
         return call_user_func_array($GLOBALS['PROXYZ_WRAPS'][$id], [$args, $callable]);
     }
-    return call_user_func_array($name, $args);
+    return call_user_func_array($id, $args);
 }
 
 /**
