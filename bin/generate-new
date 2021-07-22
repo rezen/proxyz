@@ -76,9 +76,13 @@ foreach($specs as $file) {
     $data = json_decode($content, true);
     foreach($data as $namespace => $functions) {
         foreach($functions as $fn) {
-            $functionsList[] = $fn['name'];
+            $functionsList[$fn['name']] = implode("\\", ['Proxyz', ucfirst($rootNamespace), ucfirst($namespace)]);
         }
         generateFile($rootNamespace, ucfirst($namespace), $functions);
     }
 }
-sort($functionsList);
+
+// Put map of function to namespace in file
+ksort($functionsList);
+$list =  json_encode($functionsList, JSON_PRETTY_PRINT);
+file_put_contents($root . "/src/Proxyz/_methods.php", "<?php return ". str_replace([":", "{", "}"], ["=> ", "[", "]"], $list) . ";");
