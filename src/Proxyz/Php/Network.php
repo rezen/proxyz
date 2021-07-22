@@ -13,7 +13,7 @@ function dns_check_record() {
 function dns_get_mx() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function dns_get_record($hostname, $type=null, &$authoritative_name_servers=null, &$additional_records=null, $raw=false) {
+function dns_get_record($hostname, $type=DNS_ANY, &$authoritative_name_servers=null, &$additional_records=null, $raw=false) {
   return \Proxyz\callFunction(__FUNCTION__, [$hostname, $type, &$authoritative_name_servers, &$additional_records, $raw]);
 }
 function fsockopen($hostname, $port=-1, &$error_code=null, &$error_message=null, $timeout=null) {

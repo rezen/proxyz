@@ -127,10 +127,10 @@ function php_sapi_name() {
 function php_uname($mode="a") {
   return \Proxyz\callFunction(__FUNCTION__, [$mode]);
 }
-function phpcredits($flags=null) {
+function phpcredits($flags=CREDITS_ALL) {
   return \Proxyz\callFunction(__FUNCTION__, [$flags]);
 }
-function phpinfo($flags=null) {
+function phpinfo($flags=INFO_ALL) {
   return \Proxyz\callFunction(__FUNCTION__, [$flags]);
 }
 function phpversion($extension=null) {

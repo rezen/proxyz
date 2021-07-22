@@ -109,7 +109,7 @@ function mysqli_poll(&$read, &$error, &$reject, $seconds, $microseconds=null) {
 function mysqli_prepare($mysql, $query) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
 }
-function mysqli_query($mysql, $query, $result_mode=null) {
+function mysqli_query($mysql, $query, $result_mode=MYSQLI_STORE_RESULT) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query, $result_mode]);
 }
 function mysqli_real_connect($host=null, $username=null, $passwd=null, $dbname=null, $port=null, $socket=null, $flags=null) {

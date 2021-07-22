@@ -53,4 +53,13 @@ class FunctionsTest extends UnitTest
         // One of the paramters defaults to DateTimeZone::ALL
         \Proxyz\Php\Datetime\timezone_identifiers_list();
     }
+
+    /**
+     * @doesNotPerformAssertions
+     */
+    function test_variable_safe_const_ref() {
+        \Proxyz\Php\Info\phpinfo();
+    }
+
+    
 }

@@ -67,10 +67,10 @@ function date_sub($object, $interval) {
 function date_sun_info($timestamp, $latitude, $longitude) {
   return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $latitude, $longitude]);
 }
-function date_sunrise($timestamp, $returnFormat=null, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
+function date_sunrise($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset]);
 }
-function date_sunset($timestamp, $returnFormat=null, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
+function date_sunset($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset]);
 }
 function date_time_set($object, $hour, $minute, $second=null, $microsecond=null) {
@@ -148,7 +148,7 @@ function timezone_offset_get($object, $datetime) {
 function timezone_open($timezone) {
   return \Proxyz\callFunction(__FUNCTION__, [$timezone]);
 }
-function timezone_transitions_get($object, $timestampBegin=null, $timestampEnd=null) {
+function timezone_transitions_get($object, $timestampBegin=PHP_INT_MIN, $timestampEnd=PHP_INT_MAX) {
   return \Proxyz\callFunction(__FUNCTION__, [$object, $timestampBegin, $timestampEnd]);
 }
 function timezone_version_get() {

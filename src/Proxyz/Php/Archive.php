@@ -31,7 +31,7 @@ function bzread($bz, $length=1024) {
 function bzwrite($bz, $data, $length=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$bz, $data, $length]);
 }
-function deflate_add($context, $data, $flush_mode=null) {
+function deflate_add($context, $data, $flush_mode=ZLIB_SYNC_FLUSH) {
   return \Proxyz\callFunction(__FUNCTION__, [$context, $data, $flush_mode]);
 }
 function deflate_init($encoding, $options=[]) {
@@ -40,16 +40,16 @@ function deflate_init($encoding, $options=[]) {
 function gzclose($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function gzcompress($data, $level=-1, $encoding=null) {
+function gzcompress($data, $level=-1, $encoding=ZLIB_ENCODING_DEFLATE) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $level, $encoding]);
 }
 function gzdecode($data, $max_length=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $max_length]);
 }
-function gzdeflate($data, $level=-1, $encoding=null) {
+function gzdeflate($data, $level=-1, $encoding=ZLIB_ENCODING_RAW) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $level, $encoding]);
 }
-function gzencode($data, $level=-1, $encoding=null) {
+function gzencode($data, $level=-1, $encoding=ZLIB_ENCODING_GZIP) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $level, $encoding]);
 }
 function gzeof($stream) {
@@ -85,7 +85,7 @@ function gzread($stream, $length) {
 function gzrewind($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function gzseek($stream, $offset, $whence=null) {
+function gzseek($stream, $offset, $whence=SEEK_SET) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $offset, $whence]);
 }
 function gztell($stream) {
@@ -97,7 +97,7 @@ function gzuncompress($data, $max_length=null) {
 function gzwrite($stream, $data, $length=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $data, $length]);
 }
-function inflate_add($context, $data, $flush_mode=null) {
+function inflate_add($context, $data, $flush_mode=ZLIB_SYNC_FLUSH) {
   return \Proxyz\callFunction(__FUNCTION__, [$context, $data, $flush_mode]);
 }
 function inflate_get_read_len($context) {

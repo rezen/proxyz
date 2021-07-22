@@ -118,7 +118,7 @@ function fread($stream, $length) {
 function fscanf($stream, $format, &...$vars) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $format, &$vars]);
 }
-function fseek($stream, $offset, $whence=null) {
+function fseek($stream, $offset, $whence=SEEK_SET) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $offset, $whence]);
 }
 function fstat($stream) {
@@ -181,13 +181,13 @@ function mkdir($directory, $permissions=0777, $recursive=false, $context=null) {
 function move_uploaded_file($from, $to) {
   return \Proxyz\callFunction(__FUNCTION__, [$from, $to]);
 }
-function parse_ini_file($filename, $process_sections=false, $scanner_mode=null) {
+function parse_ini_file($filename, $process_sections=false, $scanner_mode=INI_SCANNER_NORMAL) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $process_sections, $scanner_mode]);
 }
-function parse_ini_string($ini_string, $process_sections=false, $scanner_mode=null) {
+function parse_ini_string($ini_string, $process_sections=false, $scanner_mode=INI_SCANNER_NORMAL) {
   return \Proxyz\callFunction(__FUNCTION__, [$ini_string, $process_sections, $scanner_mode]);
 }
-function pathinfo($path, $flags=null) {
+function pathinfo($path, $flags=PATHINFO_ALL) {
   return \Proxyz\callFunction(__FUNCTION__, [$path, $flags]);
 }
 function pclose($handle) {

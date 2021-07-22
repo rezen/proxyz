@@ -177,8 +177,11 @@ function parseFunctionReference($file)
             }
 
             $parts[] = $name;
-
-            $initializer = (string)$param->initializer;
+            if (isset($param->initializer->constant)) {
+                $initializer = (string) $param->initializer->constant;
+            } else {
+                $initializer = (string)$param->initializer;
+            }
             if (empty($initializer) && $isOptional) {
                 $initializer = 'null';
             }
@@ -191,7 +194,7 @@ function parseFunctionReference($file)
                     $initializer = substr($initializer, 1, $length - 2);
                 }
                 if (strpos($initializer, '(') !== false) {
-                    $initializer = 'null';
+                    $initializer = 'null';                                                                                                                                                                                                                                                                                  
                 }
 
                 // Make sure namespace ref is correct

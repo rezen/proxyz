@@ -4,19 +4,19 @@
 function openssl_cipher_iv_length($cipher_algo) {
   return \Proxyz\callFunction(__FUNCTION__, [$cipher_algo]);
 }
-function openssl_cms_decrypt($input_filename, $output_filename, $certificate, $private_key=null, $encoding=null) {
+function openssl_cms_decrypt($input_filename, $output_filename, $certificate, $private_key=null, $encoding=OPENSSL_ENCODING_SMIME) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $private_key, $encoding]);
 }
-function openssl_cms_encrypt($input_filename, $output_filename, $certificate, $headers, $flags=null, $encoding=null, $cipher_algo=null) {
+function openssl_cms_encrypt($input_filename, $output_filename, $certificate, $headers, $flags=null, $encoding=OPENSSL_ENCODING_SMIME, $cipher_algo=OPENSSL_CIPHER_RC2_40) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $headers, $flags, $encoding, $cipher_algo]);
 }
 function openssl_cms_read($input_filename, &$certificates) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, &$certificates]);
 }
-function openssl_cms_sign($input_filename, $output_filename, $certificate, $private_key, $headers, $flags=null, $encoding=null, $untrusted_certificates_filename=null) {
+function openssl_cms_sign($input_filename, $output_filename, $certificate, $private_key, $headers, $flags=null, $encoding=OPENSSL_ENCODING_SMIME, $untrusted_certificates_filename=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $private_key, $headers, $flags, $encoding, $untrusted_certificates_filename]);
 }
-function openssl_cms_verify($input_filename, $flags=null, $certificates=null, $ca_info=[], $untrusted_certificates_filename=null, $content=null, $pk7=null, $sigfile=null, $encoding=null) {
+function openssl_cms_verify($input_filename, $flags=null, $certificates=null, $ca_info=[], $untrusted_certificates_filename=null, $content=null, $pk7=null, $sigfile=null, $encoding=OPENSSL_ENCODING_SMIME) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $flags, $certificates, $ca_info, $untrusted_certificates_filename, $content, $pk7, $sigfile, $encoding]);
 }
 function openssl_csr_export($csr, &$output, $no_text=true) {
@@ -91,13 +91,13 @@ function openssl_pkcs12_read($pkcs12, &$certificates, $passphrase) {
 function openssl_pkcs7_decrypt($input_filename, $output_filename, $certificate, $private_key=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $private_key]);
 }
-function openssl_pkcs7_encrypt($input_filename, $output_filename, $certificate, $headers, $flags=null, $cipher_algo=null) {
+function openssl_pkcs7_encrypt($input_filename, $output_filename, $certificate, $headers, $flags=null, $cipher_algo=OPENSSL_CIPHER_RC2_40) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $headers, $flags, $cipher_algo]);
 }
 function openssl_pkcs7_read($data, &$certificates) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$certificates]);
 }
-function openssl_pkcs7_sign($input_filename, $output_filename, $certificate, $private_key, $headers, $flags=null, $untrusted_certificates_filename=null) {
+function openssl_pkcs7_sign($input_filename, $output_filename, $certificate, $private_key, $headers, $flags=PKCS7_DETACHED, $untrusted_certificates_filename=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$input_filename, $output_filename, $certificate, $private_key, $headers, $flags, $untrusted_certificates_filename]);
 }
 function openssl_pkcs7_verify($input_filename, $flags, $signers_certificates_filename=null, $ca_info=[], $untrusted_certificates_filename=null, $content=null, $output_filename=null) {
@@ -127,16 +127,16 @@ function openssl_pkey_get_public($public_key) {
 function openssl_pkey_new($options=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$options]);
 }
-function openssl_private_decrypt($data, &$decrypted_data, $private_key, $padding=null) {
+function openssl_private_decrypt($data, &$decrypted_data, $private_key, $padding=OPENSSL_PKCS1_PADDING) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$decrypted_data, $private_key, $padding]);
 }
-function openssl_private_encrypt($data, &$encrypted_data, $private_key, $padding=null) {
+function openssl_private_encrypt($data, &$encrypted_data, $private_key, $padding=OPENSSL_PKCS1_PADDING) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$encrypted_data, $private_key, $padding]);
 }
-function openssl_public_decrypt($data, &$decrypted_data, $public_key, $padding=null) {
+function openssl_public_decrypt($data, &$decrypted_data, $public_key, $padding=OPENSSL_PKCS1_PADDING) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$decrypted_data, $public_key, $padding]);
 }
-function openssl_public_encrypt($data, &$encrypted_data, $public_key, $padding=null) {
+function openssl_public_encrypt($data, &$encrypted_data, $public_key, $padding=OPENSSL_PKCS1_PADDING) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$encrypted_data, $public_key, $padding]);
 }
 function openssl_random_pseudo_bytes($length, &$strong_result=null) {
@@ -145,7 +145,7 @@ function openssl_random_pseudo_bytes($length, &$strong_result=null) {
 function openssl_seal($data, &$sealed_data, &$encrypted_keys, $public_key, $cipher_algo, &$iv=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$sealed_data, &$encrypted_keys, $public_key, $cipher_algo, &$iv]);
 }
-function openssl_sign($data, &$signature, $private_key, $algorithm=null) {
+function openssl_sign($data, &$signature, $private_key, $algorithm=OPENSSL_ALGO_SHA1) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, &$signature, $private_key, $algorithm]);
 }
 function openssl_spki_export($spki) {
@@ -154,13 +154,13 @@ function openssl_spki_export($spki) {
 function openssl_spki_export_challenge($spki) {
   return \Proxyz\callFunction(__FUNCTION__, [$spki]);
 }
-function openssl_spki_new($private_key, $challenge, $digest_algo=null) {
+function openssl_spki_new($private_key, $challenge, $digest_algo=OPENSSL_ALGO_MD5) {
   return \Proxyz\callFunction(__FUNCTION__, [$private_key, $challenge, $digest_algo]);
 }
 function openssl_spki_verify($spki) {
   return \Proxyz\callFunction(__FUNCTION__, [$spki]);
 }
-function openssl_verify($data, $signature, $public_key, $algorithm=null) {
+function openssl_verify($data, $signature, $public_key, $algorithm=OPENSSL_ALGO_SHA1) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $signature, $public_key, $algorithm]);
 }
 function openssl_x509_check_private_key($certificate, $private_key) {

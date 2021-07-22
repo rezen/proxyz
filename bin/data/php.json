@@ -902,7 +902,7 @@
                 ],
                 [
                     "$whence",
-                    "null"
+                    "SEEK_SET"
                 ]
             ]
         },
@@ -1154,7 +1154,7 @@
                 ],
                 [
                     "$scanner_mode",
-                    "null"
+                    "INI_SCANNER_NORMAL"
                 ]
             ]
         },
@@ -1172,7 +1172,7 @@
                 ],
                 [
                     "$scanner_mode",
-                    "null"
+                    "INI_SCANNER_NORMAL"
                 ]
             ]
         },
@@ -1186,7 +1186,7 @@
                 ],
                 [
                     "$flags",
-                    "null"
+                    "PATHINFO_ALL"
                 ]
             ]
         },
@@ -2222,7 +2222,7 @@
                 ],
                 [
                     "$result_mode",
-                    "null"
+                    "MYSQLI_STORE_RESULT"
                 ]
             ]
         },
@@ -3307,7 +3307,7 @@
                 ],
                 [
                     "$flags",
-                    "null"
+                    "SE_FREE"
                 ],
                 [
                     "$charset",
@@ -3437,7 +3437,7 @@
                 ],
                 [
                     "$flags",
-                    "null"
+                    "SE_FREE"
                 ]
             ]
         },
@@ -3954,7 +3954,7 @@
             "params": [
                 [
                     "$flags",
-                    "null"
+                    "CREDITS_ALL"
                 ]
             ]
         },
@@ -3965,7 +3965,7 @@
             "params": [
                 [
                     "$flags",
-                    "null"
+                    "INFO_ALL"
                 ]
             ]
         },
@@ -4079,7 +4079,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "OPENSSL_ENCODING_SMIME"
                 ]
             ]
         },
@@ -4106,11 +4106,11 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "OPENSSL_ENCODING_SMIME"
                 ],
                 [
                     "$cipher_algo",
-                    "null"
+                    "OPENSSL_CIPHER_RC2_40"
                 ]
             ]
         },
@@ -4153,7 +4153,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "OPENSSL_ENCODING_SMIME"
                 ],
                 [
                     "$untrusted_certificates_filename",
@@ -4199,7 +4199,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "OPENSSL_ENCODING_SMIME"
                 ]
             ]
         },
@@ -4627,7 +4627,7 @@
                 ],
                 [
                     "$cipher_algo",
-                    "null"
+                    "OPENSSL_CIPHER_RC2_40"
                 ]
             ]
         },
@@ -4666,7 +4666,7 @@
                 ],
                 [
                     "$flags",
-                    "null"
+                    "PKCS7_DETACHED"
                 ],
                 [
                     "$untrusted_certificates_filename",
@@ -4837,7 +4837,7 @@
                 ],
                 [
                     "$padding",
-                    "null"
+                    "OPENSSL_PKCS1_PADDING"
                 ]
             ]
         },
@@ -4857,7 +4857,7 @@
                 ],
                 [
                     "$padding",
-                    "null"
+                    "OPENSSL_PKCS1_PADDING"
                 ]
             ]
         },
@@ -4877,7 +4877,7 @@
                 ],
                 [
                     "$padding",
-                    "null"
+                    "OPENSSL_PKCS1_PADDING"
                 ]
             ]
         },
@@ -4897,7 +4897,7 @@
                 ],
                 [
                     "$padding",
-                    "null"
+                    "OPENSSL_PKCS1_PADDING"
                 ]
             ]
         },
@@ -4957,7 +4957,7 @@
                 ],
                 [
                     "$algorithm",
-                    "null"
+                    "OPENSSL_ALGO_SHA1"
                 ]
             ]
         },
@@ -4994,7 +4994,7 @@
                 ],
                 [
                     "$digest_algo",
-                    "null"
+                    "OPENSSL_ALGO_MD5"
                 ]
             ]
         },
@@ -5024,7 +5024,7 @@
                 ],
                 [
                     "$algorithm",
-                    "null"
+                    "OPENSSL_ALGO_SHA1"
                 ]
             ]
         },
@@ -5512,7 +5512,7 @@
                 ],
                 [
                     "$type",
-                    "null"
+                    "DNS_ANY"
                 ],
                 [
                     "&$authoritative_name_servers",
@@ -5908,7 +5908,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ]
             ]
         },
@@ -6021,7 +6021,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6045,7 +6045,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6082,7 +6082,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6171,7 +6171,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6195,7 +6195,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6219,7 +6219,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6243,7 +6243,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -6293,7 +6293,7 @@
                 ],
                 [
                     "$mode",
-                    "null"
+                    "FTP_BINARY"
                 ],
                 [
                     "$offset",
@@ -7383,7 +7383,7 @@
                 ],
                 [
                     "$returnFormat",
-                    "null"
+                    "SUNFUNCS_RET_STRING"
                 ],
                 [
                     "$latitude",
@@ -7413,7 +7413,7 @@
                 ],
                 [
                     "$returnFormat",
-                    "null"
+                    "SUNFUNCS_RET_STRING"
                 ],
                 [
                     "$latitude",
@@ -7798,11 +7798,11 @@
                 ],
                 [
                     "$timestampBegin",
-                    "null"
+                    "PHP_INT_MIN"
                 ],
                 [
                     "$timestampEnd",
-                    "null"
+                    "PHP_INT_MAX"
                 ]
             ]
         },
@@ -8367,7 +8367,7 @@
                 ],
                 [
                     "$deref",
-                    "null"
+                    "LDAP_DEREF_NEVER"
                 ],
                 [
                     "$controls",
@@ -8661,7 +8661,7 @@
                 ],
                 [
                     "$deref",
-                    "null"
+                    "LDAP_DEREF_NEVER"
                 ],
                 [
                     "$controls",
@@ -8791,7 +8791,7 @@
                 ],
                 [
                     "$deref",
-                    "null"
+                    "LDAP_DEREF_NEVER"
                 ],
                 [
                     "$controls",
@@ -9226,7 +9226,7 @@
                 ],
                 [
                     "$flush_mode",
-                    "null"
+                    "ZLIB_SYNC_FLUSH"
                 ]
             ]
         },
@@ -9268,7 +9268,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "ZLIB_ENCODING_DEFLATE"
                 ]
             ]
         },
@@ -9300,7 +9300,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "ZLIB_ENCODING_RAW"
                 ]
             ]
         },
@@ -9318,7 +9318,7 @@
                 ],
                 [
                     "$encoding",
-                    "null"
+                    "ZLIB_ENCODING_GZIP"
                 ]
             ]
         },
@@ -9470,7 +9470,7 @@
                 ],
                 [
                     "$whence",
-                    "null"
+                    "SEEK_SET"
                 ]
             ]
         },
@@ -9548,7 +9548,7 @@
                 ],
                 [
                     "$flush_mode",
-                    "null"
+                    "ZLIB_SYNC_FLUSH"
                 ]
             ]
         },

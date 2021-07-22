@@ -181,7 +181,7 @@ function imap_scan() {
 function imap_scanmailbox() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function imap_search($imap, $criteria, $flags=null, $charset="") {
+function imap_search($imap, $criteria, $flags=SE_FREE, $charset="") {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $criteria, $flags, $charset]);
 }
 function imap_set_quota($imap, $quota_root, $mailbox_size) {
@@ -202,7 +202,7 @@ function imap_status($imap, $mailbox, $flags) {
 function imap_subscribe($imap, $mailbox) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
 }
-function imap_thread($imap, $flags=null) {
+function imap_thread($imap, $flags=SE_FREE) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $flags]);
 }
 function imap_timeout($timeout_type, $timeout=-1) {
