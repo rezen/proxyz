@@ -6616,7 +6616,571 @@
             ]
         }
     ],
-    "socket": [],
+    "socket": [
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-accept.xml",
+            "name": "socket_accept",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-addrinfo-bind.xml",
+            "name": "socket_addrinfo_bind",
+            "alias": null,
+            "params": [
+                [
+                    "$address"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-addrinfo-connect.xml",
+            "name": "socket_addrinfo_connect",
+            "alias": null,
+            "params": [
+                [
+                    "$address"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-addrinfo-explain.xml",
+            "name": "socket_addrinfo_explain",
+            "alias": null,
+            "params": [
+                [
+                    "$address"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-addrinfo-lookup.xml",
+            "name": "socket_addrinfo_lookup",
+            "alias": null,
+            "params": [
+                [
+                    "$host"
+                ],
+                [
+                    "$service",
+                    "null"
+                ],
+                [
+                    "$hints",
+                    "[]"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-bind.xml",
+            "name": "socket_bind",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$address"
+                ],
+                [
+                    "$port",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-clear-error.xml",
+            "name": "socket_clear_error",
+            "alias": null,
+            "params": [
+                [
+                    "$socket",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-close.xml",
+            "name": "socket_close",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-cmsg-space.xml",
+            "name": "socket_cmsg_space",
+            "alias": null,
+            "params": [
+                [
+                    "$level"
+                ],
+                [
+                    "$type"
+                ],
+                [
+                    "$num",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-connect.xml",
+            "name": "socket_connect",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$address"
+                ],
+                [
+                    "$port",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-create-listen.xml",
+            "name": "socket_create_listen",
+            "alias": null,
+            "params": [
+                [
+                    "$port"
+                ],
+                [
+                    "$backlog",
+                    "128"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-create-pair.xml",
+            "name": "socket_create_pair",
+            "alias": null,
+            "params": [
+                [
+                    "$domain"
+                ],
+                [
+                    "$type"
+                ],
+                [
+                    "$protocol"
+                ],
+                [
+                    "&$pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-create.xml",
+            "name": "socket_create",
+            "alias": null,
+            "params": [
+                [
+                    "$domain"
+                ],
+                [
+                    "$type"
+                ],
+                [
+                    "$protocol"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-export-stream.xml",
+            "name": "socket_export_stream",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-get-option.xml",
+            "name": "socket_get_option",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$level"
+                ],
+                [
+                    "$option"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-getopt.xml",
+            "name": "socket_getopt",
+            "alias": "socket_get_option",
+            "params": []
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-getpeername.xml",
+            "name": "socket_getpeername",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "&$address"
+                ],
+                [
+                    "&$port",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-getsockname.xml",
+            "name": "socket_getsockname",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "&$address"
+                ],
+                [
+                    "&$port",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-import-stream.xml",
+            "name": "socket_import_stream",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-last-error.xml",
+            "name": "socket_last_error",
+            "alias": null,
+            "params": [
+                [
+                    "$socket",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-listen.xml",
+            "name": "socket_listen",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$backlog",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-read.xml",
+            "name": "socket_read",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$mode",
+                    "PHP_BINARY_READ"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-recv.xml",
+            "name": "socket_recv",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "&$data"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$flags"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-recvfrom.xml",
+            "name": "socket_recvfrom",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "&$data"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$flags"
+                ],
+                [
+                    "&$address"
+                ],
+                [
+                    "&$port",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-recvmsg.xml",
+            "name": "socket_recvmsg",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "&$message"
+                ],
+                [
+                    "$flags",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-select.xml",
+            "name": "socket_select",
+            "alias": null,
+            "params": [
+                [
+                    "&$read"
+                ],
+                [
+                    "&$write"
+                ],
+                [
+                    "&$except"
+                ],
+                [
+                    "$seconds"
+                ],
+                [
+                    "$microseconds",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-send.xml",
+            "name": "socket_send",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$flags"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-sendmsg.xml",
+            "name": "socket_sendmsg",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$message"
+                ],
+                [
+                    "$flags",
+                    "0"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-sendto.xml",
+            "name": "socket_sendto",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$flags"
+                ],
+                [
+                    "$address"
+                ],
+                [
+                    "$port",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-set-block.xml",
+            "name": "socket_set_block",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-set-nonblock.xml",
+            "name": "socket_set_nonblock",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-set-option.xml",
+            "name": "socket_set_option",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$level"
+                ],
+                [
+                    "$option"
+                ],
+                [
+                    "$value"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-setopt.xml",
+            "name": "socket_setopt",
+            "alias": "socket_set_option",
+            "params": []
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-shutdown.xml",
+            "name": "socket_shutdown",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$mode",
+                    "2"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-strerror.xml",
+            "name": "socket_strerror",
+            "alias": null,
+            "params": [
+                [
+                    "$error_code"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-write.xml",
+            "name": "socket_write",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-wsaprotocol-info-export.xml",
+            "name": "socket_wsaprotocol_info_export",
+            "alias": null,
+            "params": [
+                [
+                    "$socket"
+                ],
+                [
+                    "$process_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-wsaprotocol-info-import.xml",
+            "name": "socket_wsaprotocol_info_import",
+            "alias": null,
+            "params": [
+                [
+                    "$info_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/bin\/data\/doc-en\/reference\/sockets\/functions\/socket-wsaprotocol-info-release.xml",
+            "name": "socket_wsaprotocol_info_release",
+            "alias": null,
+            "params": [
+                [
+                    "$info_id"
+                ]
+            ]
+        }
+    ],
     "stream": [
         {
             "file": "\/bin\/data\/doc-en\/reference\/stream\/functions\/stream-bucket-append.xml",
