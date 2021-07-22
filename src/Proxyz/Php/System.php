@@ -2,37 +2,48 @@
 // This file is dynamically generated ... do not edit 
 
 function escapeshellarg($arg) {
-  return \Proxyz\callFunction(__FUNCTION__, [$arg]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$arg], 0, $count_));
 }
 function escapeshellcmd($command) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$command], 0, $count_));
 }
 function exec($command, &$output=null, &$result_code=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$output, &$result_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$command, &$output, &$result_code], 0, $count_));
 }
 function passthru($command, &$return_var=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$return_var]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$command, &$return_var], 0, $count_));
 }
 function proc_close($process) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process], 0, $count_));
 }
 function proc_get_status($process) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process], 0, $count_));
 }
 function proc_nice($priority) {
-  return \Proxyz\callFunction(__FUNCTION__, [$priority]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$priority], 0, $count_));
 }
 function proc_open($cmd, $descriptorspec, &$pipes, $cwd=null, $env=null, $other_options=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$cmd, $descriptorspec, &$pipes, $cwd, $env, $other_options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$cmd, $descriptorspec, &$pipes, $cwd, $env, $other_options], 0, $count_));
 }
 function proc_terminate($process, $signal=15) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process, $signal]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process, $signal], 0, $count_));
 }
 function shell_exec($cmd) {
-  return \Proxyz\callFunction(__FUNCTION__, [$cmd]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$cmd], 0, $count_));
 }
 function system($command, &$result_code=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, &$result_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$command, &$result_code], 0, $count_));
 }
 function methods() {
   return [

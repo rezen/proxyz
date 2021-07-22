@@ -6,6 +6,7 @@ use Exception;
 use Proxyz\Tests\UnitTest;
 use function Proxyz\Php\Filesystem\file_get_contents;
 use function Proxyz\Php\System\passthru;
+use Proxyz\Php\Curl;
 
 class FunctionsTest extends UnitTest
 {
@@ -61,5 +62,33 @@ class FunctionsTest extends UnitTest
         \Proxyz\Php\Info\phpinfo();
     }
 
+    function test_variable_passing() {
+        $options = [
+            CURLOPT_URL            => 'http://example.com',
+            CURLOPT_TIMEOUT        => 5,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_VERBOSE           => true,
+            CURLOPT_MAXREDIRS      => 3,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_SSL_VERIFYHOST => 2,
+            CURLOPT_SSL_VERIFYPEER => 1,
+        ];
+        $ch = Curl\curl_init();
+        Curl\curl_setopt_array($ch, $options);        
+        $info = Curl\curl_getinfo($ch);
+        Curl\curl_close($ch);
+
+        $ch = curl_init();
+        curl_setopt_array($ch, $options);        
+        $info2 = curl_getinfo($ch);
+        curl_close($ch);
+        
+        $this->assertEquals(
+            array_keys($info), 
+            array_keys($info2)
+        );
+
+
+    }
     
 }

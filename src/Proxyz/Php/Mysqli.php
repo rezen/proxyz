@@ -2,172 +2,228 @@
 // This file is dynamically generated ... do not edit 
 
 function mysqli_affected_rows($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_autocommit($mysql, $enable) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $enable]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $enable], 0, $count_));
 }
 function mysqli_begin_transaction($mysql, $flags=0, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $flags, $name], 0, $count_));
 }
 function mysqli_change_user($mysql, $username, $password, $database) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $username, $password, $database]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $username, $password, $database], 0, $count_));
 }
 function mysqli_character_set_name($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_close($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_commit($mysql, $flags=0, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $flags, $name], 0, $count_));
 }
 function mysqli_connect($hostname=null, $username=null, $password=null, $database="", $port=null, $socket=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $username, $password, $database, $port, $socket]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$hostname, $username, $password, $database, $port, $socket], 0, $count_));
 }
 function mysqli_connect_errno() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function mysqli_connect_error() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function mysqli_debug($options) {
-  return \Proxyz\callFunction(__FUNCTION__, [$options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$options], 0, $count_));
 }
 function mysqli_dump_debug_info($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_errno($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_error($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_error_list($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_field_count($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_charset($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_client_info($mysql=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_client_version() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function mysqli_get_connection_stats($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_host_info($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_proto_info($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_server_info($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_server_version($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_get_warnings($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_info($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_init() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function mysqli_insert_id($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_kill($mysql, $process_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $process_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $process_id], 0, $count_));
 }
 function mysqli_more_results($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_multi_query($mysql, $query) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $query], 0, $count_));
 }
 function mysqli_next_result($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_options($mysql, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $option, $value], 0, $count_));
 }
 function mysqli_ping($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_poll(&$read, &$error, &$reject, $seconds, $microseconds=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [&$read, &$error, &$reject, $seconds, $microseconds]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([&$read, &$error, &$reject, $seconds, $microseconds], 0, $count_));
 }
 function mysqli_prepare($mysql, $query) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $query], 0, $count_));
 }
 function mysqli_query($mysql, $query, $result_mode=MYSQLI_STORE_RESULT) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query, $result_mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $query, $result_mode], 0, $count_));
 }
 function mysqli_real_connect($host=null, $username=null, $passwd=null, $dbname=null, $port=null, $socket=null, $flags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$host, $username, $passwd, $dbname, $port, $socket, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$host, $username, $passwd, $dbname, $port, $socket, $flags], 0, $count_));
 }
 function mysqli_real_escape_string($mysql, $string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $string], 0, $count_));
 }
 function mysqli_real_query($mysql, $query) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $query]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $query], 0, $count_));
 }
 function mysqli_reap_async_query($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_refresh($mysql, $flags) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $flags], 0, $count_));
 }
 function mysqli_release_savepoint($mysql, $name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $name], 0, $count_));
 }
 function mysqli_rollback($mysql, $flags=0, $name=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $flags, $name], 0, $count_));
 }
 function mysqli_savepoint($mysql, $name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $name], 0, $count_));
 }
 function mysqli_select_db($mysql, $database) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $database]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $database], 0, $count_));
 }
 function mysqli_set_charset($mysql, $charset) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $charset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $charset], 0, $count_));
 }
 function mysqli_sqlstate($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_ssl_set($mysql, $key, $certificate, $ca_certificate, $ca_path, $cipher_algos) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $key, $certificate, $ca_certificate, $ca_path, $cipher_algos]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $key, $certificate, $ca_certificate, $ca_path, $cipher_algos], 0, $count_));
 }
 function mysqli_stat($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_stmt_init($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_store_result($mysql, $mode=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql, $mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql, $mode], 0, $count_));
 }
 function mysqli_thread_id($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_thread_safe() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function mysqli_use_result($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function mysqli_warning_count($mysql) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mysql], 0, $count_));
 }
 function methods() {
   return [

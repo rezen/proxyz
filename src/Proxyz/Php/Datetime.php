@@ -2,157 +2,208 @@
 // This file is dynamically generated ... do not edit 
 
 function checkdate($month, $day, $year) {
-  return \Proxyz\callFunction(__FUNCTION__, [$month, $day, $year]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$month, $day, $year], 0, $count_));
 }
 function date($format, $timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $timestamp], 0, $count_));
 }
 function date_add($object, $interval) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $interval]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $interval], 0, $count_));
 }
 function date_create($datetime="now", $timezone=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$datetime, $timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$datetime, $timezone], 0, $count_));
 }
 function date_create_from_format($format, $datetime, $timezone=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $datetime, $timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $datetime, $timezone], 0, $count_));
 }
 function date_create_immutable($datetime="now", $timezone=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$datetime, $timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$datetime, $timezone], 0, $count_));
 }
 function date_create_immutable_from_format($format, $datetime, $timezone=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $datetime, $timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $datetime, $timezone], 0, $count_));
 }
 function date_date_set($object, $year, $month, $day) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $year, $month, $day]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $year, $month, $day], 0, $count_));
 }
 function date_default_timezone_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_default_timezone_set($timezoneId) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timezoneId]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timezoneId], 0, $count_));
 }
 function date_diff() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_format() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_get_last_errors() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_interval_create_from_date_string($datetime) {
-  return \Proxyz\callFunction(__FUNCTION__, [$datetime]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$datetime], 0, $count_));
 }
 function date_interval_format($format) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format], 0, $count_));
 }
 function date_isodate_set($object, $year, $week, $dayOfWeek=1) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $year, $week, $dayOfWeek]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $year, $week, $dayOfWeek], 0, $count_));
 }
 function date_modify($object, $modifier) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $modifier]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $modifier], 0, $count_));
 }
 function date_offset_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_parse($datetime) {
-  return \Proxyz\callFunction(__FUNCTION__, [$datetime]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$datetime], 0, $count_));
 }
 function date_parse_from_format($format, $datetime) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $datetime]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $datetime], 0, $count_));
 }
 function date_sub($object, $interval) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $interval]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $interval], 0, $count_));
 }
 function date_sun_info($timestamp, $latitude, $longitude) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $latitude, $longitude]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp, $latitude, $longitude], 0, $count_));
 }
 function date_sunrise($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset], 0, $count_));
 }
 function date_sunset($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset], 0, $count_));
 }
 function date_time_set($object, $hour, $minute, $second=0, $microsecond=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $hour, $minute, $second, $microsecond]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $hour, $minute, $second, $microsecond], 0, $count_));
 }
 function date_timestamp_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_timestamp_set($object, $timestamp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $timestamp], 0, $count_));
 }
 function date_timezone_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function date_timezone_set($object, $timezone) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $timezone], 0, $count_));
 }
 function getdate($timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp], 0, $count_));
 }
 function gettimeofday($as_float=false) {
-  return \Proxyz\callFunction(__FUNCTION__, [$as_float]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$as_float], 0, $count_));
 }
 function gmdate($format, $timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $timestamp], 0, $count_));
 }
 function gmmktime($hour, $minute=null, $second=null, $month=null, $day=null, $year=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$hour, $minute, $second, $month, $day, $year]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$hour, $minute, $second, $month, $day, $year], 0, $count_));
 }
 function gmstrftime($format, $timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $timestamp], 0, $count_));
 }
 function idate($format, $timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $timestamp], 0, $count_));
 }
 function localtime($timestamp=null, $associative=false) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $associative]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp, $associative], 0, $count_));
 }
 function microtime($as_float=false) {
-  return \Proxyz\callFunction(__FUNCTION__, [$as_float]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$as_float], 0, $count_));
 }
 function mktime($hour, $minute=null, $second=null, $month=null, $day=null, $year=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$hour, $minute, $second, $month, $day, $year]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$hour, $minute, $second, $month, $day, $year], 0, $count_));
 }
 function strftime($format, $timestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$format, $timestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$format, $timestamp], 0, $count_));
 }
 function strptime($timestamp, $format) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $format]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timestamp, $format], 0, $count_));
 }
 function strtotime($datetime, $baseTimestamp=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$datetime, $baseTimestamp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$datetime, $baseTimestamp], 0, $count_));
 }
 function time() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function timezone_abbreviations_list() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function timezone_identifiers_list($timezoneGroup=\DateTimeZone::ALL, $countryCode=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timezoneGroup, $countryCode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timezoneGroup, $countryCode], 0, $count_));
 }
 function timezone_location_get($object) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object], 0, $count_));
 }
 function timezone_name_from_abbr($abbr, $utcOffset=-1, $isDST=-1) {
-  return \Proxyz\callFunction(__FUNCTION__, [$abbr, $utcOffset, $isDST]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$abbr, $utcOffset, $isDST], 0, $count_));
 }
 function timezone_name_get($object) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object], 0, $count_));
 }
 function timezone_offset_get($object, $datetime) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $datetime]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $datetime], 0, $count_));
 }
 function timezone_open($timezone) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timezone]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timezone], 0, $count_));
 }
 function timezone_transitions_get($object, $timestampBegin=PHP_INT_MIN, $timestampEnd=PHP_INT_MAX) {
-  return \Proxyz\callFunction(__FUNCTION__, [$object, $timestampBegin, $timestampEnd]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$object, $timestampBegin, $timestampEnd], 0, $count_));
 }
 function timezone_version_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function methods() {
   return [

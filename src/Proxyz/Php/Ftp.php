@@ -2,112 +2,148 @@
 // This file is dynamically generated ... do not edit 
 
 function ftp_alloc($ftp, $size, &$response=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $size, &$response]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $size, &$response], 0, $count_));
 }
 function ftp_append($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $local_filename, $mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $remote_filename, $local_filename, $mode], 0, $count_));
 }
 function ftp_cdup($ftp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp], 0, $count_));
 }
 function ftp_chdir($ftp, $directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory], 0, $count_));
 }
 function ftp_chmod($ftp, $permissions, $filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $permissions, $filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $permissions, $filename], 0, $count_));
 }
 function ftp_close($ftp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp], 0, $count_));
 }
 function ftp_connect($hostname, $port=21, $timeout=90) {
-  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $port, $timeout]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$hostname, $port, $timeout], 0, $count_));
 }
 function ftp_delete($ftp, $filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $filename], 0, $count_));
 }
 function ftp_exec($ftp, $command) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $command]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $command], 0, $count_));
 }
 function ftp_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $stream, $remote_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $stream, $remote_filename, $mode, $offset], 0, $count_));
 }
 function ftp_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $stream, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $remote_filename, $stream, $mode, $offset], 0, $count_));
 }
 function ftp_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $local_filename, $remote_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $local_filename, $remote_filename, $mode, $offset], 0, $count_));
 }
 function ftp_get_option($ftp, $option) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $option]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $option], 0, $count_));
 }
 function ftp_login($ftp, $username, $password) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $username, $password]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $username, $password], 0, $count_));
 }
 function ftp_mdtm($ftp, $filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $filename], 0, $count_));
 }
 function ftp_mkdir($ftp, $directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory], 0, $count_));
 }
 function ftp_mlsd($ftp, $directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory], 0, $count_));
 }
 function ftp_nb_continue($ftp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp], 0, $count_));
 }
 function ftp_nb_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $stream, $remote_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $stream, $remote_filename, $mode, $offset], 0, $count_));
 }
 function ftp_nb_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $stream, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $remote_filename, $stream, $mode, $offset], 0, $count_));
 }
 function ftp_nb_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $local_filename, $remote_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $local_filename, $remote_filename, $mode, $offset], 0, $count_));
 }
 function ftp_nb_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $local_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $remote_filename, $local_filename, $mode, $offset], 0, $count_));
 }
 function ftp_nlist($ftp, $directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory], 0, $count_));
 }
 function ftp_pasv($ftp, $enable) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $enable]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $enable], 0, $count_));
 }
 function ftp_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $local_filename, $mode, $offset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $remote_filename, $local_filename, $mode, $offset], 0, $count_));
 }
 function ftp_pwd($ftp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp], 0, $count_));
 }
 function ftp_quit() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function ftp_raw($ftp, $command) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $command]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $command], 0, $count_));
 }
 function ftp_rawlist($ftp, $directory, $recursive=false) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory, $recursive]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory, $recursive], 0, $count_));
 }
 function ftp_rename($ftp, $from, $to) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $from, $to]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $from, $to], 0, $count_));
 }
 function ftp_rmdir($ftp, $directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $directory], 0, $count_));
 }
 function ftp_set_option($ftp, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $option, $value], 0, $count_));
 }
 function ftp_site($ftp, $command) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $command]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $command], 0, $count_));
 }
 function ftp_size($ftp, $filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp, $filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp, $filename], 0, $count_));
 }
 function ftp_ssl_connect($hostname, $port=21, $timeout=90) {
-  return \Proxyz\callFunction(__FUNCTION__, [$hostname, $port, $timeout]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$hostname, $port, $timeout], 0, $count_));
 }
 function ftp_systype($ftp) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ftp], 0, $count_));
 }
 function methods() {
   return [

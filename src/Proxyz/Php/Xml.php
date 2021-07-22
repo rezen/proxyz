@@ -2,76 +2,100 @@
 // This file is dynamically generated ... do not edit 
 
 function utf8_decode($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function utf8_encode($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function xml_error_string($error_code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$error_code], 0, $count_));
 }
 function xml_get_current_byte_index($parser) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser], 0, $count_));
 }
 function xml_get_current_column_number($parser) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser], 0, $count_));
 }
 function xml_get_current_line_number($parser) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser], 0, $count_));
 }
 function xml_get_error_code($parser) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser], 0, $count_));
 }
 function xml_parse($parser, $data, $is_final=false) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $data, $is_final]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $data, $is_final], 0, $count_));
 }
 function xml_parse_into_struct($parser, $data, &$values, &$index=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $data, &$values, &$index]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $data, &$values, &$index], 0, $count_));
 }
 function xml_parser_create($encoding=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$encoding]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$encoding], 0, $count_));
 }
 function xml_parser_create_ns($encoding=null, $separator=":") {
-  return \Proxyz\callFunction(__FUNCTION__, [$encoding, $separator]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$encoding, $separator], 0, $count_));
 }
 function xml_parser_free($parser) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser], 0, $count_));
 }
 function xml_parser_get_option($parser, $option) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $option]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $option], 0, $count_));
 }
 function xml_parser_set_option($parser, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $option, $value], 0, $count_));
 }
 function xml_set_character_data_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_default_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_element_handler($parser, $start_handler, $end_handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $start_handler, $end_handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $start_handler, $end_handler], 0, $count_));
 }
 function xml_set_end_namespace_decl_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_external_entity_ref_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_notation_decl_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_object($parser, $object) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $object]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $object], 0, $count_));
 }
 function xml_set_processing_instruction_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_start_namespace_decl_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function xml_set_unparsed_entity_decl_handler($parser, $handler) {
-  return \Proxyz\callFunction(__FUNCTION__, [$parser, $handler]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$parser, $handler], 0, $count_));
 }
 function methods() {
   return [

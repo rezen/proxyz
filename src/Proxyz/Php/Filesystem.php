@@ -2,247 +2,328 @@
 // This file is dynamically generated ... do not edit 
 
 function basename($path, $suffix="") {
-  return \Proxyz\callFunction(__FUNCTION__, [$path, $suffix]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path, $suffix], 0, $count_));
 }
 function chgrp($filename, $group) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $group]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $group], 0, $count_));
 }
 function chmod($filename, $permissions) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $permissions]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $permissions], 0, $count_));
 }
 function chown($filename, $user) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $user]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $user], 0, $count_));
 }
 function clearstatcache($clear_realpath_cache=false, $filename="") {
-  return \Proxyz\callFunction(__FUNCTION__, [$clear_realpath_cache, $filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$clear_realpath_cache, $filename], 0, $count_));
 }
 function copy($source, $dest, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$source, $dest, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$source, $dest, $context], 0, $count_));
 }
 function delete() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function dirname($path, $levels=1) {
-  return \Proxyz\callFunction(__FUNCTION__, [$path, $levels]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path, $levels], 0, $count_));
 }
 function disk_free_space($directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$directory], 0, $count_));
 }
 function disk_total_space($directory) {
-  return \Proxyz\callFunction(__FUNCTION__, [$directory]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$directory], 0, $count_));
 }
 function diskfreespace() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function fclose($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function feof($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function fflush($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function fgetc($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function fgetcsv($stream, $length=0, $separator=",", $enclosure='"', $escape="\\") {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $length, $separator, $enclosure, $escape]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $length, $separator, $enclosure, $escape], 0, $count_));
 }
 function fgets($handle, $length=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $length]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $length], 0, $count_));
 }
 function fgetss($handle, $length=null, $allowable_tags=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $length, $allowable_tags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $length, $allowable_tags], 0, $count_));
 }
 function file($filename, $flags=0, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $flags, $context], 0, $count_));
 }
 function file_exists($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function file_get_contents($filename, $use_include_path=false, $context=null, $offset=0, $length=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $use_include_path, $context, $offset, $length]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $use_include_path, $context, $offset, $length], 0, $count_));
 }
 function file_put_contents($filename, $data, $flags=0, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $data, $flags, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $data, $flags, $context], 0, $count_));
 }
 function fileatime($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function filectime($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function filegroup($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function fileinode($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function filemtime($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function fileowner($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function fileperms($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function filesize($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function filetype($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function flock($stream, $operation, &$would_block=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $operation, &$would_block]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $operation, &$would_block], 0, $count_));
 }
 function fnmatch($pattern, $filename, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$pattern, $filename, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$pattern, $filename, $flags], 0, $count_));
 }
 function fopen($filename, $mode, $use_include_path=false, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $mode, $use_include_path, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $mode, $use_include_path, $context], 0, $count_));
 }
 function fpassthru($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function fputcsv($handle, $fields, $separator=",", $enclosure='"', $escape_char="\\") {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $fields, $separator, $enclosure, $escape_char]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $fields, $separator, $enclosure, $escape_char], 0, $count_));
 }
 function fputs() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function fread($stream, $length) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $length]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $length], 0, $count_));
 }
 function fscanf($stream, $format, &...$vars) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $format, &$vars]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $format, &$vars], 0, $count_));
 }
 function fseek($stream, $offset, $whence=SEEK_SET) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $offset, $whence]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $offset, $whence], 0, $count_));
 }
 function fstat($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function ftell($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function ftruncate($stream, $size) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream, $size]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream, $size], 0, $count_));
 }
 function fwrite($handle, $string, $length=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $string, $length]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $string, $length], 0, $count_));
 }
 function glob($pattern, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$pattern, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$pattern, $flags], 0, $count_));
 }
 function is_dir($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_executable($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_file($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_link($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_readable($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_uploaded_file($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_writable($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function is_writeable() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function lchgrp($filename, $group) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $group]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $group], 0, $count_));
 }
 function lchown($filename, $user) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $user]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $user], 0, $count_));
 }
 function link($target, $link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$target, $link]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$target, $link], 0, $count_));
 }
 function linkinfo($path) {
-  return \Proxyz\callFunction(__FUNCTION__, [$path]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path], 0, $count_));
 }
 function lstat($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function mkdir($directory, $permissions=0777, $recursive=false, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$directory, $permissions, $recursive, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$directory, $permissions, $recursive, $context], 0, $count_));
 }
 function move_uploaded_file($from, $to) {
-  return \Proxyz\callFunction(__FUNCTION__, [$from, $to]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$from, $to], 0, $count_));
 }
 function parse_ini_file($filename, $process_sections=false, $scanner_mode=INI_SCANNER_NORMAL) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $process_sections, $scanner_mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $process_sections, $scanner_mode], 0, $count_));
 }
 function parse_ini_string($ini_string, $process_sections=false, $scanner_mode=INI_SCANNER_NORMAL) {
-  return \Proxyz\callFunction(__FUNCTION__, [$ini_string, $process_sections, $scanner_mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$ini_string, $process_sections, $scanner_mode], 0, $count_));
 }
 function pathinfo($path, $flags=PATHINFO_ALL) {
-  return \Proxyz\callFunction(__FUNCTION__, [$path, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path, $flags], 0, $count_));
 }
 function pclose($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function popen($command, $mode) {
-  return \Proxyz\callFunction(__FUNCTION__, [$command, $mode]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$command, $mode], 0, $count_));
 }
 function readfile($filename, $use_include_path=false, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $use_include_path, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $use_include_path, $context], 0, $count_));
 }
 function readlink($path) {
-  return \Proxyz\callFunction(__FUNCTION__, [$path]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path], 0, $count_));
 }
 function realpath($path) {
-  return \Proxyz\callFunction(__FUNCTION__, [$path]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$path], 0, $count_));
 }
 function realpath_cache_get() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function realpath_cache_size() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function rename($oldname, $newname, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$oldname, $newname, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$oldname, $newname, $context], 0, $count_));
 }
 function rewind($stream) {
-  return \Proxyz\callFunction(__FUNCTION__, [$stream]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$stream], 0, $count_));
 }
 function rmdir($directory, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$directory, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$directory, $context], 0, $count_));
 }
 function set_file_buffer() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function stat($filename) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
 }
 function symlink($target, $link) {
-  return \Proxyz\callFunction(__FUNCTION__, [$target, $link]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$target, $link], 0, $count_));
 }
 function tempnam($directory, $prefix) {
-  return \Proxyz\callFunction(__FUNCTION__, [$directory, $prefix]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$directory, $prefix], 0, $count_));
 }
 function tmpfile() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function touch($filename, $time=null, $atime=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $time, $atime]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $time, $atime], 0, $count_));
 }
 function umask($mask=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mask]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mask], 0, $count_));
 }
 function unlink($filename, $context=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $context]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $context], 0, $count_));
 }
 function methods() {
   return [

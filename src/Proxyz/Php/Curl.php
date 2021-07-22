@@ -2,100 +2,132 @@
 // This file is dynamically generated ... do not edit 
 
 function curl_close($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_copy_handle($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_errno($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_error($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_escape($handle, $string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $string], 0, $count_));
 }
 function curl_exec($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_file_create($filename, $mime_type=null, $posted_filename=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $mime_type, $posted_filename]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $mime_type, $posted_filename], 0, $count_));
 }
 function curl_getinfo($handle, $option=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $option]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $option], 0, $count_));
 }
 function curl_init($url=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$url]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$url], 0, $count_));
 }
 function curl_multi_add_handle($multi_handle, $handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, $handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, $handle], 0, $count_));
 }
 function curl_multi_close($multi_handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle], 0, $count_));
 }
 function curl_multi_errno($multi_handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle], 0, $count_));
 }
 function curl_multi_exec($multi_handle, &$still_running) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, &$still_running]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, &$still_running], 0, $count_));
 }
 function curl_multi_getcontent($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_multi_info_read($multi_handle, &$queued_messages=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, &$queued_messages]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, &$queued_messages], 0, $count_));
 }
 function curl_multi_init() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function curl_multi_remove_handle($multi_handle, $handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, $handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, $handle], 0, $count_));
 }
 function curl_multi_select($multi_handle, $timeout=1.0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, $timeout]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, $timeout], 0, $count_));
 }
 function curl_multi_setopt($multi_handle, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$multi_handle, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$multi_handle, $option, $value], 0, $count_));
 }
 function curl_multi_strerror($error_code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$error_code], 0, $count_));
 }
 function curl_pause($handle, $flags) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $flags], 0, $count_));
 }
 function curl_reset($handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle], 0, $count_));
 }
 function curl_setopt($handle, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $option, $value], 0, $count_));
 }
 function curl_setopt_array($handle, $options) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $options], 0, $count_));
 }
 function curl_share_close($share_handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$share_handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$share_handle], 0, $count_));
 }
 function curl_share_errno($share_handle) {
-  return \Proxyz\callFunction(__FUNCTION__, [$share_handle]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$share_handle], 0, $count_));
 }
 function curl_share_init() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function curl_share_setopt($share_handle, $option, $value) {
-  return \Proxyz\callFunction(__FUNCTION__, [$share_handle, $option, $value]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$share_handle, $option, $value], 0, $count_));
 }
 function curl_share_strerror($error_code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$error_code], 0, $count_));
 }
 function curl_strerror($error_code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$error_code], 0, $count_));
 }
 function curl_unescape($handle, $string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$handle, $string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$handle, $string], 0, $count_));
 }
 function curl_version() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function methods() {
   return [

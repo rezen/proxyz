@@ -2,235 +2,312 @@
 // This file is dynamically generated ... do not edit 
 
 function ezmlm_hash($addr) {
-  return \Proxyz\callFunction(__FUNCTION__, [$addr]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$addr], 0, $count_));
 }
 function imap_8bit($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_alerts() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_append($imap, $folder, $message, $options=null, $internal_date=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $folder, $message, $options, $internal_date]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $folder, $message, $options, $internal_date], 0, $count_));
 }
 function imap_base64($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_binary($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_body($imap, $message_num, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $flags], 0, $count_));
 }
 function imap_bodystruct($imap, $message_num, $section) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $section]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $section], 0, $count_));
 }
 function imap_check($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_clearflag_full($imap, $sequence, $flag, $options=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flag, $options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $sequence, $flag, $options], 0, $count_));
 }
 function imap_close($imap, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $flags], 0, $count_));
 }
 function imap_create() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_createmailbox($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_delete($imap, $message_num, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $flags], 0, $count_));
 }
 function imap_deletemailbox($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_errors() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_expunge($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_fetch_overview($imap, $sequence, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $sequence, $flags], 0, $count_));
 }
 function imap_fetchbody($imap, $message_num, $section, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $section, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $section, $flags], 0, $count_));
 }
 function imap_fetchheader($imap, $message_num, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $flags], 0, $count_));
 }
 function imap_fetchmime($imap, $message_num, $section, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $section, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $section, $flags], 0, $count_));
 }
 function imap_fetchstructure($imap, $message_num, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $flags], 0, $count_));
 }
 function imap_fetchtext() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_gc($imap, $flags) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $flags], 0, $count_));
 }
 function imap_get_quota($imap, $quota_root) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $quota_root]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $quota_root], 0, $count_));
 }
 function imap_get_quotaroot($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_getacl($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_getmailboxes($imap, $reference, $pattern) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $reference, $pattern]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $reference, $pattern], 0, $count_));
 }
 function imap_getsubscribed($imap, $reference, $pattern) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $reference, $pattern]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $reference, $pattern], 0, $count_));
 }
 function imap_header() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_headerinfo($imap, $message_num, $from_length=0, $subject_length=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $from_length, $subject_length]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $from_length, $subject_length], 0, $count_));
 }
 function imap_headers($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_last_error() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_list($imap, $reference, $pattern) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $reference, $pattern]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $reference, $pattern], 0, $count_));
 }
 function imap_listmailbox() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_listscan($imap, $reference, $pattern, $content) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $reference, $pattern, $content]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $reference, $pattern, $content], 0, $count_));
 }
 function imap_listsubscribed() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_lsub($imap, $reference, $pattern) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $reference, $pattern]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $reference, $pattern], 0, $count_));
 }
 function imap_mail($to, $subject, $message, $additional_headers=null, $cc=null, $bcc=null, $return_path=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$to, $subject, $message, $additional_headers, $cc, $bcc, $return_path]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$to, $subject, $message, $additional_headers, $cc, $bcc, $return_path], 0, $count_));
 }
 function imap_mail_compose($envelope, $bodies) {
-  return \Proxyz\callFunction(__FUNCTION__, [$envelope, $bodies]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$envelope, $bodies], 0, $count_));
 }
 function imap_mail_copy($imap, $message_nums, $mailbox, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_nums, $mailbox, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_nums, $mailbox, $flags], 0, $count_));
 }
 function imap_mail_move($imap, $message_nums, $mailbox, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_nums, $mailbox, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_nums, $mailbox, $flags], 0, $count_));
 }
 function imap_mailboxmsginfo($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_mime_header_decode($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_msgno($imap, $message_uid) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_uid]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_uid], 0, $count_));
 }
 function imap_mutf7_to_utf8($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_num_msg($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_num_recent($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_open($mailbox, $user, $password, $flags=0, $retries=0, $options=[]) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mailbox, $user, $password, $flags, $retries, $options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mailbox, $user, $password, $flags, $retries, $options], 0, $count_));
 }
 function imap_ping($imap) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap], 0, $count_));
 }
 function imap_qprint($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_rename() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_renamemailbox($imap, $from, $to) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $from, $to]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $from, $to], 0, $count_));
 }
 function imap_reopen($imap, $mailbox, $flags=0, $retries=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox, $flags, $retries]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox, $flags, $retries], 0, $count_));
 }
 function imap_rfc822_parse_adrlist($string, $default_hostname) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string, $default_hostname]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string, $default_hostname], 0, $count_));
 }
 function imap_rfc822_parse_headers($headers, $default_hostname="UNKNOWN") {
-  return \Proxyz\callFunction(__FUNCTION__, [$headers, $default_hostname]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$headers, $default_hostname], 0, $count_));
 }
 function imap_rfc822_write_address($mailbox, $hostname, $personal) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mailbox, $hostname, $personal]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mailbox, $hostname, $personal], 0, $count_));
 }
 function imap_savebody($imap, $file, $message_num, $section="", $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $file, $message_num, $section, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $file, $message_num, $section, $flags], 0, $count_));
 }
 function imap_scan() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_scanmailbox() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function imap_search($imap, $criteria, $flags=SE_FREE, $charset="") {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $criteria, $flags, $charset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $criteria, $flags, $charset], 0, $count_));
 }
 function imap_set_quota($imap, $quota_root, $mailbox_size) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $quota_root, $mailbox_size]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $quota_root, $mailbox_size], 0, $count_));
 }
 function imap_setacl($imap, $mailbox, $user_id, $rights) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox, $user_id, $rights]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox, $user_id, $rights], 0, $count_));
 }
 function imap_setflag_full($imap, $sequence, $flag, $options=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flag, $options]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $sequence, $flag, $options], 0, $count_));
 }
 function imap_sort($imap, $criteria, $reverse, $flags=0, $search_criteria=null, $charset=null) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $criteria, $reverse, $flags, $search_criteria, $charset]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $criteria, $reverse, $flags, $search_criteria, $charset], 0, $count_));
 }
 function imap_status($imap, $mailbox, $flags) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox, $flags], 0, $count_));
 }
 function imap_subscribe($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_thread($imap, $flags=SE_FREE) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $flags], 0, $count_));
 }
 function imap_timeout($timeout_type, $timeout=-1) {
-  return \Proxyz\callFunction(__FUNCTION__, [$timeout_type, $timeout]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$timeout_type, $timeout], 0, $count_));
 }
 function imap_uid($imap, $message_num) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num], 0, $count_));
 }
 function imap_undelete($imap, $message_num, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $message_num, $flags], 0, $count_));
 }
 function imap_unsubscribe($imap, $mailbox) {
-  return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$imap, $mailbox], 0, $count_));
 }
 function imap_utf7_decode($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_utf7_encode($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function imap_utf8($mime_encoded_text) {
-  return \Proxyz\callFunction(__FUNCTION__, [$mime_encoded_text]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mime_encoded_text], 0, $count_));
 }
 function imap_utf8_to_mutf7($string) {
-  return \Proxyz\callFunction(__FUNCTION__, [$string]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$string], 0, $count_));
 }
 function mail($to, $subject, $message, $additional_headers=[], $additional_params="") {
-  return \Proxyz\callFunction(__FUNCTION__, [$to, $subject, $message, $additional_headers, $additional_params]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$to, $subject, $message, $additional_headers, $additional_params], 0, $count_));
 }
 function methods() {
   return [

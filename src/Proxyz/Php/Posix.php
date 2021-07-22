@@ -2,115 +2,152 @@
 // This file is dynamically generated ... do not edit 
 
 function posix_access($filename, $flags=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $flags], 0, $count_));
 }
 function posix_ctermid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_errno() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_get_last_error() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getcwd() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getegid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_geteuid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getgid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getgrgid($group_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$group_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$group_id], 0, $count_));
 }
 function posix_getgrnam($name) {
-  return \Proxyz\callFunction(__FUNCTION__, [$name]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$name], 0, $count_));
 }
 function posix_getgroups() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getlogin() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getpgid($process_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process_id], 0, $count_));
 }
 function posix_getpgrp() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getpid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getppid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getpwnam($username) {
-  return \Proxyz\callFunction(__FUNCTION__, [$username]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$username], 0, $count_));
 }
 function posix_getpwuid($user_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$user_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$user_id], 0, $count_));
 }
 function posix_getrlimit() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_getsid($process_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process_id], 0, $count_));
 }
 function posix_getuid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_initgroups($username, $group_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$username, $group_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$username, $group_id], 0, $count_));
 }
 function posix_isatty($file_descriptor) {
-  return \Proxyz\callFunction(__FUNCTION__, [$file_descriptor]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$file_descriptor], 0, $count_));
 }
 function posix_kill($process_id, $signal) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process_id, $signal]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process_id, $signal], 0, $count_));
 }
 function posix_mkfifo($filename, $permissions) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $permissions]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $permissions], 0, $count_));
 }
 function posix_mknod($filename, $flags, $major=0, $minor=0) {
-  return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags, $major, $minor]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename, $flags, $major, $minor], 0, $count_));
 }
 function posix_setegid($group_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$group_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$group_id], 0, $count_));
 }
 function posix_seteuid($user_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$user_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$user_id], 0, $count_));
 }
 function posix_setgid($group_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$group_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$group_id], 0, $count_));
 }
 function posix_setpgid($process_id, $process_group_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$process_id, $process_group_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$process_id, $process_group_id], 0, $count_));
 }
 function posix_setrlimit($resource, $soft_limit, $hard_limit) {
-  return \Proxyz\callFunction(__FUNCTION__, [$resource, $soft_limit, $hard_limit]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$resource, $soft_limit, $hard_limit], 0, $count_));
 }
 function posix_setsid() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_setuid($user_id) {
-  return \Proxyz\callFunction(__FUNCTION__, [$user_id]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$user_id], 0, $count_));
 }
 function posix_strerror($error_code) {
-  return \Proxyz\callFunction(__FUNCTION__, [$error_code]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$error_code], 0, $count_));
 }
 function posix_times() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function posix_ttyname($file_descriptor) {
-  return \Proxyz\callFunction(__FUNCTION__, [$file_descriptor]);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$file_descriptor], 0, $count_));
 }
 function posix_uname() {
-  return \Proxyz\callFunction(__FUNCTION__, []);
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
 }
 function methods() {
   return [
