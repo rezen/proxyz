@@ -1,194 +1,257 @@
 <?php namespace Proxyz\Wp\Taxonomy;
 // This file is dynamically generated ... do not edit 
 
-function cat_is_ancestor_of() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function cat_is_ancestor_of(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_all_category_ids() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_all_category_ids(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_ancestors() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_ancestors(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_cat_ID() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_cat_ID(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_cat_name() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_cat_name(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_categories() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_categories(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_category_by_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_category_by_path(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_category_by_slug() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_category_by_slug(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_category_link() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_category_link(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_category_parents() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_category_parents(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_edit_term_link() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_edit_term_link(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_object_taxonomies() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_object_taxonomies(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_tag() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_tag(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_tag_link() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_tag_link(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_tags() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_tags(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_taxonomies() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_taxonomies(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_taxonomy() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_taxonomy(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_term() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_term(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_term_by() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_term_by(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_term_children() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_term_children(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_term_link() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_term_link(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_category_by_ID() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_category_by_ID(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_category_list() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_category_list(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_tag_list() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_tag_list(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_tags() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_tags(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_term_list() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_term_list(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function has_tag() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function has_tag(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function in_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function in_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_tag() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_tag(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_tax() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_tax(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_taxonomy() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_taxonomy(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_taxonomy_hierarchical() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_taxonomy_hierarchical(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_term() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_term(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_taxonomy() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_taxonomy(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_taxonomy_for_object_type() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_taxonomy_for_object_type(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function single_cat_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function single_cat_title(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function single_tag_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function single_tag_title(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function tag_description() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function tag_description(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function taxonomy_exists() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function taxonomy_exists(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function term_exists() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function term_exists(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function the_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function the_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function the_tags() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function the_tags(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function the_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function the_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_category_checklist() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_category_checklist(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_create_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_create_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_delete_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_delete_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_delete_term() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_delete_term(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_dropdown_categories() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_dropdown_categories(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_generate_tag_cloud() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_generate_tag_cloud(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_get_object_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_get_object_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_insert_category() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_insert_category(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_insert_term() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_insert_term(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_list_categories() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_list_categories(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_remove_object_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_remove_object_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_set_object_terms() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_set_object_terms(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_tag_cloud() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_tag_cloud(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_terms_checklist() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_terms_checklist(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_update_term() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_update_term(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
 function methods() {
   return [

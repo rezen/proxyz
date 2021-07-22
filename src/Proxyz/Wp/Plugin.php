@@ -1,191 +1,253 @@
 <?php namespace Proxyz\Wp\Plugin;
 // This file is dynamically generated ... do not edit 
 
-function add_action() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_action(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_contextual_help() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_contextual_help(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_filter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_filter(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_settings_error() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_settings_error(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_settings_field() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_settings_field(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_settings_section() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_settings_section(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_shortcode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_shortcode(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function apply_filters() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function apply_filters(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function apply_filters_ref_array() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function apply_filters_ref_array(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function current_filter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function current_filter(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function did_action() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function did_action(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_action() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_action(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_action_ref_array() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_action_ref_array(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_settings_fields() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_settings_fields(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_settings_sections() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_settings_sections(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_shortcode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_shortcode(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function do_shortcode_tag() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function do_shortcode_tag(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_admin_page_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_admin_page_title(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_plugin_data() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_plugin_data(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_plugins() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_plugins(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_settings_errors() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_settings_errors(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_shortcode_regex() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_shortcode_regex(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function has_action() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function has_action(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function has_filter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function has_filter(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_active_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_active_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_plugin_active() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_plugin_active(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_plugin_active_for_network() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_plugin_active_for_network(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_plugin_inactive() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_plugin_inactive(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_plugin_page() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_plugin_page(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function menu_page_url() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function menu_page_url(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function merge_filters() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function merge_filters(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function plugin_basename() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function plugin_basename(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function plugin_dir_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function plugin_dir_path(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function plugins_url() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function plugins_url(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_activation_hook() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_activation_hook(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_deactivation_hook() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_deactivation_hook(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_setting() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_setting(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function register_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function register_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_action() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_action(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_all_actions() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_all_actions(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_all_filters() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_all_filters(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_all_shortcodes() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_all_shortcodes(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_filter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_filter(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_shortcode() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_shortcode(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function settings_errors() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function settings_errors(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function settings_fields() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function settings_fields(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function shortcode_atts() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function shortcode_atts(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function shortcode_parse_atts() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function shortcode_parse_atts(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function strip_shortcodes() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function strip_shortcodes(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function the_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function the_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function unregister_setting() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function unregister_setting(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function unregister_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function unregister_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_add_dashboard_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_add_dashboard_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_convert_widget_settings() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_convert_widget_settings(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_get_sidebars_widgets() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_get_sidebars_widgets(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_get_widget_defaults() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_get_widget_defaults(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_register_sidebar_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_register_sidebar_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_register_widget_control() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_register_widget_control(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_set_sidebars_widgets() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_set_sidebars_widgets(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_unregister_sidebar_widget() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_unregister_sidebar_widget(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_unregister_widget_control() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_unregister_widget_control(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_widget_description() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_widget_description(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
 function methods() {
   return [

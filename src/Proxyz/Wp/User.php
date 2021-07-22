@@ -1,158 +1,209 @@
 <?php namespace Proxyz\Wp\User;
 // This file is dynamically generated ... do not edit 
 
-function add_cap() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_cap(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_role() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_role(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function add_user_meta() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_user_meta(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function auth_redirect() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function auth_redirect(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function author_can() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function author_can(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function count_many_users_posts() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function count_many_users_posts(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function count_user_posts() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function count_user_posts(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function count_users() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function count_users(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function current_user_can() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function current_user_can(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function current_user_can_for_blog() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function current_user_can_for_blog(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function delete_user_meta() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function delete_user_meta(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function email_exists() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function email_exists(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_author_posts_url() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_author_posts_url(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_current_user_id() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_current_user_id(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_currentuserinfo() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_currentuserinfo(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_profile() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_profile(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_role() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_role(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_super_admins() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_super_admins(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_author_meta() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_author_meta(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_the_modified_author() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_the_modified_author(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_user_by() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_user_by(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_user_meta() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_user_meta(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_userdata() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_userdata(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_usernumposts() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_usernumposts(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function get_users() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function get_users(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_multi_author() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_multi_author(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_super_admin() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_super_admin(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function is_user_logged_in() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function is_user_logged_in(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function map_meta_cap() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function map_meta_cap(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_cap() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_cap(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function remove_role() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function remove_role(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function set_current_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function set_current_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function update_user_meta() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function update_user_meta(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function user_can() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function user_can(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function user_pass_ok() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function user_pass_ok(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function username_exists() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function username_exists(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function validate_username() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function validate_username(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_authenticate() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_authenticate(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_create_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_create_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_delete_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_delete_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_dropdown_users() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_dropdown_users(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_get_current_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_get_current_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_insert_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_insert_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_login_form() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_login_form(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_loginout() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_loginout(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_logout() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_logout(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_logout_url() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_logout_url(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_set_current_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_set_current_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_set_password() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_set_password(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_signon() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_signon(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
-function wp_update_user() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function wp_update_user(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
 function methods() {
   return [

@@ -1,293 +1,389 @@
 <?php namespace Proxyz\Wp\Theme;
 // This file is dynamically generated ... do not edit 
 
-function add_custom_background() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function add_custom_image_header() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function add_image_size() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function add_theme_support() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function body_class() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function comments_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function current_theme_supports() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function dynamic_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_404_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_archive_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_attachment_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_author_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_body_class() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_category_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_comments_popup_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_current_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_date_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_footer() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_header() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_header_image() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_header_textcolor() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_home_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_locale_stylesheet_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_page_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_paged_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_post_class() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_query_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_registered_nav_menus() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_search_form() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_search_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_single_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_stylesheet() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_stylesheet_directory() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_stylesheet_directory_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_stylesheet_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_tag_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_taxonomy_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_template_directory() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_template_directory_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_template_part() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_data() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_file_path() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_file_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_mod() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_mods() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_root() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_root_uri() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_roots() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_theme_support() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function get_themes() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function has_header_image() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function header_image() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function header_textcolor() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function in_the_loop() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function is_active_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function is_admin_bar_showing() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function is_child_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function is_customize_preview() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function is_dynamic_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function language_attributes() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function load_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function locale_stylesheet() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function locate_template() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function post_class() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function preview_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function preview_theme_ob_filter() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function preview_theme_ob_filter_callback() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function register_nav_menu() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function register_nav_menus() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function register_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function register_sidebars() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function register_theme_directory() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function remove_theme_mod() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function remove_theme_mods() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function remove_theme_support() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function require_if_theme_supports() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function search_theme_directories() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function set_theme_mod() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function switch_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function unregister_nav_menu() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function unregister_sidebar() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function validate_current_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_add_inline_style() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_clean_themes_cache() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_create_nav_menu() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_get_archives() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_get_nav_menu_items() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_get_theme() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_get_themes() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_nav_menu() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_oembed_remove_provider() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_page_menu() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
-}
-function wp_title() {
-  return \Proxyz\callFunction(__FUNCTION__, func_get_args());
+function add_custom_background(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function add_custom_image_header(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function add_image_size(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function add_theme_support(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function body_class(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function comments_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function current_theme_supports(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function dynamic_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_404_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_archive_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_attachment_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_author_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_body_class(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_category_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_comments_popup_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_current_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_date_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_footer(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_header(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_header_image(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_header_textcolor(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_home_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_locale_stylesheet_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_page_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_paged_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_post_class(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_query_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_registered_nav_menus(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_search_form(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_search_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_single_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_stylesheet(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_stylesheet_directory(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_stylesheet_directory_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_stylesheet_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_tag_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_taxonomy_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_template_directory(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_template_directory_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_template_part(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_data(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_file_path(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_file_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_mod(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_mods(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_root(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_root_uri(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_roots(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_theme_support(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function get_themes(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function has_header_image(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function header_image(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function header_textcolor(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function in_the_loop(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function is_active_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function is_admin_bar_showing(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function is_child_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function is_customize_preview(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function is_dynamic_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function language_attributes(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function load_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function locale_stylesheet(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function locate_template(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function post_class(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function preview_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function preview_theme_ob_filter(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function preview_theme_ob_filter_callback(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function register_nav_menu(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function register_nav_menus(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function register_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function register_sidebars(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function register_theme_directory(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function remove_theme_mod(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function remove_theme_mods(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function remove_theme_support(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function require_if_theme_supports(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function search_theme_directories(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function set_theme_mod(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function switch_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function unregister_nav_menu(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function unregister_sidebar(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function validate_current_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_add_inline_style(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_clean_themes_cache(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_create_nav_menu(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_get_archives(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_get_nav_menu_items(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_get_theme(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_get_themes(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_nav_menu(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_oembed_remove_provider(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_page_menu(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
+}
+function wp_title(...$args) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice($args, 0, $count_));
 }
 function methods() {
   return [
