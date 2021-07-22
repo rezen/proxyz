@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+
 $root = realpath(dirname(__FILE__) . "/../");
 
 $generate = [
@@ -20,75 +21,68 @@ $generate = [
     'datetime' => ['datetime/functions', ], 
     'ldap' => ['ldap/functions', ], 
     'posix' => ['posix/functions', ], 
-    'archive'=> ['zlib/functions', 'zip/functions', 'bzip2/functions']
+    'archive'=> ['zlib/functions', 'zip/functions', 'bzip2/functions'],
+    'cryptography' => ['csprng/functions', 'hash/functions', 'sodium/functions', 'password/functions']
 ];
 
-if (!is_dir("$root/bin/data/doc-en")) {
-    system("cd bin/data && git clone https://github.com/php/doc-en");
-}
 
-$functions = [];
-foreach ($generate as $namespace => $references)
-{
-    $functions[$namespace] = [];
-    foreach ($references as $dir)
-    {
 
-        $refs = glob("$root/bin/data/doc-en/reference/$dir/*.xml");
-        foreach ($refs as $ref)
-        {
-            $functions[$namespace][] = parseFunctionReference($ref);
-
+function getFunctions() {
+    global $root, $generate;
+    if (!is_dir("$root/bin/data/doc-en")) {
+        system("cd bin/data && git clone https://github.com/php/doc-en");
+    }
+    $functions = [];
+    foreach ($generate as $namespace => $references) {
+        $functions[$namespace] = [];
+        foreach ($references as $dir) {
+            $refs = glob("$root/bin/data/doc-en/reference/$dir/*.xml");
+            foreach ($refs as $ref) {
+                $functions[$namespace][] = parseFunctionReference($ref);
+            }
         }
     }
+    return $functions;
 }
 
-$encoded = json_encode($functions, JSON_PRETTY_PRINT);
-file_put_contents("$root/bin/data/php.json", $encoded);
-
-
-function getAliasParams($file, $alias)
-{
-    if (!$alias)
-    {
+function getAliasParams($file, $alias) {
+    if (!$alias) {
         echo "[!] No alias provided file=$file\n";
         return [];
     }
 
-    if (strpos($alias, "::") !== false)
-    {
+    if (strpos($alias, "::") !== false) {
         $parent = realpath(dirname($file) . "/..");
         $parts = explode("::", $alias);
         $method = str_replace(["__", "_"], ["", "-"], strtolower($parts[1]));
         $klass = strtolower($parts[0]);
         $aliasFile = $parent . "/$klass/$method.xml";
-    }
-    else
-    {
+    } else {
         $aliasFile = realpath(dirname($file)) . "/" . str_replace("_", "-", $alias) . ".xml";
     }
 
     $ref = parseFunctionReference($aliasFile);
-    return $ref['params'];
+    return $ref['params'] ?? [];
 }
 
-function parseFunctionReference($file)
-{
-    if (!file_exists($file))
-    {
-        return ['file' => $file, 'name' => null, 'alias' => null, 'params' => [], ];
+function parseFunctionReference($file) {
+    if (!file_exists($file)) {
+        return [
+            'file' => $file, 
+            'name' => null, 
+            'alias' => null, 
+        ];
     }
     $content = file_get_contents($file);
-    $content = preg_replace_callback('#&[A-Z0-9\.\-]+;#i', function ($matches)
-    {
+    // Clear out entity references
+    $content = preg_replace_callback('#&[A-Z0-9\.\-]+;#i', function ($matches) {
         return htmlentities(html_entity_decode($matches[0]) , ENT_XML1);
-    }
-    , $content);
+    }, $content);
     $content = trim($content);
     $lines = explode("\n", $content);
     $lastLine = $lines[count($lines) - 1];
-    if ($lastLine && $lastLine[0] === "{")
-    {
+    // If last line is JSON remove it
+    if ($lastLine && $lastLine[0] === "{") {
         $content = substr($content, 0, strrpos(trim($content) , "\n"));
     }
     $spec = simplexml_load_string($content, null, LIBXML_NOENT);
@@ -211,3 +205,7 @@ function parseFunctionReference($file)
     }
 }
 
+
+$functions = getFunctions();
+$encoded = json_encode($functions, JSON_PRETTY_PRINT);
+file_put_contents("$root/bin/data/php.json", $encoded);

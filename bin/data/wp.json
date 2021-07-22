@@ -1,0 +1,2874 @@
+{
+    "post": [
+        {
+            "name": "add_meta_box"
+        },
+        {
+            "name": "add_post_meta"
+        },
+        {
+            "name": "add_post_type_support"
+        },
+        {
+            "name": "delete_post_meta"
+        },
+        {
+            "name": "get_adjacent_post"
+        },
+        {
+            "name": "get_all_page_ids"
+        },
+        {
+            "name": "get_ancestors"
+        },
+        {
+            "name": "get_attached_file"
+        },
+        {
+            "name": "get_bookmark"
+        },
+        {
+            "name": "get_bookmarks"
+        },
+        {
+            "name": "get_boundary_post"
+        },
+        {
+            "name": "get_children"
+        },
+        {
+            "name": "get_delete_post_link"
+        },
+        {
+            "name": "get_edit_post_link"
+        },
+        {
+            "name": "get_extended"
+        },
+        {
+            "name": "get_next_post"
+        },
+        {
+            "name": "get_next_posts_link"
+        },
+        {
+            "name": "get_page"
+        },
+        {
+            "name": "get_page_by_path"
+        },
+        {
+            "name": "get_page_by_title"
+        },
+        {
+            "name": "get_page_children"
+        },
+        {
+            "name": "get_page_hierarchy"
+        },
+        {
+            "name": "get_page_link"
+        },
+        {
+            "name": "get_page_uri"
+        },
+        {
+            "name": "get_pages"
+        },
+        {
+            "name": "get_permalink"
+        },
+        {
+            "name": "get_post"
+        },
+        {
+            "name": "get_post_ancestors"
+        },
+        {
+            "name": "get_post_custom"
+        },
+        {
+            "name": "get_post_custom_keys"
+        },
+        {
+            "name": "get_post_custom_values"
+        },
+        {
+            "name": "get_post_field"
+        },
+        {
+            "name": "get_post_format"
+        },
+        {
+            "name": "get_post_meta"
+        },
+        {
+            "name": "get_post_mime_type"
+        },
+        {
+            "name": "get_post_status"
+        },
+        {
+            "name": "get_post_type"
+        },
+        {
+            "name": "get_post_type_archive_link"
+        },
+        {
+            "name": "get_post_type_capabilities"
+        },
+        {
+            "name": "get_post_type_labels"
+        },
+        {
+            "name": "get_post_type_object"
+        },
+        {
+            "name": "get_post_types"
+        },
+        {
+            "name": "get_posts"
+        },
+        {
+            "name": "get_previous_post"
+        },
+        {
+            "name": "get_previous_posts_link"
+        },
+        {
+            "name": "get_the_ID"
+        },
+        {
+            "name": "get_the_author"
+        },
+        {
+            "name": "get_the_author_posts"
+        },
+        {
+            "name": "get_the_content"
+        },
+        {
+            "name": "get_the_excerpt"
+        },
+        {
+            "name": "get_the_post_thumbnail"
+        },
+        {
+            "name": "get_the_title"
+        },
+        {
+            "name": "has_excerpt"
+        },
+        {
+            "name": "has_post_format"
+        },
+        {
+            "name": "has_post_thumbnail"
+        },
+        {
+            "name": "has_term"
+        },
+        {
+            "name": "have_posts"
+        },
+        {
+            "name": "image_edit_before_change"
+        },
+        {
+            "name": "image_resize"
+        },
+        {
+            "name": "is_attachment"
+        },
+        {
+            "name": "is_local_attachment"
+        },
+        {
+            "name": "is_object_in_term"
+        },
+        {
+            "name": "is_page"
+        },
+        {
+            "name": "is_post"
+        },
+        {
+            "name": "is_post_type_archive"
+        },
+        {
+            "name": "is_post_type_hierarchical"
+        },
+        {
+            "name": "is_single"
+        },
+        {
+            "name": "is_sticky"
+        },
+        {
+            "name": "next_posts_link"
+        },
+        {
+            "name": "page_uri_index"
+        },
+        {
+            "name": "paginate_links"
+        },
+        {
+            "name": "post_type_archive_title"
+        },
+        {
+            "name": "post_type_exists"
+        },
+        {
+            "name": "post_type_supports"
+        },
+        {
+            "name": "previous_posts_link"
+        },
+        {
+            "name": "register_meta"
+        },
+        {
+            "name": "register_post_status"
+        },
+        {
+            "name": "register_post_type"
+        },
+        {
+            "name": "remove_meta_box"
+        },
+        {
+            "name": "remove_post_type_support"
+        },
+        {
+            "name": "set_post_format"
+        },
+        {
+            "name": "set_post_thumbnail"
+        },
+        {
+            "name": "set_post_type"
+        },
+        {
+            "name": "the_ID"
+        },
+        {
+            "name": "the_author"
+        },
+        {
+            "name": "the_content"
+        },
+        {
+            "name": "the_excerpt"
+        },
+        {
+            "name": "the_permalink"
+        },
+        {
+            "name": "the_post"
+        },
+        {
+            "name": "the_title"
+        },
+        {
+            "name": "the_title_attribute"
+        },
+        {
+            "name": "update_attached_file"
+        },
+        {
+            "name": "update_post_meta"
+        },
+        {
+            "name": "wp_attachment_is_image"
+        },
+        {
+            "name": "wp_check_for_changed_slugs"
+        },
+        {
+            "name": "wp_count_posts"
+        },
+        {
+            "name": "wp_count_terms"
+        },
+        {
+            "name": "wp_create_thumbnail"
+        },
+        {
+            "name": "wp_delete_attachment"
+        },
+        {
+            "name": "wp_delete_post"
+        },
+        {
+            "name": "wp_dropdown_pages"
+        },
+        {
+            "name": "wp_generate_attachment_metadata"
+        },
+        {
+            "name": "wp_get_attachment_image"
+        },
+        {
+            "name": "wp_get_attachment_image_src"
+        },
+        {
+            "name": "wp_get_attachment_link"
+        },
+        {
+            "name": "wp_get_attachment_metadata"
+        },
+        {
+            "name": "wp_get_attachment_thumb_file"
+        },
+        {
+            "name": "wp_get_attachment_thumb_url"
+        },
+        {
+            "name": "wp_get_attachment_url"
+        },
+        {
+            "name": "wp_get_mime_types"
+        },
+        {
+            "name": "wp_get_post_categories"
+        },
+        {
+            "name": "wp_get_post_revision"
+        },
+        {
+            "name": "wp_get_post_revisions"
+        },
+        {
+            "name": "wp_get_post_tags"
+        },
+        {
+            "name": "wp_get_post_terms"
+        },
+        {
+            "name": "wp_get_recent_posts"
+        },
+        {
+            "name": "wp_get_single_post"
+        },
+        {
+            "name": "wp_insert_attachment"
+        },
+        {
+            "name": "wp_insert_post"
+        },
+        {
+            "name": "wp_is_post_revision"
+        },
+        {
+            "name": "wp_link_pages"
+        },
+        {
+            "name": "wp_list_bookmarks"
+        },
+        {
+            "name": "wp_list_pages"
+        },
+        {
+            "name": "wp_mime_type_icon"
+        },
+        {
+            "name": "wp_page_menu"
+        },
+        {
+            "name": "wp_prepare_attachment_for_js"
+        },
+        {
+            "name": "wp_publish_post"
+        },
+        {
+            "name": "wp_set_post_categories"
+        },
+        {
+            "name": "wp_set_post_tags"
+        },
+        {
+            "name": "wp_set_post_terms"
+        },
+        {
+            "name": "wp_trash_post"
+        },
+        {
+            "name": "wp_trim_excerpt"
+        },
+        {
+            "name": "wp_update_attachment_metadata"
+        },
+        {
+            "name": "wp_update_post"
+        }
+    ],
+    "taxonomy": [
+        {
+            "name": "cat_is_ancestor_of"
+        },
+        {
+            "name": "get_all_category_ids"
+        },
+        {
+            "name": "get_ancestors"
+        },
+        {
+            "name": "get_cat_ID"
+        },
+        {
+            "name": "get_cat_name"
+        },
+        {
+            "name": "get_categories"
+        },
+        {
+            "name": "get_category"
+        },
+        {
+            "name": "get_category_by_path"
+        },
+        {
+            "name": "get_category_by_slug"
+        },
+        {
+            "name": "get_category_link"
+        },
+        {
+            "name": "get_category_parents"
+        },
+        {
+            "name": "get_edit_term_link"
+        },
+        {
+            "name": "get_object_taxonomies"
+        },
+        {
+            "name": "get_tag"
+        },
+        {
+            "name": "get_tag_link"
+        },
+        {
+            "name": "get_tags"
+        },
+        {
+            "name": "get_taxonomies"
+        },
+        {
+            "name": "get_taxonomy"
+        },
+        {
+            "name": "get_term"
+        },
+        {
+            "name": "get_term_by"
+        },
+        {
+            "name": "get_term_children"
+        },
+        {
+            "name": "get_term_link"
+        },
+        {
+            "name": "get_terms"
+        },
+        {
+            "name": "get_the_category"
+        },
+        {
+            "name": "get_the_category_by_ID"
+        },
+        {
+            "name": "get_the_category_list"
+        },
+        {
+            "name": "get_the_tag_list"
+        },
+        {
+            "name": "get_the_tags"
+        },
+        {
+            "name": "get_the_term_list"
+        },
+        {
+            "name": "get_the_terms"
+        },
+        {
+            "name": "has_tag"
+        },
+        {
+            "name": "in_category"
+        },
+        {
+            "name": "is_category"
+        },
+        {
+            "name": "is_tag"
+        },
+        {
+            "name": "is_tax"
+        },
+        {
+            "name": "is_taxonomy"
+        },
+        {
+            "name": "is_taxonomy_hierarchical"
+        },
+        {
+            "name": "is_term"
+        },
+        {
+            "name": "register_taxonomy"
+        },
+        {
+            "name": "register_taxonomy_for_object_type"
+        },
+        {
+            "name": "single_cat_title"
+        },
+        {
+            "name": "single_tag_title"
+        },
+        {
+            "name": "tag_description"
+        },
+        {
+            "name": "taxonomy_exists"
+        },
+        {
+            "name": "term_exists"
+        },
+        {
+            "name": "the_category"
+        },
+        {
+            "name": "the_tags"
+        },
+        {
+            "name": "the_terms"
+        },
+        {
+            "name": "wp_category_checklist"
+        },
+        {
+            "name": "wp_create_category"
+        },
+        {
+            "name": "wp_delete_category"
+        },
+        {
+            "name": "wp_delete_term"
+        },
+        {
+            "name": "wp_dropdown_categories"
+        },
+        {
+            "name": "wp_generate_tag_cloud"
+        },
+        {
+            "name": "wp_get_object_terms"
+        },
+        {
+            "name": "wp_insert_category"
+        },
+        {
+            "name": "wp_insert_term"
+        },
+        {
+            "name": "wp_list_categories"
+        },
+        {
+            "name": "wp_remove_object_terms"
+        },
+        {
+            "name": "wp_set_object_terms"
+        },
+        {
+            "name": "wp_tag_cloud"
+        },
+        {
+            "name": "wp_terms_checklist"
+        },
+        {
+            "name": "wp_update_term"
+        }
+    ],
+    "user": [
+        {
+            "name": "add_cap"
+        },
+        {
+            "name": "add_role"
+        },
+        {
+            "name": "add_user_meta"
+        },
+        {
+            "name": "auth_redirect"
+        },
+        {
+            "name": "author_can"
+        },
+        {
+            "name": "count_many_users_posts"
+        },
+        {
+            "name": "count_user_posts"
+        },
+        {
+            "name": "count_users"
+        },
+        {
+            "name": "current_user_can"
+        },
+        {
+            "name": "current_user_can_for_blog"
+        },
+        {
+            "name": "delete_user_meta"
+        },
+        {
+            "name": "email_exists"
+        },
+        {
+            "name": "get_author_posts_url"
+        },
+        {
+            "name": "get_current_user_id"
+        },
+        {
+            "name": "get_currentuserinfo"
+        },
+        {
+            "name": "get_profile"
+        },
+        {
+            "name": "get_role"
+        },
+        {
+            "name": "get_super_admins"
+        },
+        {
+            "name": "get_the_author_meta"
+        },
+        {
+            "name": "get_the_modified_author"
+        },
+        {
+            "name": "get_user_by"
+        },
+        {
+            "name": "get_user_meta"
+        },
+        {
+            "name": "get_userdata"
+        },
+        {
+            "name": "get_usernumposts"
+        },
+        {
+            "name": "get_users"
+        },
+        {
+            "name": "is_multi_author"
+        },
+        {
+            "name": "is_super_admin"
+        },
+        {
+            "name": "is_user_logged_in"
+        },
+        {
+            "name": "map_meta_cap"
+        },
+        {
+            "name": "remove_cap"
+        },
+        {
+            "name": "remove_role"
+        },
+        {
+            "name": "set_current_user"
+        },
+        {
+            "name": "update_user_meta"
+        },
+        {
+            "name": "user_can"
+        },
+        {
+            "name": "user_pass_ok"
+        },
+        {
+            "name": "username_exists"
+        },
+        {
+            "name": "validate_username"
+        },
+        {
+            "name": "wp_authenticate"
+        },
+        {
+            "name": "wp_create_user"
+        },
+        {
+            "name": "wp_delete_user"
+        },
+        {
+            "name": "wp_dropdown_users"
+        },
+        {
+            "name": "wp_get_current_user"
+        },
+        {
+            "name": "wp_insert_user"
+        },
+        {
+            "name": "wp_login_form"
+        },
+        {
+            "name": "wp_loginout"
+        },
+        {
+            "name": "wp_logout"
+        },
+        {
+            "name": "wp_logout_url"
+        },
+        {
+            "name": "wp_set_current_user"
+        },
+        {
+            "name": "wp_set_password"
+        },
+        {
+            "name": "wp_signon"
+        },
+        {
+            "name": "wp_update_user"
+        }
+    ],
+    "feed": [
+        {
+            "name": "bloginfo_rss"
+        },
+        {
+            "name": "comment_author_rss"
+        },
+        {
+            "name": "comment_link"
+        },
+        {
+            "name": "comment_text_rss"
+        },
+        {
+            "name": "do_feed"
+        },
+        {
+            "name": "do_feed_atom"
+        },
+        {
+            "name": "do_feed_rdf"
+        },
+        {
+            "name": "do_feed_rss"
+        },
+        {
+            "name": "do_feed_rss2"
+        },
+        {
+            "name": "fetch_feed"
+        },
+        {
+            "name": "fetch_rss"
+        },
+        {
+            "name": "get_author_feed_link"
+        },
+        {
+            "name": "get_bloginfo_rss"
+        },
+        {
+            "name": "get_category_feed_link"
+        },
+        {
+            "name": "get_comment_author_rss"
+        },
+        {
+            "name": "get_comment_link"
+        },
+        {
+            "name": "get_post_comments_feed_link"
+        },
+        {
+            "name": "get_rss"
+        },
+        {
+            "name": "get_search_comments_feed_link"
+        },
+        {
+            "name": "get_search_feed_link"
+        },
+        {
+            "name": "get_the_category_rss"
+        },
+        {
+            "name": "get_the_title_rss"
+        },
+        {
+            "name": "permalink_single_rss"
+        },
+        {
+            "name": "post_comments_feed_link"
+        },
+        {
+            "name": "rss_enclosure"
+        },
+        {
+            "name": "the_category_rss"
+        },
+        {
+            "name": "the_content_rss"
+        },
+        {
+            "name": "the_excerpt_rss"
+        },
+        {
+            "name": "the_title_rss"
+        },
+        {
+            "name": "wp_rss"
+        }
+    ],
+    "http": [
+        {
+            "name": "wp_get_http_headers"
+        },
+        {
+            "name": "wp_remote_fopen"
+        },
+        {
+            "name": "wp_remote_get"
+        },
+        {
+            "name": "wp_remote_retrieve_body"
+        }
+    ],
+    "comment": [
+        {
+            "name": "add_comment_meta"
+        },
+        {
+            "name": "add_ping"
+        },
+        {
+            "name": "check_comment"
+        },
+        {
+            "name": "comment_ID"
+        },
+        {
+            "name": "comment_author"
+        },
+        {
+            "name": "comment_class"
+        },
+        {
+            "name": "comment_date"
+        },
+        {
+            "name": "comment_form"
+        },
+        {
+            "name": "comment_text"
+        },
+        {
+            "name": "comment_time"
+        },
+        {
+            "name": "comments_number"
+        },
+        {
+            "name": "delete_comment_meta"
+        },
+        {
+            "name": "discover_pingback_server_uri"
+        },
+        {
+            "name": "do_all_pings"
+        },
+        {
+            "name": "do_enclose"
+        },
+        {
+            "name": "do_trackbacks"
+        },
+        {
+            "name": "generic_ping"
+        },
+        {
+            "name": "get_approved_comments"
+        },
+        {
+            "name": "get_avatar"
+        },
+        {
+            "name": "get_comment"
+        },
+        {
+            "name": "get_comment_author"
+        },
+        {
+            "name": "get_comment_date"
+        },
+        {
+            "name": "get_comment_meta"
+        },
+        {
+            "name": "get_comment_pages_count"
+        },
+        {
+            "name": "get_comment_text"
+        },
+        {
+            "name": "get_comment_time"
+        },
+        {
+            "name": "get_comments"
+        },
+        {
+            "name": "get_enclosed"
+        },
+        {
+            "name": "get_lastcommentmodified"
+        },
+        {
+            "name": "get_pung"
+        },
+        {
+            "name": "get_to_ping"
+        },
+        {
+            "name": "have_comments"
+        },
+        {
+            "name": "is_trackback"
+        },
+        {
+            "name": "next_comments_link"
+        },
+        {
+            "name": "paginate_comments_links"
+        },
+        {
+            "name": "pingback"
+        },
+        {
+            "name": "previous_comments_link"
+        },
+        {
+            "name": "privacy_ping_filter"
+        },
+        {
+            "name": "sanitize_comment_cookies"
+        },
+        {
+            "name": "trackback"
+        },
+        {
+            "name": "trackback_url"
+        },
+        {
+            "name": "trackback_url_list"
+        },
+        {
+            "name": "update_comment_meta"
+        },
+        {
+            "name": "weblog_ping"
+        },
+        {
+            "name": "wp_allow_comment"
+        },
+        {
+            "name": "wp_count_comments"
+        },
+        {
+            "name": "wp_delete_comment"
+        },
+        {
+            "name": "wp_filter_comment"
+        },
+        {
+            "name": "wp_get_comment_status"
+        },
+        {
+            "name": "wp_get_current_commenter"
+        },
+        {
+            "name": "wp_insert_comment"
+        },
+        {
+            "name": "wp_list_comments"
+        },
+        {
+            "name": "wp_new_comment"
+        },
+        {
+            "name": "wp_set_comment_status"
+        },
+        {
+            "name": "wp_throttle_comment_flood"
+        },
+        {
+            "name": "wp_update_comment"
+        },
+        {
+            "name": "wp_update_comment_count"
+        },
+        {
+            "name": "wp_update_comment_count_now"
+        }
+    ],
+    "plugin": [
+        {
+            "name": "add_action"
+        },
+        {
+            "name": "add_contextual_help"
+        },
+        {
+            "name": "add_filter"
+        },
+        {
+            "name": "add_settings_error"
+        },
+        {
+            "name": "add_settings_field"
+        },
+        {
+            "name": "add_settings_section"
+        },
+        {
+            "name": "add_shortcode"
+        },
+        {
+            "name": "apply_filters"
+        },
+        {
+            "name": "apply_filters_ref_array"
+        },
+        {
+            "name": "current_filter"
+        },
+        {
+            "name": "did_action"
+        },
+        {
+            "name": "do_action"
+        },
+        {
+            "name": "do_action_ref_array"
+        },
+        {
+            "name": "do_settings_fields"
+        },
+        {
+            "name": "do_settings_sections"
+        },
+        {
+            "name": "do_shortcode"
+        },
+        {
+            "name": "do_shortcode_tag"
+        },
+        {
+            "name": "get_admin_page_title"
+        },
+        {
+            "name": "get_plugin_data"
+        },
+        {
+            "name": "get_plugins"
+        },
+        {
+            "name": "get_settings_errors"
+        },
+        {
+            "name": "get_shortcode_regex"
+        },
+        {
+            "name": "has_action"
+        },
+        {
+            "name": "has_filter"
+        },
+        {
+            "name": "is_active_widget"
+        },
+        {
+            "name": "is_plugin_active"
+        },
+        {
+            "name": "is_plugin_active_for_network"
+        },
+        {
+            "name": "is_plugin_inactive"
+        },
+        {
+            "name": "is_plugin_page"
+        },
+        {
+            "name": "menu_page_url"
+        },
+        {
+            "name": "merge_filters"
+        },
+        {
+            "name": "plugin_basename"
+        },
+        {
+            "name": "plugin_dir_path"
+        },
+        {
+            "name": "plugins_url"
+        },
+        {
+            "name": "register_activation_hook"
+        },
+        {
+            "name": "register_deactivation_hook"
+        },
+        {
+            "name": "register_setting"
+        },
+        {
+            "name": "register_widget"
+        },
+        {
+            "name": "remove_action"
+        },
+        {
+            "name": "remove_all_actions"
+        },
+        {
+            "name": "remove_all_filters"
+        },
+        {
+            "name": "remove_all_shortcodes"
+        },
+        {
+            "name": "remove_filter"
+        },
+        {
+            "name": "remove_shortcode"
+        },
+        {
+            "name": "settings_errors"
+        },
+        {
+            "name": "settings_fields"
+        },
+        {
+            "name": "shortcode_atts"
+        },
+        {
+            "name": "shortcode_parse_atts"
+        },
+        {
+            "name": "strip_shortcodes"
+        },
+        {
+            "name": "the_widget"
+        },
+        {
+            "name": "unregister_setting"
+        },
+        {
+            "name": "unregister_widget"
+        },
+        {
+            "name": "wp_add_dashboard_widget"
+        },
+        {
+            "name": "wp_convert_widget_settings"
+        },
+        {
+            "name": "wp_get_sidebars_widgets"
+        },
+        {
+            "name": "wp_get_widget_defaults"
+        },
+        {
+            "name": "wp_register_sidebar_widget"
+        },
+        {
+            "name": "wp_register_widget_control"
+        },
+        {
+            "name": "wp_set_sidebars_widgets"
+        },
+        {
+            "name": "wp_unregister_sidebar_widget"
+        },
+        {
+            "name": "wp_unregister_widget_control"
+        },
+        {
+            "name": "wp_widget_description"
+        }
+    ],
+    "theme": [
+        {
+            "name": "add_custom_background"
+        },
+        {
+            "name": "add_custom_image_header"
+        },
+        {
+            "name": "add_image_size"
+        },
+        {
+            "name": "add_theme_support"
+        },
+        {
+            "name": "body_class"
+        },
+        {
+            "name": "comments_template"
+        },
+        {
+            "name": "current_theme_supports"
+        },
+        {
+            "name": "dynamic_sidebar"
+        },
+        {
+            "name": "get_404_template"
+        },
+        {
+            "name": "get_archive_template"
+        },
+        {
+            "name": "get_attachment_template"
+        },
+        {
+            "name": "get_author_template"
+        },
+        {
+            "name": "get_body_class"
+        },
+        {
+            "name": "get_category_template"
+        },
+        {
+            "name": "get_comments_popup_template"
+        },
+        {
+            "name": "get_current_theme"
+        },
+        {
+            "name": "get_date_template"
+        },
+        {
+            "name": "get_footer"
+        },
+        {
+            "name": "get_header"
+        },
+        {
+            "name": "get_header_image"
+        },
+        {
+            "name": "get_header_textcolor"
+        },
+        {
+            "name": "get_home_template"
+        },
+        {
+            "name": "get_locale_stylesheet_uri"
+        },
+        {
+            "name": "get_page_template"
+        },
+        {
+            "name": "get_paged_template"
+        },
+        {
+            "name": "get_post_class"
+        },
+        {
+            "name": "get_query_template"
+        },
+        {
+            "name": "get_registered_nav_menus"
+        },
+        {
+            "name": "get_search_form"
+        },
+        {
+            "name": "get_search_template"
+        },
+        {
+            "name": "get_sidebar"
+        },
+        {
+            "name": "get_single_template"
+        },
+        {
+            "name": "get_stylesheet"
+        },
+        {
+            "name": "get_stylesheet_directory"
+        },
+        {
+            "name": "get_stylesheet_directory_uri"
+        },
+        {
+            "name": "get_stylesheet_uri"
+        },
+        {
+            "name": "get_tag_template"
+        },
+        {
+            "name": "get_taxonomy_template"
+        },
+        {
+            "name": "get_template"
+        },
+        {
+            "name": "get_template_directory"
+        },
+        {
+            "name": "get_template_directory_uri"
+        },
+        {
+            "name": "get_template_part"
+        },
+        {
+            "name": "get_theme"
+        },
+        {
+            "name": "get_theme_data"
+        },
+        {
+            "name": "get_theme_file_path"
+        },
+        {
+            "name": "get_theme_file_uri"
+        },
+        {
+            "name": "get_theme_mod"
+        },
+        {
+            "name": "get_theme_mods"
+        },
+        {
+            "name": "get_theme_root"
+        },
+        {
+            "name": "get_theme_root_uri"
+        },
+        {
+            "name": "get_theme_roots"
+        },
+        {
+            "name": "get_theme_support"
+        },
+        {
+            "name": "get_themes"
+        },
+        {
+            "name": "has_header_image"
+        },
+        {
+            "name": "header_image"
+        },
+        {
+            "name": "header_textcolor"
+        },
+        {
+            "name": "in_the_loop"
+        },
+        {
+            "name": "is_active_sidebar"
+        },
+        {
+            "name": "is_admin_bar_showing"
+        },
+        {
+            "name": "is_child_theme"
+        },
+        {
+            "name": "is_customize_preview"
+        },
+        {
+            "name": "is_dynamic_sidebar"
+        },
+        {
+            "name": "language_attributes"
+        },
+        {
+            "name": "load_template"
+        },
+        {
+            "name": "locale_stylesheet"
+        },
+        {
+            "name": "locate_template"
+        },
+        {
+            "name": "post_class"
+        },
+        {
+            "name": "preview_theme"
+        },
+        {
+            "name": "preview_theme_ob_filter"
+        },
+        {
+            "name": "preview_theme_ob_filter_callback"
+        },
+        {
+            "name": "register_nav_menu"
+        },
+        {
+            "name": "register_nav_menus"
+        },
+        {
+            "name": "register_sidebar"
+        },
+        {
+            "name": "register_sidebars"
+        },
+        {
+            "name": "register_theme_directory"
+        },
+        {
+            "name": "remove_theme_mod"
+        },
+        {
+            "name": "remove_theme_mods"
+        },
+        {
+            "name": "remove_theme_support"
+        },
+        {
+            "name": "require_if_theme_supports"
+        },
+        {
+            "name": "search_theme_directories"
+        },
+        {
+            "name": "set_theme_mod"
+        },
+        {
+            "name": "switch_theme"
+        },
+        {
+            "name": "unregister_nav_menu"
+        },
+        {
+            "name": "unregister_sidebar"
+        },
+        {
+            "name": "validate_current_theme"
+        },
+        {
+            "name": "wp_add_inline_style"
+        },
+        {
+            "name": "wp_clean_themes_cache"
+        },
+        {
+            "name": "wp_create_nav_menu"
+        },
+        {
+            "name": "wp_get_archives"
+        },
+        {
+            "name": "wp_get_nav_menu_items"
+        },
+        {
+            "name": "wp_get_theme"
+        },
+        {
+            "name": "wp_get_themes"
+        },
+        {
+            "name": "wp_nav_menu"
+        },
+        {
+            "name": "wp_oembed_remove_provider"
+        },
+        {
+            "name": "wp_page_menu"
+        },
+        {
+            "name": "wp_title"
+        }
+    ],
+    "formatting": [
+        {
+            "name": "absint"
+        },
+        {
+            "name": "add_magic_quotes"
+        },
+        {
+            "name": "addslashes_gpc"
+        },
+        {
+            "name": "antispambot"
+        },
+        {
+            "name": "attribute_escape"
+        },
+        {
+            "name": "backslashit"
+        },
+        {
+            "name": "balanceTags"
+        },
+        {
+            "name": "clean_pre"
+        },
+        {
+            "name": "clean_url"
+        },
+        {
+            "name": "convert_chars"
+        },
+        {
+            "name": "convert_smilies"
+        },
+        {
+            "name": "ent2ncr"
+        },
+        {
+            "name": "esc_attr"
+        },
+        {
+            "name": "esc_html"
+        },
+        {
+            "name": "esc_js"
+        },
+        {
+            "name": "esc_sql"
+        },
+        {
+            "name": "esc_textarea"
+        },
+        {
+            "name": "esc_url"
+        },
+        {
+            "name": "esc_url_raw"
+        },
+        {
+            "name": "force_balance_tags"
+        },
+        {
+            "name": "format_to_edit"
+        },
+        {
+            "name": "format_to_post"
+        },
+        {
+            "name": "funky_javascript_fix"
+        },
+        {
+            "name": "htmlentities2"
+        },
+        {
+            "name": "is_email"
+        },
+        {
+            "name": "js_escape"
+        },
+        {
+            "name": "make_clickable"
+        },
+        {
+            "name": "popuplinks"
+        },
+        {
+            "name": "remove_accents"
+        },
+        {
+            "name": "sanitize_email"
+        },
+        {
+            "name": "sanitize_file_name"
+        },
+        {
+            "name": "sanitize_html_class"
+        },
+        {
+            "name": "sanitize_key"
+        },
+        {
+            "name": "sanitize_mime_type"
+        },
+        {
+            "name": "sanitize_option"
+        },
+        {
+            "name": "sanitize_sql_orderby"
+        },
+        {
+            "name": "sanitize_text_field"
+        },
+        {
+            "name": "sanitize_title"
+        },
+        {
+            "name": "sanitize_title_for_query"
+        },
+        {
+            "name": "sanitize_title_with_dashes"
+        },
+        {
+            "name": "sanitize_user"
+        },
+        {
+            "name": "seems_utf8"
+        },
+        {
+            "name": "stripslashes_deep"
+        },
+        {
+            "name": "trailingslashit"
+        },
+        {
+            "name": "untrailingslashit"
+        },
+        {
+            "name": "url_shorten"
+        },
+        {
+            "name": "urlencode_deep"
+        },
+        {
+            "name": "utf8_uri_encode"
+        },
+        {
+            "name": "wp_filter_kses"
+        },
+        {
+            "name": "wp_filter_nohtml_kses"
+        },
+        {
+            "name": "wp_filter_post_kses"
+        },
+        {
+            "name": "wp_iso_descrambler"
+        },
+        {
+            "name": "wp_kses"
+        },
+        {
+            "name": "wp_kses_array_lc"
+        },
+        {
+            "name": "wp_kses_attr"
+        },
+        {
+            "name": "wp_kses_bad_protocol"
+        },
+        {
+            "name": "wp_kses_bad_protocol_once"
+        },
+        {
+            "name": "wp_kses_bad_protocol_once2"
+        },
+        {
+            "name": "wp_kses_check_attr_val"
+        },
+        {
+            "name": "wp_kses_decode_entities"
+        },
+        {
+            "name": "wp_kses_hair"
+        },
+        {
+            "name": "wp_kses_hook"
+        },
+        {
+            "name": "wp_kses_html_error"
+        },
+        {
+            "name": "wp_kses_js_entities"
+        },
+        {
+            "name": "wp_kses_no_null"
+        },
+        {
+            "name": "wp_kses_normalize_entities"
+        },
+        {
+            "name": "wp_kses_normalize_entities2"
+        },
+        {
+            "name": "wp_kses_post"
+        },
+        {
+            "name": "wp_kses_split"
+        },
+        {
+            "name": "wp_kses_split2"
+        },
+        {
+            "name": "wp_kses_stripslashes"
+        },
+        {
+            "name": "wp_kses_version"
+        },
+        {
+            "name": "wp_make_link_relative"
+        },
+        {
+            "name": "wp_normalize_path"
+        },
+        {
+            "name": "wp_rel_nofollow"
+        },
+        {
+            "name": "wp_richedit_pre"
+        },
+        {
+            "name": "wp_specialchars"
+        },
+        {
+            "name": "wp_trim_words"
+        },
+        {
+            "name": "wpautop"
+        },
+        {
+            "name": "wptexturize"
+        },
+        {
+            "name": "zeroise"
+        }
+    ],
+    "misc": [
+        {
+            "name": "__"
+        },
+        {
+            "name": "_e"
+        },
+        {
+            "name": "_ex"
+        },
+        {
+            "name": "_n"
+        },
+        {
+            "name": "_ngettext"
+        },
+        {
+            "name": "_nx"
+        },
+        {
+            "name": "_x"
+        },
+        {
+            "name": "add_comments_page"
+        },
+        {
+            "name": "add_dashboard_page"
+        },
+        {
+            "name": "add_editor_style"
+        },
+        {
+            "name": "add_group"
+        },
+        {
+            "name": "add_links_page"
+        },
+        {
+            "name": "add_management_page"
+        },
+        {
+            "name": "add_media_page"
+        },
+        {
+            "name": "add_menu_page"
+        },
+        {
+            "name": "add_node"
+        },
+        {
+            "name": "add_object_page"
+        },
+        {
+            "name": "add_option"
+        },
+        {
+            "name": "add_options_page"
+        },
+        {
+            "name": "add_pages_page"
+        },
+        {
+            "name": "add_plugins_page"
+        },
+        {
+            "name": "add_posts_page"
+        },
+        {
+            "name": "add_query_arg"
+        },
+        {
+            "name": "add_rewrite_rule"
+        },
+        {
+            "name": "add_site_option"
+        },
+        {
+            "name": "add_submenu_page"
+        },
+        {
+            "name": "add_theme_page"
+        },
+        {
+            "name": "add_users_page"
+        },
+        {
+            "name": "add_utility_page"
+        },
+        {
+            "name": "admin_url"
+        },
+        {
+            "name": "bool_from_yn"
+        },
+        {
+            "name": "cache_javascript_headers"
+        },
+        {
+            "name": "capital_P_dangit"
+        },
+        {
+            "name": "check_admin_referer"
+        },
+        {
+            "name": "check_ajax_referer"
+        },
+        {
+            "name": "checked"
+        },
+        {
+            "name": "clean_blog_cache"
+        },
+        {
+            "name": "comments_open"
+        },
+        {
+            "name": "content_url"
+        },
+        {
+            "name": "current_time"
+        },
+        {
+            "name": "date_i18n"
+        },
+        {
+            "name": "delete_option"
+        },
+        {
+            "name": "delete_site_option"
+        },
+        {
+            "name": "delete_site_transient"
+        },
+        {
+            "name": "delete_transient"
+        },
+        {
+            "name": "disabled"
+        },
+        {
+            "name": "do_robots"
+        },
+        {
+            "name": "esc_attr__"
+        },
+        {
+            "name": "esc_attr_e"
+        },
+        {
+            "name": "esc_html__"
+        },
+        {
+            "name": "esc_html_e"
+        },
+        {
+            "name": "flush_rewrite_rules"
+        },
+        {
+            "name": "form_option"
+        },
+        {
+            "name": "get_admin_url"
+        },
+        {
+            "name": "get_alloptions"
+        },
+        {
+            "name": "get_bloginfo"
+        },
+        {
+            "name": "get_calendar"
+        },
+        {
+            "name": "get_date_from_gmt"
+        },
+        {
+            "name": "get_day_link"
+        },
+        {
+            "name": "get_gmt_from_date"
+        },
+        {
+            "name": "get_lastpostdate"
+        },
+        {
+            "name": "get_lastpostmodified"
+        },
+        {
+            "name": "get_locale"
+        },
+        {
+            "name": "get_meta_sql"
+        },
+        {
+            "name": "get_month_link"
+        },
+        {
+            "name": "get_node"
+        },
+        {
+            "name": "get_nodes"
+        },
+        {
+            "name": "get_num_queries"
+        },
+        {
+            "name": "get_option"
+        },
+        {
+            "name": "get_post_stati"
+        },
+        {
+            "name": "get_post_statuses"
+        },
+        {
+            "name": "get_posts_by_author_sql"
+        },
+        {
+            "name": "get_query_var"
+        },
+        {
+            "name": "get_site_option"
+        },
+        {
+            "name": "get_site_transient"
+        },
+        {
+            "name": "get_site_url"
+        },
+        {
+            "name": "get_submit_button"
+        },
+        {
+            "name": "get_tax_sql"
+        },
+        {
+            "name": "get_the_date"
+        },
+        {
+            "name": "get_the_modified_time"
+        },
+        {
+            "name": "get_the_time"
+        },
+        {
+            "name": "get_transient"
+        },
+        {
+            "name": "get_user_option"
+        },
+        {
+            "name": "get_weekstartend"
+        },
+        {
+            "name": "get_year_link"
+        },
+        {
+            "name": "has_nav_menu"
+        },
+        {
+            "name": "has_tag"
+        },
+        {
+            "name": "home_url"
+        },
+        {
+            "name": "human_time_diff"
+        },
+        {
+            "name": "in_category"
+        },
+        {
+            "name": "includes_url"
+        },
+        {
+            "name": "is_404"
+        },
+        {
+            "name": "is_admin"
+        },
+        {
+            "name": "is_archive"
+        },
+        {
+            "name": "is_attachment"
+        },
+        {
+            "name": "is_author"
+        },
+        {
+            "name": "is_blog_installed"
+        },
+        {
+            "name": "is_category"
+        },
+        {
+            "name": "is_comments_popup"
+        },
+        {
+            "name": "is_customize_preview"
+        },
+        {
+            "name": "is_date"
+        },
+        {
+            "name": "is_day"
+        },
+        {
+            "name": "is_feed"
+        },
+        {
+            "name": "is_front_page"
+        },
+        {
+            "name": "is_home"
+        },
+        {
+            "name": "is_main_query"
+        },
+        {
+            "name": "is_main_site"
+        },
+        {
+            "name": "is_month"
+        },
+        {
+            "name": "is_multisite"
+        },
+        {
+            "name": "is_new_day"
+        },
+        {
+            "name": "is_page"
+        },
+        {
+            "name": "is_page_template"
+        },
+        {
+            "name": "is_paged"
+        },
+        {
+            "name": "is_preview"
+        },
+        {
+            "name": "is_rtl"
+        },
+        {
+            "name": "is_search"
+        },
+        {
+            "name": "is_serialized"
+        },
+        {
+            "name": "is_serialized_string"
+        },
+        {
+            "name": "is_single"
+        },
+        {
+            "name": "is_singular"
+        },
+        {
+            "name": "is_ssl"
+        },
+        {
+            "name": "is_sticky"
+        },
+        {
+            "name": "is_tag"
+        },
+        {
+            "name": "is_tax"
+        },
+        {
+            "name": "is_time"
+        },
+        {
+            "name": "is_trackback"
+        },
+        {
+            "name": "is_wp_error"
+        },
+        {
+            "name": "is_year"
+        },
+        {
+            "name": "iso8601_timezone_to_offset"
+        },
+        {
+            "name": "iso8601_to_datetime"
+        },
+        {
+            "name": "load_default_textdomain"
+        },
+        {
+            "name": "load_muplugin_textdomain"
+        },
+        {
+            "name": "load_plugin_textdomain"
+        },
+        {
+            "name": "load_textdomain"
+        },
+        {
+            "name": "load_theme_textdomain"
+        },
+        {
+            "name": "log_app"
+        },
+        {
+            "name": "make_url_footnote"
+        },
+        {
+            "name": "maybe_serialize"
+        },
+        {
+            "name": "maybe_unserialize"
+        },
+        {
+            "name": "mysql2date"
+        },
+        {
+            "name": "network_admin_url"
+        },
+        {
+            "name": "network_home_url"
+        },
+        {
+            "name": "network_site_url"
+        },
+        {
+            "name": "nocache_headers"
+        },
+        {
+            "name": "pings_open"
+        },
+        {
+            "name": "plugin_dir_url"
+        },
+        {
+            "name": "post_submit_meta_box"
+        },
+        {
+            "name": "query_posts"
+        },
+        {
+            "name": "remove_menu_page"
+        },
+        {
+            "name": "remove_node"
+        },
+        {
+            "name": "remove_query_arg"
+        },
+        {
+            "name": "remove_submenu_page"
+        },
+        {
+            "name": "rewind_posts"
+        },
+        {
+            "name": "selected"
+        },
+        {
+            "name": "set_site_transient"
+        },
+        {
+            "name": "set_transient"
+        },
+        {
+            "name": "setup_postdata"
+        },
+        {
+            "name": "site_url"
+        },
+        {
+            "name": "spawn_cron"
+        },
+        {
+            "name": "status_header"
+        },
+        {
+            "name": "submit_button"
+        },
+        {
+            "name": "the_date"
+        },
+        {
+            "name": "the_modified_time"
+        },
+        {
+            "name": "the_time"
+        },
+        {
+            "name": "unzip_file"
+        },
+        {
+            "name": "update_option"
+        },
+        {
+            "name": "update_site_option"
+        },
+        {
+            "name": "update_user_option"
+        },
+        {
+            "name": "user_pass_ok"
+        },
+        {
+            "name": "validate_file"
+        },
+        {
+            "name": "validate_file_to_edit"
+        },
+        {
+            "name": "wp"
+        },
+        {
+            "name": "wp_cache_get"
+        },
+        {
+            "name": "wp_cache_reset"
+        },
+        {
+            "name": "wp_cache_set"
+        },
+        {
+            "name": "wp_check_filetype"
+        },
+        {
+            "name": "wp_clear_scheduled_hook"
+        },
+        {
+            "name": "wp_clearcookie"
+        },
+        {
+            "name": "wp_create_nonce"
+        },
+        {
+            "name": "wp_cron"
+        },
+        {
+            "name": "wp_dequeue_script"
+        },
+        {
+            "name": "wp_dequeue_style"
+        },
+        {
+            "name": "wp_deregister_script"
+        },
+        {
+            "name": "wp_deregister_style"
+        },
+        {
+            "name": "wp_die"
+        },
+        {
+            "name": "wp_editor"
+        },
+        {
+            "name": "wp_enqueue_script"
+        },
+        {
+            "name": "wp_enqueue_style"
+        },
+        {
+            "name": "wp_explain_nonce"
+        },
+        {
+            "name": "wp_footer"
+        },
+        {
+            "name": "wp_get_cookie_login"
+        },
+        {
+            "name": "wp_get_image_editor"
+        },
+        {
+            "name": "wp_get_installed_translations"
+        },
+        {
+            "name": "wp_get_original_referer"
+        },
+        {
+            "name": "wp_get_referer"
+        },
+        {
+            "name": "wp_get_schedule"
+        },
+        {
+            "name": "wp_get_schedules"
+        },
+        {
+            "name": "wp_handle_sideload"
+        },
+        {
+            "name": "wp_hash"
+        },
+        {
+            "name": "wp_head"
+        },
+        {
+            "name": "wp_install_defaults"
+        },
+        {
+            "name": "wp_is_mobile"
+        },
+        {
+            "name": "wp_list_pluck"
+        },
+        {
+            "name": "wp_load_alloptions"
+        },
+        {
+            "name": "wp_localize_script"
+        },
+        {
+            "name": "wp_mail"
+        },
+        {
+            "name": "wp_max_upload_size"
+        },
+        {
+            "name": "wp_mkdir_p"
+        },
+        {
+            "name": "wp_new_user_notification"
+        },
+        {
+            "name": "wp_next_scheduled"
+        },
+        {
+            "name": "wp_nonce_ays"
+        },
+        {
+            "name": "wp_nonce_field"
+        },
+        {
+            "name": "wp_nonce_url"
+        },
+        {
+            "name": "wp_notify_moderator"
+        },
+        {
+            "name": "wp_notify_postauthor"
+        },
+        {
+            "name": "wp_original_referer_field"
+        },
+        {
+            "name": "wp_parse_args"
+        },
+        {
+            "name": "wp_password_change_notification"
+        },
+        {
+            "name": "wp_redirect"
+        },
+        {
+            "name": "wp_referer_field"
+        },
+        {
+            "name": "wp_register_script"
+        },
+        {
+            "name": "wp_register_style"
+        },
+        {
+            "name": "wp_reschedule_event"
+        },
+        {
+            "name": "wp_reset_postdata"
+        },
+        {
+            "name": "wp_reset_query"
+        },
+        {
+            "name": "wp_safe_redirect"
+        },
+        {
+            "name": "wp_salt"
+        },
+        {
+            "name": "wp_schedule_event"
+        },
+        {
+            "name": "wp_schedule_single_event"
+        },
+        {
+            "name": "wp_script_is"
+        },
+        {
+            "name": "wp_send_json"
+        },
+        {
+            "name": "wp_send_json_error"
+        },
+        {
+            "name": "wp_send_json_success"
+        },
+        {
+            "name": "wp_set_auth_cookie"
+        },
+        {
+            "name": "wp_strip_all_tags"
+        },
+        {
+            "name": "wp_style_is"
+        },
+        {
+            "name": "wp_text_diff"
+        },
+        {
+            "name": "wp_unschedule_event"
+        },
+        {
+            "name": "wp_upload_bits"
+        },
+        {
+            "name": "wp_upload_dir"
+        },
+        {
+            "name": "wp_verify_nonce"
+        },
+        {
+            "name": "xmlrpc_getpostcategory"
+        },
+        {
+            "name": "xmlrpc_getposttitle"
+        },
+        {
+            "name": "xmlrpc_removepostdata"
+        }
+    ],
+    "multisite": [
+        {
+            "name": "_admin_notice_multisite_activate_plugins_page"
+        },
+        {
+            "name": "add_blog_option"
+        },
+        {
+            "name": "add_existing_user_to_blog"
+        },
+        {
+            "name": "add_new_user_to_blog"
+        },
+        {
+            "name": "add_user_to_blog"
+        },
+        {
+            "name": "admin_notice_feed"
+        },
+        {
+            "name": "avoid_blog_page_permalink_collision"
+        },
+        {
+            "name": "check_import_new_users"
+        },
+        {
+            "name": "check_upload_mimes"
+        },
+        {
+            "name": "check_upload_size"
+        },
+        {
+            "name": "choose_primary_blog"
+        },
+        {
+            "name": "confirm_delete_users"
+        },
+        {
+            "name": "create_empty_blog"
+        },
+        {
+            "name": "delete_blog_option"
+        },
+        {
+            "name": "display_space_usage"
+        },
+        {
+            "name": "domain_exists"
+        },
+        {
+            "name": "filter_SSL"
+        },
+        {
+            "name": "fix_import_form_size"
+        },
+        {
+            "name": "fix_phpmailer_messageid"
+        },
+        {
+            "name": "force_ssl_content"
+        },
+        {
+            "name": "format_code_lang"
+        },
+        {
+            "name": "get_active_blog_for_user"
+        },
+        {
+            "name": "get_admin_users_for_domain"
+        },
+        {
+            "name": "get_blog_count"
+        },
+        {
+            "name": "get_blog_details"
+        },
+        {
+            "name": "get_blog_id_from_url"
+        },
+        {
+            "name": "get_blog_option"
+        },
+        {
+            "name": "get_blog_permalink"
+        },
+        {
+            "name": "get_blog_post"
+        },
+        {
+            "name": "get_blog_status"
+        },
+        {
+            "name": "get_blogaddress_by_domain"
+        },
+        {
+            "name": "get_blogaddress_by_id"
+        },
+        {
+            "name": "get_blogaddress_by_name"
+        },
+        {
+            "name": "get_blogs_of_user"
+        },
+        {
+            "name": "get_current_site"
+        },
+        {
+            "name": "get_current_site_name"
+        },
+        {
+            "name": "get_dashboard_blog"
+        },
+        {
+            "name": "get_dirsize"
+        },
+        {
+            "name": "get_id_from_blogname"
+        },
+        {
+            "name": "get_last_updated"
+        },
+        {
+            "name": "get_most_recent_post_of_user"
+        },
+        {
+            "name": "get_site_allowed_themes"
+        },
+        {
+            "name": "get_sitestats"
+        },
+        {
+            "name": "get_space_allowed"
+        },
+        {
+            "name": "get_space_used"
+        },
+        {
+            "name": "get_upload_space_available"
+        },
+        {
+            "name": "get_user_count"
+        },
+        {
+            "name": "get_user_id_from_string"
+        },
+        {
+            "name": "global_terms"
+        },
+        {
+            "name": "grant_super_admin"
+        },
+        {
+            "name": "insert_blog"
+        },
+        {
+            "name": "install_blog"
+        },
+        {
+            "name": "install_blog_defaults"
+        },
+        {
+            "name": "is_archived"
+        },
+        {
+            "name": "is_blog_user"
+        },
+        {
+            "name": "is_email_address_unsafe"
+        },
+        {
+            "name": "is_subdomain_install"
+        },
+        {
+            "name": "is_upload_space_available"
+        },
+        {
+            "name": "is_user_member_of_blog"
+        },
+        {
+            "name": "is_user_option_local"
+        },
+        {
+            "name": "is_user_spammy"
+        },
+        {
+            "name": "maybe_add_existing_user_to_blog"
+        },
+        {
+            "name": "maybe_redirect_404"
+        },
+        {
+            "name": "ms_cookie_constants"
+        },
+        {
+            "name": "ms_deprecated_blogs_file"
+        },
+        {
+            "name": "ms_file_constants"
+        },
+        {
+            "name": "ms_not_installed"
+        },
+        {
+            "name": "ms_site_check"
+        },
+        {
+            "name": "ms_subdomain_constants"
+        },
+        {
+            "name": "ms_upload_constants"
+        },
+        {
+            "name": "mu_dropdown_languages"
+        },
+        {
+            "name": "new_user_email_admin_notice"
+        },
+        {
+            "name": "newblog_notify_siteadmin"
+        },
+        {
+            "name": "newuser_notify_siteadmin"
+        },
+        {
+            "name": "recurse_dirsize"
+        },
+        {
+            "name": "redirect_mu_dashboard"
+        },
+        {
+            "name": "redirect_this_site"
+        },
+        {
+            "name": "redirect_user_to_blog"
+        },
+        {
+            "name": "refresh_blog_details"
+        },
+        {
+            "name": "refresh_user_details"
+        },
+        {
+            "name": "remove_user_from_blog"
+        },
+        {
+            "name": "restore_current_blog"
+        },
+        {
+            "name": "revoke_super_admin"
+        },
+        {
+            "name": "secret_salt_warning"
+        },
+        {
+            "name": "send_confirmation_on_profile_email"
+        },
+        {
+            "name": "show_post_thumbnail_warning"
+        },
+        {
+            "name": "signup_nonce_check"
+        },
+        {
+            "name": "signup_nonce_fields"
+        },
+        {
+            "name": "site_admin_notice"
+        },
+        {
+            "name": "switch_to_blog"
+        },
+        {
+            "name": "sync_category_tag_slugs"
+        },
+        {
+            "name": "update_archived"
+        },
+        {
+            "name": "update_blog_details"
+        },
+        {
+            "name": "update_blog_option"
+        },
+        {
+            "name": "update_blog_public"
+        },
+        {
+            "name": "update_blog_status"
+        },
+        {
+            "name": "update_option_new_admin_email"
+        },
+        {
+            "name": "update_posts_count"
+        },
+        {
+            "name": "update_user_status"
+        },
+        {
+            "name": "upload_is_file_too_big"
+        },
+        {
+            "name": "upload_is_user_over_quota"
+        },
+        {
+            "name": "upload_is_user_over_quote"
+        },
+        {
+            "name": "upload_size_limit_filter"
+        },
+        {
+            "name": "upload_space_setting"
+        },
+        {
+            "name": "users_can_register_signup_filter"
+        },
+        {
+            "name": "welcome_user_msg_filter"
+        },
+        {
+            "name": "wordpressmu_wp_mail_from"
+        },
+        {
+            "name": "wp_dashboard_quota"
+        },
+        {
+            "name": "wp_get_sites"
+        },
+        {
+            "name": "wpmu_activate_signup"
+        },
+        {
+            "name": "wpmu_admin_redirect_add_updated_param"
+        },
+        {
+            "name": "wpmu_create_blog"
+        },
+        {
+            "name": "wpmu_create_user"
+        },
+        {
+            "name": "wpmu_current_site"
+        },
+        {
+            "name": "wpmu_delete_blog"
+        },
+        {
+            "name": "wpmu_delete_user"
+        },
+        {
+            "name": "wpmu_get_blog_allowedthemes"
+        },
+        {
+            "name": "wpmu_log_new_registrations"
+        },
+        {
+            "name": "wpmu_signup_blog"
+        },
+        {
+            "name": "wpmu_signup_blog_notification"
+        },
+        {
+            "name": "wpmu_signup_user"
+        },
+        {
+            "name": "wpmu_signup_user_notification"
+        },
+        {
+            "name": "wpmu_update_blogs_date"
+        },
+        {
+            "name": "wpmu_validate_blog_signup"
+        },
+        {
+            "name": "wpmu_validate_user_signup"
+        },
+        {
+            "name": "wpmu_welcome_notification"
+        },
+        {
+            "name": "wpmu_welcome_user_notification"
+        }
+    ]
+}

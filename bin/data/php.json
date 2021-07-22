@@ -9854,5 +9854,1406 @@
                 ]
             ]
         }
+    ],
+    "cryptography": [
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/csprng\/functions\/random-bytes.xml",
+            "name": "random_bytes",
+            "alias": null,
+            "params": [
+                [
+                    "$length"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/csprng\/functions\/random-int.xml",
+            "name": "random_int",
+            "alias": null,
+            "params": [
+                [
+                    "$min"
+                ],
+                [
+                    "$max"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-algos.xml",
+            "name": "hash_algos",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-copy.xml",
+            "name": "hash_copy",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-equals.xml",
+            "name": "hash_equals",
+            "alias": null,
+            "params": [
+                [
+                    "$known_string"
+                ],
+                [
+                    "$user_string"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-file.xml",
+            "name": "hash_file",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$filename"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-final.xml",
+            "name": "hash_final",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-hkdf.xml",
+            "name": "hash_hkdf",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$key"
+                ],
+                [
+                    "$length",
+                    "0"
+                ],
+                [
+                    "$info",
+                    "\"\""
+                ],
+                [
+                    "$salt",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-hmac-algos.xml",
+            "name": "hash_hmac_algos",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-hmac-file.xml",
+            "name": "hash_hmac_file",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$key"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-hmac.xml",
+            "name": "hash_hmac",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$key"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-init.xml",
+            "name": "hash_init",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$flags",
+                    "0"
+                ],
+                [
+                    "$key",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-pbkdf2.xml",
+            "name": "hash_pbkdf2",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$password"
+                ],
+                [
+                    "$salt"
+                ],
+                [
+                    "$iterations"
+                ],
+                [
+                    "$length",
+                    "0"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-update-file.xml",
+            "name": "hash_update_file",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$filename"
+                ],
+                [
+                    "$stream_context",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-update-stream.xml",
+            "name": "hash_update_stream",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$stream"
+                ],
+                [
+                    "$length",
+                    "-1"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash-update.xml",
+            "name": "hash_update",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$data"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/hash\/functions\/hash.xml",
+            "name": "hash",
+            "alias": null,
+            "params": [
+                [
+                    "$algo"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$binary",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-add.xml",
+            "name": "sodium_add",
+            "alias": null,
+            "params": [
+                [
+                    "&$string1"
+                ],
+                [
+                    "$string2"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-base642bin.xml",
+            "name": "sodium_base642bin",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ],
+                [
+                    "$id"
+                ],
+                [
+                    "$ignore",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-bin2base64.xml",
+            "name": "sodium_bin2base64",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ],
+                [
+                    "$id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-bin2hex.xml",
+            "name": "sodium_bin2hex",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-compare.xml",
+            "name": "sodium_compare",
+            "alias": null,
+            "params": [
+                [
+                    "$string1"
+                ],
+                [
+                    "$string2"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-aes256gcm-decrypt.xml",
+            "name": "sodium_crypto_aead_aes256gcm_decrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-aes256gcm-encrypt.xml",
+            "name": "sodium_crypto_aead_aes256gcm_encrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-aes256gcm-is-available.xml",
+            "name": "sodium_crypto_aead_aes256gcm_is_available",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-aes256gcm-keygen.xml",
+            "name": "sodium_crypto_aead_aes256gcm_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-decrypt.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_decrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-encrypt.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_encrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-ietf-decrypt.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_ietf_decrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-ietf-encrypt.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_ietf_encrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-ietf-keygen.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_ietf_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-chacha20poly1305-keygen.xml",
+            "name": "sodium_crypto_aead_chacha20poly1305_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-xchacha20poly1305-ietf-decrypt.xml",
+            "name": "sodium_crypto_aead_xchacha20poly1305_ietf_decrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-xchacha20poly1305-ietf-encrypt.xml",
+            "name": "sodium_crypto_aead_xchacha20poly1305_ietf_encrypt",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$additional_data"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-aead-xchacha20poly1305-ietf-keygen.xml",
+            "name": "sodium_crypto_aead_xchacha20poly1305_ietf_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-auth-keygen.xml",
+            "name": "sodium_crypto_auth_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-auth-verify.xml",
+            "name": "sodium_crypto_auth_verify",
+            "alias": null,
+            "params": [
+                [
+                    "$mac"
+                ],
+                [
+                    "$message"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-auth.xml",
+            "name": "sodium_crypto_auth",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-keypair-from-secretkey-and-publickey.xml",
+            "name": "sodium_crypto_box_keypair_from_secretkey_and_publickey",
+            "alias": null,
+            "params": [
+                [
+                    "$secret_key"
+                ],
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-keypair.xml",
+            "name": "sodium_crypto_box_keypair",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-open.xml",
+            "name": "sodium_crypto_box_open",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-publickey-from-secretkey.xml",
+            "name": "sodium_crypto_box_publickey_from_secretkey",
+            "alias": null,
+            "params": [
+                [
+                    "$secret_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-publickey.xml",
+            "name": "sodium_crypto_box_publickey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-seal-open.xml",
+            "name": "sodium_crypto_box_seal_open",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-seal.xml",
+            "name": "sodium_crypto_box_seal",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-secretkey.xml",
+            "name": "sodium_crypto_box_secretkey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box-seed-keypair.xml",
+            "name": "sodium_crypto_box_seed_keypair",
+            "alias": null,
+            "params": [
+                [
+                    "$seed"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-box.xml",
+            "name": "sodium_crypto_box",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-generichash-final.xml",
+            "name": "sodium_crypto_generichash_final",
+            "alias": null,
+            "params": [
+                [
+                    "&$state"
+                ],
+                [
+                    "$length",
+                    "SODIUM_CRYPTO_GENERICHASH_BYTES"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-generichash-init.xml",
+            "name": "sodium_crypto_generichash_init",
+            "alias": null,
+            "params": [
+                [
+                    "$key",
+                    "\"\""
+                ],
+                [
+                    "$length",
+                    "SODIUM_CRYPTO_GENERICHASH_BYTES"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-generichash-keygen.xml",
+            "name": "sodium_crypto_generichash_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-generichash-update.xml",
+            "name": "sodium_crypto_generichash_update",
+            "alias": null,
+            "params": [
+                [
+                    "&$state"
+                ],
+                [
+                    "$message"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-generichash.xml",
+            "name": "sodium_crypto_generichash",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$key",
+                    "\"\""
+                ],
+                [
+                    "$length",
+                    "SODIUM_CRYPTO_GENERICHASH_BYTES"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kdf-derive-from-key.xml",
+            "name": "sodium_crypto_kdf_derive_from_key",
+            "alias": null,
+            "params": [
+                [
+                    "$subkey_length"
+                ],
+                [
+                    "$subkey_id"
+                ],
+                [
+                    "$context"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kdf-keygen.xml",
+            "name": "sodium_crypto_kdf_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-client-session-keys.xml",
+            "name": "sodium_crypto_kx_client_session_keys",
+            "alias": null,
+            "params": [
+                [
+                    "$client_key_pair"
+                ],
+                [
+                    "$server_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-keypair.xml",
+            "name": "sodium_crypto_kx_keypair",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-publickey.xml",
+            "name": "sodium_crypto_kx_publickey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-secretkey.xml",
+            "name": "sodium_crypto_kx_secretkey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-seed-keypair.xml",
+            "name": "sodium_crypto_kx_seed_keypair",
+            "alias": null,
+            "params": [
+                [
+                    "$seed"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-kx-server-session-keys.xml",
+            "name": "sodium_crypto_kx_server_session_keys",
+            "alias": null,
+            "params": [
+                [
+                    "$server_key_pair"
+                ],
+                [
+                    "$client_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-scryptsalsa208sha256-str-verify.xml",
+            "name": "sodium_crypto_pwhash_scryptsalsa208sha256_str_verify",
+            "alias": null,
+            "params": [
+                [
+                    "$hash"
+                ],
+                [
+                    "$password"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-scryptsalsa208sha256-str.xml",
+            "name": "sodium_crypto_pwhash_scryptsalsa208sha256_str",
+            "alias": null,
+            "params": [
+                [
+                    "$password"
+                ],
+                [
+                    "$opslimit"
+                ],
+                [
+                    "$memlimit"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-scryptsalsa208sha256.xml",
+            "name": "sodium_crypto_pwhash_scryptsalsa208sha256",
+            "alias": null,
+            "params": [
+                [
+                    "$length"
+                ],
+                [
+                    "$password"
+                ],
+                [
+                    "$salt"
+                ],
+                [
+                    "$opslimit"
+                ],
+                [
+                    "$memlimit"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-str-needs-rehash.xml",
+            "name": "sodium_crypto_pwhash_str_needs_rehash",
+            "alias": null,
+            "params": [
+                [
+                    "$password"
+                ],
+                [
+                    "$opslimit"
+                ],
+                [
+                    "$memlimit"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-str-verify.xml",
+            "name": "sodium_crypto_pwhash_str_verify",
+            "alias": null,
+            "params": [
+                [
+                    "$hash"
+                ],
+                [
+                    "$password"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash-str.xml",
+            "name": "sodium_crypto_pwhash_str",
+            "alias": null,
+            "params": [
+                [
+                    "$password"
+                ],
+                [
+                    "$opslimit"
+                ],
+                [
+                    "$memlimit"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-pwhash.xml",
+            "name": "sodium_crypto_pwhash",
+            "alias": null,
+            "params": [
+                [
+                    "$length"
+                ],
+                [
+                    "$password"
+                ],
+                [
+                    "$salt"
+                ],
+                [
+                    "$opslimit"
+                ],
+                [
+                    "$memlimit"
+                ],
+                [
+                    "$algo",
+                    "SODIUM_CRYPTO_PWHASH_ALG_DEFAULT"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-scalarmult-base.xml",
+            "name": "sodium_crypto_scalarmult_base",
+            "alias": "sodium_crypto_box_publickey_from_secretkey",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-scalarmult.xml",
+            "name": "sodium_crypto_scalarmult",
+            "alias": null,
+            "params": [
+                [
+                    "$n"
+                ],
+                [
+                    "$p"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretbox-keygen.xml",
+            "name": "sodium_crypto_secretbox_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretbox-open.xml",
+            "name": "sodium_crypto_secretbox_open",
+            "alias": null,
+            "params": [
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretbox.xml",
+            "name": "sodium_crypto_secretbox",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-init-pull.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_init_pull",
+            "alias": null,
+            "params": [
+                [
+                    "$header"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-init-push.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_init_push",
+            "alias": null,
+            "params": [
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-keygen.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-pull.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_pull",
+            "alias": null,
+            "params": [
+                [
+                    "&$state"
+                ],
+                [
+                    "$ciphertext"
+                ],
+                [
+                    "$additional_data",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-push.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_push",
+            "alias": null,
+            "params": [
+                [
+                    "&$state"
+                ],
+                [
+                    "$message"
+                ],
+                [
+                    "$additional_data",
+                    "\"\""
+                ],
+                [
+                    "$tag",
+                    "SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_MESSAGE"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-secretstream-xchacha20poly1305-rekey.xml",
+            "name": "sodium_crypto_secretstream_xchacha20poly1305_rekey",
+            "alias": null,
+            "params": [
+                [
+                    "&$state"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-shorthash-keygen.xml",
+            "name": "sodium_crypto_shorthash_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-shorthash.xml",
+            "name": "sodium_crypto_shorthash",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-detached.xml",
+            "name": "sodium_crypto_sign_detached",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$secret_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-ed25519-pk-to-curve25519.xml",
+            "name": "sodium_crypto_sign_ed25519_pk_to_curve25519",
+            "alias": null,
+            "params": [
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-ed25519-sk-to-curve25519.xml",
+            "name": "sodium_crypto_sign_ed25519_sk_to_curve25519",
+            "alias": null,
+            "params": [
+                [
+                    "$secret_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-keypair-from-secretkey-and-publickey.xml",
+            "name": "sodium_crypto_sign_keypair_from_secretkey_and_publickey",
+            "alias": null,
+            "params": [
+                [
+                    "$secret_key"
+                ],
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-keypair.xml",
+            "name": "sodium_crypto_sign_keypair",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-open.xml",
+            "name": "sodium_crypto_sign_open",
+            "alias": null,
+            "params": [
+                [
+                    "$signed_message"
+                ],
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-publickey-from-secretkey.xml",
+            "name": "sodium_crypto_sign_publickey_from_secretkey",
+            "alias": null,
+            "params": [
+                [
+                    "$secret_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-publickey.xml",
+            "name": "sodium_crypto_sign_publickey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-secretkey.xml",
+            "name": "sodium_crypto_sign_secretkey",
+            "alias": null,
+            "params": [
+                [
+                    "$key_pair"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-seed-keypair.xml",
+            "name": "sodium_crypto_sign_seed_keypair",
+            "alias": null,
+            "params": [
+                [
+                    "$seed"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign-verify-detached.xml",
+            "name": "sodium_crypto_sign_verify_detached",
+            "alias": null,
+            "params": [
+                [
+                    "$signature"
+                ],
+                [
+                    "$message"
+                ],
+                [
+                    "$public_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-sign.xml",
+            "name": "sodium_crypto_sign",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$secret_key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-stream-keygen.xml",
+            "name": "sodium_crypto_stream_keygen",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-stream-xor.xml",
+            "name": "sodium_crypto_stream_xor",
+            "alias": null,
+            "params": [
+                [
+                    "$message"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-crypto-stream.xml",
+            "name": "sodium_crypto_stream",
+            "alias": null,
+            "params": [
+                [
+                    "$length"
+                ],
+                [
+                    "$nonce"
+                ],
+                [
+                    "$key"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-hex2bin.xml",
+            "name": "sodium_hex2bin",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ],
+                [
+                    "$ignore",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-increment.xml",
+            "name": "sodium_increment",
+            "alias": null,
+            "params": [
+                [
+                    "&$string"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-memcmp.xml",
+            "name": "sodium_memcmp",
+            "alias": null,
+            "params": [
+                [
+                    "$string1"
+                ],
+                [
+                    "$string2"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-memzero.xml",
+            "name": "sodium_memzero",
+            "alias": null,
+            "params": [
+                [
+                    "&$string"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-pad.xml",
+            "name": "sodium_pad",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ],
+                [
+                    "$block_size"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/sodium\/functions\/sodium-unpad.xml",
+            "name": "sodium_unpad",
+            "alias": null,
+            "params": [
+                [
+                    "$string"
+                ],
+                [
+                    "$block_size"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/password\/functions\/password-algos.xml",
+            "name": "password_algos",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/password\/functions\/password-get-info.xml",
+            "name": "password_get_info",
+            "alias": null,
+            "params": [
+                [
+                    "$hash"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/password\/functions\/password-hash.xml",
+            "name": "password_hash",
+            "alias": null,
+            "params": [
+                [
+                    "$password"
+                ],
+                [
+                    "$algo"
+                ],
+                [
+                    "$options",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/password\/functions\/password-needs-rehash.xml",
+            "name": "password_needs_rehash",
+            "alias": null,
+            "params": [
+                [
+                    "$hash"
+                ],
+                [
+                    "$algo"
+                ],
+                [
+                    "$options",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/password\/functions\/password-verify.xml",
+            "name": "password_verify",
+            "alias": null,
+            "params": [
+                [
+                    "$password"
+                ],
+                [
+                    "$hash"
+                ]
+            ]
+        }
     ]
 }

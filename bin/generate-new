@@ -2,16 +2,7 @@
 <?php
 
 $root = realpath(dirname(__FILE__) . "/../");
-$specs = glob("$root/bin/data/*json");
 
-foreach($specs as $file) {
-    $rootNamespace = ucfirst(str_replace(".json", "", basename($file)));
-    $content = file_get_contents($file);
-    $data = json_decode($content, true);
-    foreach($data as $namespace => $functions) {
-        generateFile($rootNamespace, ucfirst($namespace), $functions);
-    }
-}
 
 function generateFile($rootNamespace, $namespace, $functions=[]) {
     $body =  '<?php namespace ' . implode("\\", ['Proxyz', $rootNamespace, $namespace]) . ";\n";
@@ -50,20 +41,44 @@ function generateFile($rootNamespace, $namespace, $functions=[]) {
 }
 
 function fnString($function) {
-    $params = array_map(function($param) {
-        return implode("=", $param);
-    }, $function['params']);
-    $params = implode(", ", $params);
-    $returns = array_map(function($param) {
-        return str_replace("...", "", $param[0]);
-    }, $function['params']);
-    $returns = implode(", ", $returns);
+    // If we have the method signature ... use it
+    if (isset($function['params'])) {
+        $params = array_map(function($param) {
+            return implode("=", $param);
+        }, $function['params']);
+        $params = implode(", ", $params);
+        $returns = array_map(function($param) {
+            return str_replace("...", "", $param[0]);
+        }, $function['params']);
+        $returns = '[' . implode(", ", $returns) . ']';
+    } else {
+        // No params signature ... fallback to variadic
+        $params = '...$args';
+        $returns = '$args';
+    }
 
     return implode("\n",  [
         "",
         "function {$function['name']}($params) {",
         "  \$count_ = func_num_args();",
-        "  return \Proxyz\callFunction(__FUNCTION__, array_slice([$returns], 0, \$count_));",
+        "  return \Proxyz\callFunction(__FUNCTION__, array_slice($returns, 0, \$count_));",
         "}",
     ]);
 } 
+
+$specs = glob("$root/bin/data/*json");
+$functionsList = [];
+
+foreach($specs as $file) {
+    echo "[i] Found spec file=$file\n";
+    $rootNamespace = ucfirst(str_replace(".json", "", basename($file)));
+    $content = file_get_contents($file);
+    $data = json_decode($content, true);
+    foreach($data as $namespace => $functions) {
+        foreach($functions as $fn) {
+            $functionsList[] = $fn['name'];
+        }
+        generateFile($rootNamespace, ucfirst($namespace), $functions);
+    }
+}
+sort($functionsList);
