@@ -18,6 +18,9 @@ $generate = [
     'socket' => ['socket/functions'], 
     'stream' => ['stream/functions', ], 
     'datetime' => ['datetime/functions', ], 
+    'ldap' => ['ldap/functions', ], 
+    'posix' => ['posix/functions', ], 
+    'archive'=> ['zlib/functions', 'zip/functions', 'bzip2/functions']
 ];
 
 if (!is_dir("$root/bin/data/doc-en")) {

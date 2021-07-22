@@ -7812,5 +7812,2047 @@
             "alias": "",
             "params": []
         }
+    ],
+    "ldap": [
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-8859-to-t61.xml",
+            "name": "ldap_8859_to_t61",
+            "alias": null,
+            "params": [
+                [
+                    "$value"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-add-ext.xml",
+            "name": "ldap_add_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-add.xml",
+            "name": "ldap_add",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-bind-ext.xml",
+            "name": "ldap_bind_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn",
+                    "null"
+                ],
+                [
+                    "$password",
+                    "null"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-bind.xml",
+            "name": "ldap_bind",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn",
+                    "null"
+                ],
+                [
+                    "$password",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-close.xml",
+            "name": "ldap_close",
+            "alias": "ldap_unbind",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-compare.xml",
+            "name": "ldap_compare",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$attribute"
+                ],
+                [
+                    "$value"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-connect.xml",
+            "name": "ldap_connect",
+            "alias": null,
+            "params": [
+                [
+                    "$uri",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-control-paged-result-response.xml",
+            "name": "ldap_control_paged_result_response",
+            "alias": null,
+            "params": [
+                [
+                    "$link"
+                ],
+                [
+                    "$result"
+                ],
+                [
+                    "&$cookie",
+                    "null"
+                ],
+                [
+                    "&$estimated",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-control-paged-result.xml",
+            "name": "ldap_control_paged_result",
+            "alias": null,
+            "params": [
+                [
+                    "$link"
+                ],
+                [
+                    "$pagesize"
+                ],
+                [
+                    "$iscritical",
+                    "false"
+                ],
+                [
+                    "$cookie",
+                    "\"\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-count-entries.xml",
+            "name": "ldap_count_entries",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-count-references.xml",
+            "name": "ldap_count_references",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-delete-ext.xml",
+            "name": "ldap_delete_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-delete.xml",
+            "name": "ldap_delete",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-dn2ufn.xml",
+            "name": "ldap_dn2ufn",
+            "alias": null,
+            "params": [
+                [
+                    "$dn"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-err2str.xml",
+            "name": "ldap_err2str",
+            "alias": null,
+            "params": [
+                [
+                    "$errno"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-errno.xml",
+            "name": "ldap_errno",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-error.xml",
+            "name": "ldap_error",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-escape.xml",
+            "name": "ldap_escape",
+            "alias": null,
+            "params": [
+                [
+                    "$value"
+                ],
+                [
+                    "$ignore",
+                    "\"\""
+                ],
+                [
+                    "$flags",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-exop-passwd.xml",
+            "name": "ldap_exop_passwd",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$user",
+                    "\"\""
+                ],
+                [
+                    "$old_password",
+                    "\"\""
+                ],
+                [
+                    "$new_password",
+                    "\"\""
+                ],
+                [
+                    "&$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-exop-refresh.xml",
+            "name": "ldap_exop_refresh",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$ttl"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-exop-whoami.xml",
+            "name": "ldap_exop_whoami",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-exop.xml",
+            "name": "ldap_exop",
+            "alias": null,
+            "params": [
+                [
+                    "$link"
+                ],
+                [
+                    "$reqoid"
+                ],
+                [
+                    "$reqdata",
+                    "null"
+                ],
+                [
+                    "$serverctrls",
+                    "null"
+                ],
+                [
+                    "&$retdata",
+                    "null"
+                ],
+                [
+                    "&$retoid",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-explode-dn.xml",
+            "name": "ldap_explode_dn",
+            "alias": null,
+            "params": [
+                [
+                    "$dn"
+                ],
+                [
+                    "$with_attrib"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-first-attribute.xml",
+            "name": "ldap_first_attribute",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-first-entry.xml",
+            "name": "ldap_first_entry",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-first-reference.xml",
+            "name": "ldap_first_reference",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-free-result.xml",
+            "name": "ldap_free_result",
+            "alias": null,
+            "params": [
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-attributes.xml",
+            "name": "ldap_get_attributes",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-dn.xml",
+            "name": "ldap_get_dn",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-entries.xml",
+            "name": "ldap_get_entries",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-option.xml",
+            "name": "ldap_get_option",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$option"
+                ],
+                [
+                    "&$value",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-values-len.xml",
+            "name": "ldap_get_values_len",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$attribute"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-get-values.xml",
+            "name": "ldap_get_values",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$attribute"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-list.xml",
+            "name": "ldap_list",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$base"
+                ],
+                [
+                    "$filter"
+                ],
+                [
+                    "$attributes",
+                    "[]"
+                ],
+                [
+                    "$attributes_only",
+                    "null"
+                ],
+                [
+                    "$sizelimit",
+                    "-1"
+                ],
+                [
+                    "$timelimit",
+                    "-1"
+                ],
+                [
+                    "$deref",
+                    "null"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-add-ext.xml",
+            "name": "ldap_mod_add_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-add.xml",
+            "name": "ldap_mod_add",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-del-ext.xml",
+            "name": "ldap_mod_del_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-del.xml",
+            "name": "ldap_mod_del",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-replace-ext.xml",
+            "name": "ldap_mod_replace_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-mod-replace.xml",
+            "name": "ldap_mod_replace",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-modify-batch.xml",
+            "name": "ldap_modify_batch",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$modifications_info"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-modify.xml",
+            "name": "ldap_modify",
+            "alias": "ldap_mod_replace",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-next-attribute.xml",
+            "name": "ldap_next_attribute",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-next-entry.xml",
+            "name": "ldap_next_entry",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-next-reference.xml",
+            "name": "ldap_next_reference",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-parse-exop.xml",
+            "name": "ldap_parse_exop",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ],
+                [
+                    "&$response_data",
+                    "null"
+                ],
+                [
+                    "&$response_oid",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-parse-reference.xml",
+            "name": "ldap_parse_reference",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$entry"
+                ],
+                [
+                    "&$referrals"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-parse-result.xml",
+            "name": "ldap_parse_result",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$result"
+                ],
+                [
+                    "&$error_code"
+                ],
+                [
+                    "&$matched_dn",
+                    "null"
+                ],
+                [
+                    "&$error_message",
+                    "null"
+                ],
+                [
+                    "&$referrals",
+                    "null"
+                ],
+                [
+                    "&$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-read.xml",
+            "name": "ldap_read",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$base"
+                ],
+                [
+                    "$filter"
+                ],
+                [
+                    "$attributes",
+                    "[]"
+                ],
+                [
+                    "$attributes_only",
+                    "null"
+                ],
+                [
+                    "$sizelimit",
+                    "-1"
+                ],
+                [
+                    "$timelimit",
+                    "-1"
+                ],
+                [
+                    "$deref",
+                    "null"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-rename-ext.xml",
+            "name": "ldap_rename_ext",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$new_rdn"
+                ],
+                [
+                    "$new_parent"
+                ],
+                [
+                    "$delete_old_rdn"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-rename.xml",
+            "name": "ldap_rename",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn"
+                ],
+                [
+                    "$new_rdn"
+                ],
+                [
+                    "$new_parent"
+                ],
+                [
+                    "$delete_old_rdn"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-sasl-bind.xml",
+            "name": "ldap_sasl_bind",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$dn",
+                    "null"
+                ],
+                [
+                    "$password",
+                    "null"
+                ],
+                [
+                    "$mech",
+                    "null"
+                ],
+                [
+                    "$realm",
+                    "null"
+                ],
+                [
+                    "$authc_id",
+                    "null"
+                ],
+                [
+                    "$authz_id",
+                    "null"
+                ],
+                [
+                    "$props",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-search.xml",
+            "name": "ldap_search",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$base"
+                ],
+                [
+                    "$filter"
+                ],
+                [
+                    "$attributes",
+                    "[]"
+                ],
+                [
+                    "$attributes_only",
+                    "null"
+                ],
+                [
+                    "$sizelimit",
+                    "-1"
+                ],
+                [
+                    "$timelimit",
+                    "-1"
+                ],
+                [
+                    "$deref",
+                    "null"
+                ],
+                [
+                    "$controls",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-set-option.xml",
+            "name": "ldap_set_option",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$option"
+                ],
+                [
+                    "$value"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-set-rebind-proc.xml",
+            "name": "ldap_set_rebind_proc",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ],
+                [
+                    "$callback"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-sort.xml",
+            "name": "ldap_sort",
+            "alias": null,
+            "params": [
+                [
+                    "$link"
+                ],
+                [
+                    "$result"
+                ],
+                [
+                    "$sortfilter"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-start-tls.xml",
+            "name": "ldap_start_tls",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-t61-to-8859.xml",
+            "name": "ldap_t61_to_8859",
+            "alias": null,
+            "params": [
+                [
+                    "$value"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/ldap\/functions\/ldap-unbind.xml",
+            "name": "ldap_unbind",
+            "alias": null,
+            "params": [
+                [
+                    "$ldap"
+                ]
+            ]
+        }
+    ],
+    "posix": [
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-access.xml",
+            "name": "posix_access",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$flags",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-ctermid.xml",
+            "name": "posix_ctermid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-errno.xml",
+            "name": "posix_errno",
+            "alias": "posix_get_last_error",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-get-last-error.xml",
+            "name": "posix_get_last_error",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getcwd.xml",
+            "name": "posix_getcwd",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getegid.xml",
+            "name": "posix_getegid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-geteuid.xml",
+            "name": "posix_geteuid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getgid.xml",
+            "name": "posix_getgid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getgrgid.xml",
+            "name": "posix_getgrgid",
+            "alias": null,
+            "params": [
+                [
+                    "$group_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getgrnam.xml",
+            "name": "posix_getgrnam",
+            "alias": null,
+            "params": [
+                [
+                    "$name"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getgroups.xml",
+            "name": "posix_getgroups",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getlogin.xml",
+            "name": "posix_getlogin",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getpgid.xml",
+            "name": "posix_getpgid",
+            "alias": null,
+            "params": [
+                [
+                    "$process_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getpgrp.xml",
+            "name": "posix_getpgrp",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getpid.xml",
+            "name": "posix_getpid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getppid.xml",
+            "name": "posix_getppid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getpwnam.xml",
+            "name": "posix_getpwnam",
+            "alias": null,
+            "params": [
+                [
+                    "$username"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getpwuid.xml",
+            "name": "posix_getpwuid",
+            "alias": null,
+            "params": [
+                [
+                    "$user_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getrlimit.xml",
+            "name": "posix_getrlimit",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getsid.xml",
+            "name": "posix_getsid",
+            "alias": null,
+            "params": [
+                [
+                    "$process_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-getuid.xml",
+            "name": "posix_getuid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-initgroups.xml",
+            "name": "posix_initgroups",
+            "alias": null,
+            "params": [
+                [
+                    "$username"
+                ],
+                [
+                    "$group_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-isatty.xml",
+            "name": "posix_isatty",
+            "alias": null,
+            "params": [
+                [
+                    "$file_descriptor"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-kill.xml",
+            "name": "posix_kill",
+            "alias": null,
+            "params": [
+                [
+                    "$process_id"
+                ],
+                [
+                    "$signal"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-mkfifo.xml",
+            "name": "posix_mkfifo",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$permissions"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-mknod.xml",
+            "name": "posix_mknod",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$flags"
+                ],
+                [
+                    "$major",
+                    "null"
+                ],
+                [
+                    "$minor",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setegid.xml",
+            "name": "posix_setegid",
+            "alias": null,
+            "params": [
+                [
+                    "$group_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-seteuid.xml",
+            "name": "posix_seteuid",
+            "alias": null,
+            "params": [
+                [
+                    "$user_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setgid.xml",
+            "name": "posix_setgid",
+            "alias": null,
+            "params": [
+                [
+                    "$group_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setpgid.xml",
+            "name": "posix_setpgid",
+            "alias": null,
+            "params": [
+                [
+                    "$process_id"
+                ],
+                [
+                    "$process_group_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setrlimit.xml",
+            "name": "posix_setrlimit",
+            "alias": null,
+            "params": [
+                [
+                    "$resource"
+                ],
+                [
+                    "$soft_limit"
+                ],
+                [
+                    "$hard_limit"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setsid.xml",
+            "name": "posix_setsid",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-setuid.xml",
+            "name": "posix_setuid",
+            "alias": null,
+            "params": [
+                [
+                    "$user_id"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-strerror.xml",
+            "name": "posix_strerror",
+            "alias": null,
+            "params": [
+                [
+                    "$error_code"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-times.xml",
+            "name": "posix_times",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-ttyname.xml",
+            "name": "posix_ttyname",
+            "alias": null,
+            "params": [
+                [
+                    "$file_descriptor"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/posix\/functions\/posix-uname.xml",
+            "name": "posix_uname",
+            "alias": "",
+            "params": []
+        }
+    ],
+    "archive": [
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/deflate_add.xml",
+            "name": "deflate_add",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$flush_mode",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/deflate_init.xml",
+            "name": "deflate_init",
+            "alias": null,
+            "params": [
+                [
+                    "$encoding"
+                ],
+                [
+                    "$options",
+                    "[]"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzclose.xml",
+            "name": "gzclose",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzcompress.xml",
+            "name": "gzcompress",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$level",
+                    "-1"
+                ],
+                [
+                    "$encoding",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzdecode.xml",
+            "name": "gzdecode",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$max_length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzdeflate.xml",
+            "name": "gzdeflate",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$level",
+                    "-1"
+                ],
+                [
+                    "$encoding",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzencode.xml",
+            "name": "gzencode",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$level",
+                    "-1"
+                ],
+                [
+                    "$encoding",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzeof.xml",
+            "name": "gzeof",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzfile.xml",
+            "name": "gzfile",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$use_include_path",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzgetc.xml",
+            "name": "gzgetc",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzgets.xml",
+            "name": "gzgets",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ],
+                [
+                    "$length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzgetss.xml",
+            "name": "gzgetss",
+            "alias": null,
+            "params": [
+                [
+                    "$zp"
+                ],
+                [
+                    "$length"
+                ],
+                [
+                    "$allowable_tags",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzinflate.xml",
+            "name": "gzinflate",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$max_length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzopen.xml",
+            "name": "gzopen",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$mode"
+                ],
+                [
+                    "$use_include_path",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzpassthru.xml",
+            "name": "gzpassthru",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzputs.xml",
+            "name": "gzputs",
+            "alias": "gzwrite",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzread.xml",
+            "name": "gzread",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ],
+                [
+                    "$length"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzrewind.xml",
+            "name": "gzrewind",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzseek.xml",
+            "name": "gzseek",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ],
+                [
+                    "$offset"
+                ],
+                [
+                    "$whence",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gztell.xml",
+            "name": "gztell",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzuncompress.xml",
+            "name": "gzuncompress",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$max_length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/gzwrite.xml",
+            "name": "gzwrite",
+            "alias": null,
+            "params": [
+                [
+                    "$stream"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/inflate-get-read-len.xml",
+            "name": "inflate_get_read_len",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/inflate-get-status.xml",
+            "name": "inflate_get_status",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/inflate_add.xml",
+            "name": "inflate_add",
+            "alias": null,
+            "params": [
+                [
+                    "$context"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$flush_mode",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/inflate_init.xml",
+            "name": "inflate_init",
+            "alias": null,
+            "params": [
+                [
+                    "$encoding"
+                ],
+                [
+                    "$options",
+                    "[]"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/readgzfile.xml",
+            "name": "readgzfile",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ],
+                [
+                    "$use_include_path",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/zlib-decode.xml",
+            "name": "zlib_decode",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$max_length",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/zlib-encode.xml",
+            "name": "zlib_encode",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$encoding"
+                ],
+                [
+                    "$level",
+                    "-1"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zlib\/functions\/zlib-get-coding-type.xml",
+            "name": "zlib_get_coding_type",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-close.xml",
+            "name": "zip_close",
+            "alias": null,
+            "params": [
+                [
+                    "$zip"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-close.xml",
+            "name": "zip_entry_close",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-compressedsize.xml",
+            "name": "zip_entry_compressedsize",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-compressionmethod.xml",
+            "name": "zip_entry_compressionmethod",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-filesize.xml",
+            "name": "zip_entry_filesize",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-name.xml",
+            "name": "zip_entry_name",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-open.xml",
+            "name": "zip_entry_open",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_dp"
+                ],
+                [
+                    "$zip_entry"
+                ],
+                [
+                    "$mode",
+                    "\"rb\""
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-entry-read.xml",
+            "name": "zip_entry_read",
+            "alias": null,
+            "params": [
+                [
+                    "$zip_entry"
+                ],
+                [
+                    "$len",
+                    "1024"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-open.xml",
+            "name": "zip_open",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/zip\/functions\/zip-read.xml",
+            "name": "zip_read",
+            "alias": null,
+            "params": [
+                [
+                    "$zip"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzclose.xml",
+            "name": "bzclose",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzcompress.xml",
+            "name": "bzcompress",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$block_size",
+                    "4"
+                ],
+                [
+                    "$work_factor",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzdecompress.xml",
+            "name": "bzdecompress",
+            "alias": null,
+            "params": [
+                [
+                    "$data"
+                ],
+                [
+                    "$use_less_memory",
+                    "false"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzerrno.xml",
+            "name": "bzerrno",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzerror.xml",
+            "name": "bzerror",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzerrstr.xml",
+            "name": "bzerrstr",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzflush.xml",
+            "name": "bzflush",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzopen.xml",
+            "name": "bzopen",
+            "alias": null,
+            "params": [
+                [
+                    "$file"
+                ],
+                [
+                    "$mode"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzread.xml",
+            "name": "bzread",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ],
+                [
+                    "$length",
+                    "1024"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/bzip2\/functions\/bzwrite.xml",
+            "name": "bzwrite",
+            "alias": null,
+            "params": [
+                [
+                    "$bz"
+                ],
+                [
+                    "$data"
+                ],
+                [
+                    "$length",
+                    "null"
+                ]
+            ]
+        }
     ]
 }

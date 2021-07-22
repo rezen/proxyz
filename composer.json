@@ -56,7 +56,10 @@
 			"src/Proxyz/Php/Mail.php",
 			"src/Proxyz/Php/Info.php",
 			"src/Proxyz/Php/Stream.php",
-			"src/Proxyz/Php/Datetime.php"
+			"src/Proxyz/Php/Datetime.php",
+			"src/Proxyz/Php/Ldap.php",
+			"src/Proxyz/Php/Posix.php",
+			"src/Proxyz/Php/Archive.php"
 		],
 		"exclude-from-classmap": []
 	},
