@@ -59,7 +59,11 @@ $instance = \Proxyz\newInstance(\SplFileInfo::class, [$first]);
 ## Testing
 ```sh
 composer install
+# Unit tests
 ./vendor/bin/phpunit  -d memory_limit=1024M --testdox ./test/tests/ 
+
+# Performance of functions
+php test/performance.php 
 ```
 
 ## Todo

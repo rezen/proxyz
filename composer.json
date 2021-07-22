@@ -25,7 +25,8 @@
 	"require-dev": {
 		"symfony/dom-crawler": "^5.1",
 		"symfony/css-selector": "^5.1",
-		"phpunit/phpunit": "^8.0"
+		"phpunit/phpunit": "^8.0",
+		"bvanhoekelen/performance": "^2.5"
 	},
 	"autoload": {
 		"psr-4": {},
