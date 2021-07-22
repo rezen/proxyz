@@ -309,6 +309,62 @@ function mail($to, $subject, $message, $additional_headers=[], $additional_param
   $count_ = func_num_args();
   return \Proxyz\callFunction(__FUNCTION__, array_slice([$to, $subject, $message, $additional_headers, $additional_params], 0, $count_));
 }
+function mailparse_determine_best_xfer_encoding($fp) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$fp], 0, $count_));
+}
+function mailparse_msg_create() {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([], 0, $count_));
+}
+function mailparse_msg_extract_part($mimemail, $msgbody, $callbackfunc=null) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail, $msgbody, $callbackfunc], 0, $count_));
+}
+function mailparse_msg_extract_part_file($mimemail, $filename, $callbackfunc=null) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail, $filename, $callbackfunc], 0, $count_));
+}
+function mailparse_msg_extract_whole_part_file($mimemail, $filename, $callbackfunc=null) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail, $filename, $callbackfunc], 0, $count_));
+}
+function mailparse_msg_free($mimemail) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail], 0, $count_));
+}
+function mailparse_msg_get_part($mimemail, $mimesection) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail, $mimesection], 0, $count_));
+}
+function mailparse_msg_get_part_data($mimemail) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail], 0, $count_));
+}
+function mailparse_msg_get_structure($mimemail) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail], 0, $count_));
+}
+function mailparse_msg_parse($mimemail, $data) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$mimemail, $data], 0, $count_));
+}
+function mailparse_msg_parse_file($filename) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$filename], 0, $count_));
+}
+function mailparse_rfc822_parse_addresses($addresses) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$addresses], 0, $count_));
+}
+function mailparse_stream_encode($sourcefp, $destfp, $encoding) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$sourcefp, $destfp, $encoding], 0, $count_));
+}
+function mailparse_uudecode_all($fp) {
+  $count_ = func_num_args();
+  return \Proxyz\callFunction(__FUNCTION__, array_slice([$fp], 0, $count_));
+}
 function methods() {
   return [
     "ezmlm_hash",
@@ -387,5 +443,19 @@ function methods() {
     "imap_utf7_encode",
     "imap_utf8",
     "imap_utf8_to_mutf7",
-    "mail"
+    "mail",
+    "mailparse_determine_best_xfer_encoding",
+    "mailparse_msg_create",
+    "mailparse_msg_extract_part",
+    "mailparse_msg_extract_part_file",
+    "mailparse_msg_extract_whole_part_file",
+    "mailparse_msg_free",
+    "mailparse_msg_get_part",
+    "mailparse_msg_get_part_data",
+    "mailparse_msg_get_structure",
+    "mailparse_msg_parse",
+    "mailparse_msg_parse_file",
+    "mailparse_rfc822_parse_addresses",
+    "mailparse_stream_encode",
+    "mailparse_uudecode_all"
 ];}

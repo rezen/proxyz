@@ -3571,6 +3571,175 @@
                     "\"\""
                 ]
             ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-determine-best-xfer-encoding.xml",
+            "name": "mailparse_determine_best_xfer_encoding",
+            "alias": null,
+            "params": [
+                [
+                    "$fp"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-create.xml",
+            "name": "mailparse_msg_create",
+            "alias": "",
+            "params": []
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-extract-part-file.xml",
+            "name": "mailparse_msg_extract_part_file",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ],
+                [
+                    "$filename"
+                ],
+                [
+                    "$callbackfunc",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-extract-part.xml",
+            "name": "mailparse_msg_extract_part",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ],
+                [
+                    "$msgbody"
+                ],
+                [
+                    "$callbackfunc",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-extract-whole-part-file.xml",
+            "name": "mailparse_msg_extract_whole_part_file",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ],
+                [
+                    "$filename"
+                ],
+                [
+                    "$callbackfunc",
+                    "null"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-free.xml",
+            "name": "mailparse_msg_free",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-get-part-data.xml",
+            "name": "mailparse_msg_get_part_data",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-get-part.xml",
+            "name": "mailparse_msg_get_part",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ],
+                [
+                    "$mimesection"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-get-structure.xml",
+            "name": "mailparse_msg_get_structure",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-parse-file.xml",
+            "name": "mailparse_msg_parse_file",
+            "alias": null,
+            "params": [
+                [
+                    "$filename"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-msg-parse.xml",
+            "name": "mailparse_msg_parse",
+            "alias": null,
+            "params": [
+                [
+                    "$mimemail"
+                ],
+                [
+                    "$data"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-rfc822-parse-addresses.xml",
+            "name": "mailparse_rfc822_parse_addresses",
+            "alias": null,
+            "params": [
+                [
+                    "$addresses"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-stream-encode.xml",
+            "name": "mailparse_stream_encode",
+            "alias": null,
+            "params": [
+                [
+                    "$sourcefp"
+                ],
+                [
+                    "$destfp"
+                ],
+                [
+                    "$encoding"
+                ]
+            ]
+        },
+        {
+            "file": "\/Users\/ahermosilla\/vcs\/proxyz\/bin\/data\/doc-en\/reference\/mailparse\/functions\/mailparse-uudecode-all.xml",
+            "name": "mailparse_uudecode_all",
+            "alias": null,
+            "params": [
+                [
+                    "$fp"
+                ]
+            ]
         }
     ],
     "info": [

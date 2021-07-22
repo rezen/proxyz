@@ -10,7 +10,7 @@ $generate = [
     'session' => ['session/functions', ], 
     'mysqli' => ['mysqli/mysqli'], 
     
-    'mail' => ['imap/functions', 'mail/functions', ], 
+    'mail' => ['imap/functions', 'mail/functions',  'mailparse/functions'], 
     'info' => ['info/functions', ], 
     'openssl' => ['openssl/functions'], 
     'xml' => ['xml/functions', ], 
