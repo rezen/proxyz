@@ -62,6 +62,21 @@ class FunctionsTest extends UnitTest
         \Proxyz\Php\Info\phpinfo();
     }
 
+
+    function test_wp_namespace() {
+        $this->expectException(\Throwable::class);
+        \Proxyz\Wp\Post\add_post_meta(1, 'meta_key', 'meta_value');
+    }
+
+    function test_wp_namespace_too() {
+        \Proxyz\addOverride('add_post_meta', function($post_id, $key=null, $value=null) {
+            return func_get_args();
+        });
+        $args = [1, 'meta_key', 'meta_value'];
+        $response = \Proxyz\Wp\Post\add_post_meta(...$args);
+        $this->assertEquals($args, $response);
+    }
+
     function test_variable_passing() {
         $options = [
             CURLOPT_URL            => 'http://example.com',
@@ -87,8 +102,6 @@ class FunctionsTest extends UnitTest
             array_keys($info), 
             array_keys($info2)
         );
-
-
     }
     
 }
