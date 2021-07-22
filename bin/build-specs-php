@@ -182,11 +182,11 @@ function parseFunctionReference($file)
             } else {
                 $initializer = (string)$param->initializer;
             }
-            if (empty($initializer) && $isOptional) {
+            if (strlen($initializer) === 0 && $isOptional) {
                 $initializer = 'null';
             }
         
-            if (!empty($initializer))
+            if (strlen($initializer) > 0)
             {
                 $length = strlen($initializer);
                 if ($initializer[0] === "&" && $initializer[$length - 1] === ';')
