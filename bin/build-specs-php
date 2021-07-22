@@ -66,9 +66,10 @@ function getAliasParams($file, $alias) {
 }
 
 function parseFunctionReference($file) {
+    global $root;
     if (!file_exists($file)) {
         return [
-            'file' => $file, 
+            'file' => str_replace($root, "", $file),
             'name' => null, 
             'alias' => null, 
         ];
@@ -126,7 +127,7 @@ function parseFunctionReference($file) {
         }
         $returnType = $method->type;
         $signature = [
-            'file' => $file, 
+            'file' => str_replace($root, "", $file),
             'name' => $methodName, 
             'alias' => null, 'params' => [], 
         ];
