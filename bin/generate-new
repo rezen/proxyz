@@ -68,19 +68,33 @@ function fnString($function) {
 
 $specs = glob("$root/bin/data/*json");
 $functionsList = [];
-
+$functionsByNamespace = [];
 foreach($specs as $file) {
     echo "[i] Found spec file=$file\n";
     $rootNamespace = ucfirst(str_replace(".json", "", basename($file)));
     $content = file_get_contents($file);
     $data = json_decode($content, true);
     foreach($data as $namespace => $functions) {
+        $fullNamespace = implode("\\", ['Proxyz', ucfirst($rootNamespace), ucfirst($namespace)]);
+        $functionsByNamespace[$fullNamespace] = [];
         foreach($functions as $fn) {
-            $functionsList[$fn['name']] = implode("\\", ['Proxyz', ucfirst($rootNamespace), ucfirst($namespace)]);
+            $functionsList[$fn['name']] = $fullNamespace;
+            $functionsByNamespace[$fullNamespace][] = $fn['name'];
         }
         generateFile($rootNamespace, ucfirst($namespace), $functions);
     }
 }
+
+// Generate readme in docs as reference
+$readme = "# Functions\n";
+foreach($functionsByNamespace as $namespace => $fns) {
+    $readme .= "### $namespace\n";
+    foreach($fns as $fn) {
+        $readme .= "- `$fn`\n";
+    }
+    $readme .= "\n"; 
+}
+file_put_contents($root . "/docs/README.md", $readme);
 
 // Put map of function to namespace in file
 ksort($functionsList);
