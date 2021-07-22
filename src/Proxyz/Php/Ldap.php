@@ -55,7 +55,7 @@ function ldap_errno($ldap) {
 function ldap_error($ldap) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap]);
 }
-function ldap_escape($value, $ignore="", $flags=null) {
+function ldap_escape($value, $ignore="", $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$value, $ignore, $flags]);
 }
 function ldap_exop($link, $reqoid, $reqdata=null, $serverctrls=null, &$retdata=null, &$retoid=null) {
@@ -103,7 +103,7 @@ function ldap_get_values($ldap, $entry, $attribute) {
 function ldap_get_values_len($ldap, $entry, $attribute) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $entry, $attribute]);
 }
-function ldap_list($ldap, $base, $filter, $attributes=[], $attributes_only=null, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
+function ldap_list($ldap, $base, $filter, $attributes=[], $attributes_only=0, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $base, $filter, $attributes, $attributes_only, $sizelimit, $timelimit, $deref, $controls]);
 }
 function ldap_mod_add($ldap, $dn, $entry, $controls=null) {
@@ -148,7 +148,7 @@ function ldap_parse_reference($ldap, $entry, &$referrals) {
 function ldap_parse_result($ldap, $result, &$error_code, &$matched_dn=null, &$error_message=null, &$referrals=null, &$controls=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $result, &$error_code, &$matched_dn, &$error_message, &$referrals, &$controls]);
 }
-function ldap_read($ldap, $base, $filter, $attributes=[], $attributes_only=null, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
+function ldap_read($ldap, $base, $filter, $attributes=[], $attributes_only=0, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $base, $filter, $attributes, $attributes_only, $sizelimit, $timelimit, $deref, $controls]);
 }
 function ldap_rename($ldap, $dn, $new_rdn, $new_parent, $delete_old_rdn, $controls=null) {
@@ -160,7 +160,7 @@ function ldap_rename_ext($ldap, $dn, $new_rdn, $new_parent, $delete_old_rdn, $co
 function ldap_sasl_bind($ldap, $dn=null, $password=null, $mech=null, $realm=null, $authc_id=null, $authz_id=null, $props=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $dn, $password, $mech, $realm, $authc_id, $authz_id, $props]);
 }
-function ldap_search($ldap, $base, $filter, $attributes=[], $attributes_only=null, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
+function ldap_search($ldap, $base, $filter, $attributes=[], $attributes_only=0, $sizelimit=-1, $timelimit=-1, $deref=LDAP_DEREF_NEVER, $controls=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$ldap, $base, $filter, $attributes, $attributes_only, $sizelimit, $timelimit, $deref, $controls]);
 }
 function ldap_set_option($ldap, $option, $value) {

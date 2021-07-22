@@ -4,7 +4,7 @@
 function bzclose($bz) {
   return \Proxyz\callFunction(__FUNCTION__, [$bz]);
 }
-function bzcompress($data, $block_size=4, $work_factor=null) {
+function bzcompress($data, $block_size=4, $work_factor=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $block_size, $work_factor]);
 }
 function bzdecompress($data, $use_less_memory=false) {
@@ -43,7 +43,7 @@ function gzclose($stream) {
 function gzcompress($data, $level=-1, $encoding=ZLIB_ENCODING_DEFLATE) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $level, $encoding]);
 }
-function gzdecode($data, $max_length=null) {
+function gzdecode($data, $max_length=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $max_length]);
 }
 function gzdeflate($data, $level=-1, $encoding=ZLIB_ENCODING_RAW) {
@@ -55,7 +55,7 @@ function gzencode($data, $level=-1, $encoding=ZLIB_ENCODING_GZIP) {
 function gzeof($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function gzfile($filename, $use_include_path=null) {
+function gzfile($filename, $use_include_path=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $use_include_path]);
 }
 function gzgetc($stream) {
@@ -67,10 +67,10 @@ function gzgets($stream, $length=null) {
 function gzgetss($zp, $length, $allowable_tags=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$zp, $length, $allowable_tags]);
 }
-function gzinflate($data, $max_length=null) {
+function gzinflate($data, $max_length=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $max_length]);
 }
-function gzopen($filename, $mode, $use_include_path=null) {
+function gzopen($filename, $mode, $use_include_path=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $mode, $use_include_path]);
 }
 function gzpassthru($stream) {
@@ -91,7 +91,7 @@ function gzseek($stream, $offset, $whence=SEEK_SET) {
 function gztell($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function gzuncompress($data, $max_length=null) {
+function gzuncompress($data, $max_length=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $max_length]);
 }
 function gzwrite($stream, $data, $length=null) {
@@ -109,7 +109,7 @@ function inflate_get_status($context) {
 function inflate_init($encoding, $options=[]) {
   return \Proxyz\callFunction(__FUNCTION__, [$encoding, $options]);
 }
-function readgzfile($filename, $use_include_path=null) {
+function readgzfile($filename, $use_include_path=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $use_include_path]);
 }
 function zip_close($zip) {
@@ -142,7 +142,7 @@ function zip_open($filename) {
 function zip_read($zip) {
   return \Proxyz\callFunction(__FUNCTION__, [$zip]);
 }
-function zlib_decode($data, $max_length=null) {
+function zlib_decode($data, $max_length=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$data, $max_length]);
 }
 function zlib_encode($data, $encoding, $level=-1) {

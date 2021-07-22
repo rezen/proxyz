@@ -88,7 +88,7 @@ function getmyuid() {
 function getopt($short_options, $long_options=[], &$rest_index=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$short_options, $long_options, &$rest_index]);
 }
-function getrusage($mode=null) {
+function getrusage($mode=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$mode]);
 }
 function ini_alter() {

@@ -46,7 +46,7 @@ function fflush($stream) {
 function fgetc($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function fgetcsv($stream, $length=null, $separator=",", $enclosure='"', $escape="\\") {
+function fgetcsv($stream, $length=0, $separator=",", $enclosure='"', $escape="\\") {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $length, $separator, $enclosure, $escape]);
 }
 function fgets($handle, $length=null) {
@@ -55,16 +55,16 @@ function fgets($handle, $length=null) {
 function fgetss($handle, $length=null, $allowable_tags=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$handle, $length, $allowable_tags]);
 }
-function file($filename, $flags=null, $context=null) {
+function file($filename, $flags=0, $context=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags, $context]);
 }
 function file_exists($filename) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename]);
 }
-function file_get_contents($filename, $use_include_path=false, $context=null, $offset=null, $length=null) {
+function file_get_contents($filename, $use_include_path=false, $context=null, $offset=0, $length=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $use_include_path, $context, $offset, $length]);
 }
-function file_put_contents($filename, $data, $flags=null, $context=null) {
+function file_put_contents($filename, $data, $flags=0, $context=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $data, $flags, $context]);
 }
 function fileatime($filename) {
@@ -97,7 +97,7 @@ function filetype($filename) {
 function flock($stream, $operation, &$would_block=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $operation, &$would_block]);
 }
-function fnmatch($pattern, $filename, $flags=null) {
+function fnmatch($pattern, $filename, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$pattern, $filename, $flags]);
 }
 function fopen($filename, $mode, $use_include_path=false, $context=null) {
@@ -133,7 +133,7 @@ function ftruncate($stream, $size) {
 function fwrite($handle, $string, $length=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$handle, $string, $length]);
 }
-function glob($pattern, $flags=null) {
+function glob($pattern, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$pattern, $flags]);
 }
 function is_dir($filename) {

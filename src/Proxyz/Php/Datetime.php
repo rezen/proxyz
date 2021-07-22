@@ -73,7 +73,7 @@ function date_sunrise($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=n
 function date_sunset($timestamp, $returnFormat=SUNFUNCS_RET_STRING, $latitude=null, $longitude=null, $zenith=null, $utcOffset=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$timestamp, $returnFormat, $latitude, $longitude, $zenith, $utcOffset]);
 }
-function date_time_set($object, $hour, $minute, $second=null, $microsecond=null) {
+function date_time_set($object, $hour, $minute, $second=0, $microsecond=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$object, $hour, $minute, $second, $microsecond]);
 }
 function date_timestamp_get() {

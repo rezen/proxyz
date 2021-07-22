@@ -1,7 +1,7 @@
 <?php namespace Proxyz\Php\Posix;
 // This file is dynamically generated ... do not edit 
 
-function posix_access($filename, $flags=null) {
+function posix_access($filename, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags]);
 }
 function posix_ctermid() {
@@ -76,7 +76,7 @@ function posix_kill($process_id, $signal) {
 function posix_mkfifo($filename, $permissions) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $permissions]);
 }
-function posix_mknod($filename, $flags, $major=null, $minor=null) {
+function posix_mknod($filename, $flags, $major=0, $minor=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename, $flags, $major, $minor]);
 }
 function posix_setegid($group_id) {

@@ -28,13 +28,13 @@ function ftp_delete($ftp, $filename) {
 function ftp_exec($ftp, $command) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $command]);
 }
-function ftp_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $stream, $remote_filename, $mode, $offset]);
 }
-function ftp_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=null) {
+function ftp_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $stream, $mode, $offset]);
 }
-function ftp_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $local_filename, $remote_filename, $mode, $offset]);
 }
 function ftp_get_option($ftp, $option) {
@@ -55,16 +55,16 @@ function ftp_mlsd($ftp, $directory) {
 function ftp_nb_continue($ftp) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp]);
 }
-function ftp_nb_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_nb_fget($ftp, $stream, $remote_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $stream, $remote_filename, $mode, $offset]);
 }
-function ftp_nb_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=null) {
+function ftp_nb_fput($ftp, $remote_filename, $stream, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $stream, $mode, $offset]);
 }
-function ftp_nb_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_nb_get($ftp, $local_filename, $remote_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $local_filename, $remote_filename, $mode, $offset]);
 }
-function ftp_nb_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_nb_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $local_filename, $mode, $offset]);
 }
 function ftp_nlist($ftp, $directory) {
@@ -73,7 +73,7 @@ function ftp_nlist($ftp, $directory) {
 function ftp_pasv($ftp, $enable) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $enable]);
 }
-function ftp_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=null) {
+function ftp_put($ftp, $remote_filename, $local_filename, $mode=FTP_BINARY, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$ftp, $remote_filename, $local_filename, $mode, $offset]);
 }
 function ftp_pwd($ftp) {

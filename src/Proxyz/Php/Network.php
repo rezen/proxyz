@@ -46,7 +46,7 @@ function getservbyname($service, $protocol) {
 function getservbyport($port, $protocol) {
   return \Proxyz\callFunction(__FUNCTION__, [$port, $protocol]);
 }
-function header($header, $replace=true, $response_code=null) {
+function header($header, $replace=true, $response_code=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$header, $replace, $response_code]);
 }
 function header_register_callback($callback) {
@@ -61,7 +61,7 @@ function headers_list() {
 function headers_sent(&$filename=null, &$line=null) {
   return \Proxyz\callFunction(__FUNCTION__, [&$filename, &$line]);
 }
-function http_response_code($response_code=null) {
+function http_response_code($response_code=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$response_code]);
 }
 function inet_ntop($ip) {

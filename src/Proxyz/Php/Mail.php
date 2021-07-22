@@ -19,7 +19,7 @@ function imap_base64($string) {
 function imap_binary($string) {
   return \Proxyz\callFunction(__FUNCTION__, [$string]);
 }
-function imap_body($imap, $message_num, $flags=null) {
+function imap_body($imap, $message_num, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
 }
 function imap_bodystruct($imap, $message_num, $section) {
@@ -28,10 +28,10 @@ function imap_bodystruct($imap, $message_num, $section) {
 function imap_check($imap) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap]);
 }
-function imap_clearflag_full($imap, $sequence, $flag, $options=null) {
+function imap_clearflag_full($imap, $sequence, $flag, $options=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flag, $options]);
 }
-function imap_close($imap, $flags=null) {
+function imap_close($imap, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $flags]);
 }
 function imap_create() {
@@ -40,7 +40,7 @@ function imap_create() {
 function imap_createmailbox($imap, $mailbox) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox]);
 }
-function imap_delete($imap, $message_num, $flags=null) {
+function imap_delete($imap, $message_num, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
 }
 function imap_deletemailbox($imap, $mailbox) {
@@ -52,19 +52,19 @@ function imap_errors() {
 function imap_expunge($imap) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap]);
 }
-function imap_fetch_overview($imap, $sequence, $flags=null) {
+function imap_fetch_overview($imap, $sequence, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flags]);
 }
-function imap_fetchbody($imap, $message_num, $section, $flags=null) {
+function imap_fetchbody($imap, $message_num, $section, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $section, $flags]);
 }
-function imap_fetchheader($imap, $message_num, $flags=null) {
+function imap_fetchheader($imap, $message_num, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
 }
-function imap_fetchmime($imap, $message_num, $section, $flags=null) {
+function imap_fetchmime($imap, $message_num, $section, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $section, $flags]);
 }
-function imap_fetchstructure($imap, $message_num, $flags=null) {
+function imap_fetchstructure($imap, $message_num, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
 }
 function imap_fetchtext() {
@@ -91,7 +91,7 @@ function imap_getsubscribed($imap, $reference, $pattern) {
 function imap_header() {
   return \Proxyz\callFunction(__FUNCTION__, []);
 }
-function imap_headerinfo($imap, $message_num, $from_length=null, $subject_length=null) {
+function imap_headerinfo($imap, $message_num, $from_length=0, $subject_length=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $from_length, $subject_length]);
 }
 function imap_headers($imap) {
@@ -121,10 +121,10 @@ function imap_mail($to, $subject, $message, $additional_headers=null, $cc=null, 
 function imap_mail_compose($envelope, $bodies) {
   return \Proxyz\callFunction(__FUNCTION__, [$envelope, $bodies]);
 }
-function imap_mail_copy($imap, $message_nums, $mailbox, $flags=null) {
+function imap_mail_copy($imap, $message_nums, $mailbox, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_nums, $mailbox, $flags]);
 }
-function imap_mail_move($imap, $message_nums, $mailbox, $flags=null) {
+function imap_mail_move($imap, $message_nums, $mailbox, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_nums, $mailbox, $flags]);
 }
 function imap_mailboxmsginfo($imap) {
@@ -145,7 +145,7 @@ function imap_num_msg($imap) {
 function imap_num_recent($imap) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap]);
 }
-function imap_open($mailbox, $user, $password, $flags=null, $retries=null, $options=[]) {
+function imap_open($mailbox, $user, $password, $flags=0, $retries=0, $options=[]) {
   return \Proxyz\callFunction(__FUNCTION__, [$mailbox, $user, $password, $flags, $retries, $options]);
 }
 function imap_ping($imap) {
@@ -160,7 +160,7 @@ function imap_rename() {
 function imap_renamemailbox($imap, $from, $to) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $from, $to]);
 }
-function imap_reopen($imap, $mailbox, $flags=null, $retries=null) {
+function imap_reopen($imap, $mailbox, $flags=0, $retries=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox, $flags, $retries]);
 }
 function imap_rfc822_parse_adrlist($string, $default_hostname) {
@@ -172,7 +172,7 @@ function imap_rfc822_parse_headers($headers, $default_hostname="UNKNOWN") {
 function imap_rfc822_write_address($mailbox, $hostname, $personal) {
   return \Proxyz\callFunction(__FUNCTION__, [$mailbox, $hostname, $personal]);
 }
-function imap_savebody($imap, $file, $message_num, $section="", $flags=null) {
+function imap_savebody($imap, $file, $message_num, $section="", $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $file, $message_num, $section, $flags]);
 }
 function imap_scan() {
@@ -190,10 +190,10 @@ function imap_set_quota($imap, $quota_root, $mailbox_size) {
 function imap_setacl($imap, $mailbox, $user_id, $rights) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $mailbox, $user_id, $rights]);
 }
-function imap_setflag_full($imap, $sequence, $flag, $options=null) {
+function imap_setflag_full($imap, $sequence, $flag, $options=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $sequence, $flag, $options]);
 }
-function imap_sort($imap, $criteria, $reverse, $flags=null, $search_criteria=null, $charset=null) {
+function imap_sort($imap, $criteria, $reverse, $flags=0, $search_criteria=null, $charset=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $criteria, $reverse, $flags, $search_criteria, $charset]);
 }
 function imap_status($imap, $mailbox, $flags) {
@@ -211,7 +211,7 @@ function imap_timeout($timeout_type, $timeout=-1) {
 function imap_uid($imap, $message_num) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num]);
 }
-function imap_undelete($imap, $message_num, $flags=null) {
+function imap_undelete($imap, $message_num, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$imap, $message_num, $flags]);
 }
 function imap_unsubscribe($imap, $mailbox) {

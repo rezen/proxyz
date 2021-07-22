@@ -34,7 +34,7 @@ function stream_context_set_option($stream_or_context, $wrapper, $option, $value
 function stream_context_set_params($context, $params) {
   return \Proxyz\callFunction(__FUNCTION__, [$context, $params]);
 }
-function stream_copy_to_stream($source, $dest, $maxlength=-1, $offset=null) {
+function stream_copy_to_stream($source, $dest, $maxlength=-1, $offset=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$source, $dest, $maxlength, $offset]);
 }
 function stream_filter_append($stream, $filtername, $read_write=null, $params=null) {
@@ -82,7 +82,7 @@ function stream_register_wrapper() {
 function stream_resolve_include_path($filename) {
   return \Proxyz\callFunction(__FUNCTION__, [$filename]);
 }
-function stream_select(&$read, &$write, &$except, $tv_sec, $tv_usec=null) {
+function stream_select(&$read, &$write, &$except, $tv_sec, $tv_usec=0) {
   return \Proxyz\callFunction(__FUNCTION__, [&$read, &$write, &$except, $tv_sec, $tv_usec]);
 }
 function stream_set_blocking($stream, $enable) {
@@ -94,7 +94,7 @@ function stream_set_chunk_size($stream, $size) {
 function stream_set_read_buffer($stream, $size) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $size]);
 }
-function stream_set_timeout($stream, $seconds, $microseconds=null) {
+function stream_set_timeout($stream, $seconds, $microseconds=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream, $seconds, $microseconds]);
 }
 function stream_set_write_buffer($stream, $buffer) {
@@ -115,10 +115,10 @@ function stream_socket_get_name($handle, $want_peer) {
 function stream_socket_pair($domain, $type, $protocol) {
   return \Proxyz\callFunction(__FUNCTION__, [$domain, $type, $protocol]);
 }
-function stream_socket_recvfrom($socket, $length, $flags=null, &$address=null) {
+function stream_socket_recvfrom($socket, $length, $flags=0, &$address=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$socket, $length, $flags, &$address]);
 }
-function stream_socket_sendto($socket, $data, $flags=null, $address=null) {
+function stream_socket_sendto($socket, $data, $flags=0, $address=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$socket, $data, $flags, $address]);
 }
 function stream_socket_server($local_socket, &$errno=null, &$errstr=null, $flags=STREAM_SERVER_BIND | STREAM_SERVER_LISTEN, $context=null) {
@@ -130,7 +130,7 @@ function stream_socket_shutdown($stream, $mode) {
 function stream_supports_lock($stream) {
   return \Proxyz\callFunction(__FUNCTION__, [$stream]);
 }
-function stream_wrapper_register($protocol, $class, $flags=null) {
+function stream_wrapper_register($protocol, $class, $flags=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$protocol, $class, $flags]);
 }
 function stream_wrapper_restore($protocol) {

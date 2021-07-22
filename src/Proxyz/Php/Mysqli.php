@@ -7,7 +7,7 @@ function mysqli_affected_rows($mysql) {
 function mysqli_autocommit($mysql, $enable) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $enable]);
 }
-function mysqli_begin_transaction($mysql, $flags=null, $name=null) {
+function mysqli_begin_transaction($mysql, $flags=0, $name=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
 function mysqli_change_user($mysql, $username, $password, $database) {
@@ -19,7 +19,7 @@ function mysqli_character_set_name($mysql) {
 function mysqli_close($mysql) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_commit($mysql, $flags=null, $name=null) {
+function mysqli_commit($mysql, $flags=0, $name=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
 function mysqli_connect($hostname=null, $username=null, $password=null, $database="", $port=null, $socket=null) {
@@ -103,7 +103,7 @@ function mysqli_options($mysql, $option, $value) {
 function mysqli_ping($mysql) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_poll(&$read, &$error, &$reject, $seconds, $microseconds=null) {
+function mysqli_poll(&$read, &$error, &$reject, $seconds, $microseconds=0) {
   return \Proxyz\callFunction(__FUNCTION__, [&$read, &$error, &$reject, $seconds, $microseconds]);
 }
 function mysqli_prepare($mysql, $query) {
@@ -130,7 +130,7 @@ function mysqli_refresh($mysql, $flags) {
 function mysqli_release_savepoint($mysql, $name) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $name]);
 }
-function mysqli_rollback($mysql, $flags=null, $name=null) {
+function mysqli_rollback($mysql, $flags=0, $name=null) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $flags, $name]);
 }
 function mysqli_savepoint($mysql, $name) {
@@ -154,7 +154,7 @@ function mysqli_stat($mysql) {
 function mysqli_stmt_init($mysql) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql]);
 }
-function mysqli_store_result($mysql, $mode=null) {
+function mysqli_store_result($mysql, $mode=0) {
   return \Proxyz\callFunction(__FUNCTION__, [$mysql, $mode]);
 }
 function mysqli_thread_id($mysql) {
